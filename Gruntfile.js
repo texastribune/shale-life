@@ -22,7 +22,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          './styleguide/styleguide.css': './styleguide/styleguide.css'
+          './app/main.css': './app/main.css'
         }
       }
     },
@@ -36,7 +36,7 @@ module.exports = function(grunt) {
       },
       livereload: {
         options: {
-          base: ['./styleguide'],
+          base: ['./app'],
           middleware: function(connect, options) {
             return [
               connect.static(options.base[0]),
@@ -55,7 +55,7 @@ module.exports = function(grunt) {
       },
       server: {
         files: {
-          './styleguide/styleguide.css': './styleguide/styleguide.scss'
+          './app/main.css': './app/main.scss'
         }
       }
     },
