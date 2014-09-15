@@ -1029,6 +1029,24 @@ tr:nth-child(odd) td {
 pre {
   width: 100%; }
 
+.context-box {
+  border: 1px solid black; }
+  @media screen and (min-width: 768px) {
+    .context-box {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      margin-right: 0; }
+      .context-box:last-child {
+        margin-right: 0; } }
+
+.mini-map {
+  float: left;
+  height: 70px;
+  margin-right: 1em;
+  width: 70px; }
+
 @media screen and (min-width: 768px) {
   .video-wrapper {
     float: left;

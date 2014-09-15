@@ -1,4 +1,18 @@
+.context-box {
+  border: 1px solid black;
 
+  @include media($default-768) {
+    @include span-columns(4 of 12);
+    @include omega();
+  }
+}
+
+.mini-map {
+  float: left;
+  height: 70px;
+  margin-right: 1em;
+  width: 70px;
+}
 
 .video-wrapper { 
   @include media($default-768) {
