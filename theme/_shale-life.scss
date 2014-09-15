@@ -1,0 +1,8 @@
+
+
+.video-wrapper { 
+  @include media($default-768) {
+    @include span-columns(8 of 12);
+    @include shift(0);
+  }
+}

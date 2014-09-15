@@ -1028,3 +1028,13 @@ tr:nth-child(odd) td {
 
 pre {
   width: 100%; }
+
+@media screen and (min-width: 768px) {
+  .video-wrapper {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    margin-left: 0%; }
+    .video-wrapper:last-child {
+      margin-right: 0; } }
