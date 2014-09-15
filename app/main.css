@@ -500,11 +500,17 @@ dd {
   background-color: #111111;
   width: 100%; }
   .masthead .branding {
-    padding: .75em 0 .375em;
-    text-align: center;
-    width: 100%; }
+    float: left;
+    padding: .75em .25em .375em; }
     .masthead .branding .trib-logo {
       height: 1.5em; }
+  .masthead .home {
+    color: white;
+    float: right;
+    font-size: 1em;
+    padding: .25em; }
+    .masthead .home i {
+      font-size: 2em; }
 
 /* Header Banner */
 .banner {

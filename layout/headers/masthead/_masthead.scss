@@ -5,12 +5,24 @@
   width: 100%;
 
   .branding {
-    padding: .75em 0 .375em;
-    text-align: center;
-    width: 100%;
+    float: left;
+    padding: .75em .25em .375em;
+    // text-align: center;
+    // width: 100%;
 
     .trib-logo {
       height: 1.5em;
+    }
+  }
+
+  .home {
+    color: $white;
+    float: right;
+    font-size: 1em;
+    padding: .25em;
+
+    i {
+      font-size: 2em;
     }
   }
 }
