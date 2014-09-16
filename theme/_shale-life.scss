@@ -1,9 +1,13 @@
+$bp-prototype: new-breakpoint(min-width 945px);
+
 .context-box {
   border: 1px solid black;
+  margin-top: 1em;
 
-  @include media($default-768) {
+  @include media($bp-prototype) {
     @include span-columns(4 of 12);
     @include omega();
+    margin-top: 0;
   }
 }
 
@@ -15,7 +19,7 @@
 }
 
 .video-wrapper { 
-  @include media($default-768) {
+  @include media($bp-prototype) {
     @include span-columns(8 of 12);
     @include shift(0);
   }
