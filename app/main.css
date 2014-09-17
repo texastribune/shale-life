@@ -390,7 +390,7 @@ th {
     text-decoration: underline; }
 
 .about, .prose {
-  color: #282828;
+  color: white;
   display: block;
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 1em;
@@ -410,7 +410,7 @@ th {
 /* Grid Mixins */
 /* Base Theme for HTML elements */
 body {
-  color: #282828;
+  background-color: #111111;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1;
@@ -498,6 +498,7 @@ dd {
 /* Tribune Masthead */
 .masthead {
   background-color: #111111;
+  border-bottom: 1px solid #ffc200;
   width: 100%; }
   .masthead .branding {
     float: left;
@@ -675,6 +676,7 @@ dd {
 
 .footer {
   background-color: #111111;
+  border-top: 1px solid #ffc200;
   color: white;
   font-size: .75em;
   margin-top: 1em; }
