@@ -92,7 +92,8 @@
   }
 
   .explainer-header {
-    color: $bodytext-black;
+    color: $white;
+    background-color: $bodytext-black;
     font-family: $base-sans-serif;
     font-weight: 800;
     line-height: 1.2;
@@ -100,8 +101,8 @@
   }
 
   .explainer-text {
-    background: $explainer-gray;
-    color: $bodytext-black;
+    color: $white;
+    background-color: $bodytext-black;
     font-family: $base-sans-serif;
     font-weight: 300;
     line-height: 1.3;

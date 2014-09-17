@@ -81,7 +81,7 @@ td {
 
 tr {
   &:nth-child(odd) td {
-    background-color: $background-gray;
+    background-color: $text-gray;
   }
 
   @include media($bp-table) {

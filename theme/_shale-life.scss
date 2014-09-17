@@ -1,7 +1,7 @@
 $bp-prototype: new-breakpoint(min-width 945px);
 
 .context-box {
-  border: 1px solid black;
+  border: 1px solid $teal;
   margin-top: 1em;
 
   @include media($bp-prototype) {
