@@ -51,7 +51,7 @@ $bp-prototype: new-breakpoint(min-width 985px);
 .share {
   display: inline-block;
   float: left;
-  max-width: 0;
+  max-width: 2.5em;
 
   i {
     font-size: 2em;
@@ -65,6 +65,10 @@ $bp-prototype: new-breakpoint(min-width 985px);
       color: $teal;
       text-decoration: none;
     }
+  }
+
+  @include media($bp-prototype) {
+    max-width: 0;
   }
 }
 

@@ -1087,7 +1087,7 @@ pre {
 .share {
   display: inline-block;
   float: left;
-  max-width: 0; }
+  max-width: 2.5em; }
   .share i {
     font-size: 2em;
     margin-bottom: 1em; }
@@ -1096,6 +1096,9 @@ pre {
     .share a:hover {
       color: #008990;
       text-decoration: none; }
+  @media screen and (min-width: 985px) {
+    .share {
+      max-width: 0; } }
 
 @media screen and (min-width: 985px) {
   .video-wrapper {
