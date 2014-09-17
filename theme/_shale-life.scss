@@ -1,25 +1,33 @@
-$bp-prototype: new-breakpoint(min-width 800px);
+$bp-prototype: new-breakpoint(min-width 985px);
 
 .context-box {
   border: 1px solid $teal;
   margin: 1em 0;
 
   @include media($bp-prototype) {
-    @include span-columns(8);
+    @include span-columns(12);
     @include omega();
-    margin-top: 0;
+  }
+
+  h3 {
+    margin: 0;
   }
 }
 
 .context {
-  display: none;
-
   @include media($bp-prototype) {
     display: block;
     margin-top: 0;
-    @include span-columns(8);
+    @include span-columns(6);
     @include omega();
   }
+}
+
+.intro-text {
+  // @include media($bp-prototype) {
+  //   @include span-columns(8);
+  //   max-width: 61%;
+  // }
 }
 
 .mini-map {
@@ -31,22 +39,40 @@ $bp-prototype: new-breakpoint(min-width 800px);
   };
 
   @include media($bp-prototype) {
-    @include span-columns(4);
+    @include span-columns(6);
     margin-top: 0;
 
     img {
-      height: 175px;
-      width: 175px;
+      height: 125px;
+      width: 125px;
+    }
+  }
+}
+
+.share {
+  display: inline-block;
+  float: left;
+  max-width: 25px;
+  margin: 0em 2em 0 0;
+
+  i {
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+
+  a {
+    color: rgb(119, 119, 119);
+
+    &:hover {
+      color: $teal;
+      text-decoration: none;
     }
   }
 }
 
 .video-wrapper { 
-  @include features-layout($bp-prototype, 12, 8);
-}
-
-.intro-text {
   @include media($bp-prototype) {
-    @include span-columns(4);
+    @include span-columns(10);
   }
 }
+
