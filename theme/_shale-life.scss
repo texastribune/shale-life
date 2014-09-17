@@ -1,26 +1,52 @@
-$bp-prototype: new-breakpoint(min-width 945px);
+$bp-prototype: new-breakpoint(min-width 800px);
 
 .context-box {
   border: 1px solid $teal;
-  margin-top: 1em;
+  margin: 1em 0;
 
   @include media($bp-prototype) {
-    @include span-columns(4 of 12);
+    @include span-columns(8);
     @include omega();
     margin-top: 0;
   }
 }
 
+.context {
+  display: none;
+
+  @include media($bp-prototype) {
+    display: block;
+    margin-top: 0;
+    @include span-columns(8);
+    @include omega();
+  }
+}
+
 .mini-map {
-  float: left;
-  height: 70px;
   margin-right: 1em;
-  width: 70px;
+  
+  img {
+    height: 100px;
+    width: 100px;
+  };
+
+  @include media($bp-prototype) {
+    @include span-columns(4);
+    margin-top: 0;
+
+    img {
+      max-height: 175px;
+      max-width: 175px;
+    }
+  }
 }
 
 .video-wrapper { 
+  @include features-layout($bp-prototype, 12, 8);
+}
+
+.intro-text {
   @include media($bp-prototype) {
-    @include span-columns(8 of 12);
-    @include shift(0);
+    @include span-columns(4);
   }
 }

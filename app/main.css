@@ -899,7 +899,7 @@ dd {
 table {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 1em;
-  margin-bottom: 2em;
+  margin-bottom: .5em;
   width: 100%; }
   @media screen and (max-width: 480px) {
     table {
@@ -1034,30 +1034,72 @@ pre {
 
 .context-box {
   border: 1px solid #008990;
-  margin-top: 1em; }
-  @media screen and (min-width: 945px) {
+  margin: 1em 0; }
+  @media screen and (min-width: 800px) {
     .context-box {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 31.76157%;
+      width: 65.88078%;
       margin-right: 0;
       margin-top: 0; }
       .context-box:last-child {
         margin-right: 0; } }
 
-.mini-map {
-  float: left;
-  height: 70px;
-  margin-right: 1em;
-  width: 70px; }
+.context {
+  display: none; }
+  @media screen and (min-width: 800px) {
+    .context {
+      display: block;
+      margin-top: 0;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%;
+      margin-right: 0; }
+      .context:last-child {
+        margin-right: 0; } }
 
-@media screen and (min-width: 945px) {
-  .video-wrapper {
+.mini-map {
+  margin-right: 1em; }
+  .mini-map img {
+    height: 100px;
+    width: 100px; }
+  @media screen and (min-width: 800px) {
+    .mini-map {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      margin-top: 0; }
+      .mini-map:last-child {
+        margin-right: 0; }
+      .mini-map img {
+        max-height: 175px;
+        max-width: 175px; } }
+
+.video-wrapper {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .video-wrapper:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 800px) {
+    .video-wrapper {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%;
+      margin-left: 17.05961%; }
+      .video-wrapper:last-child {
+        margin-right: 0; } }
+
+@media screen and (min-width: 800px) {
+  .intro-text {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 65.88078%;
-    margin-left: 0%; }
-    .video-wrapper:last-child {
+    width: 31.76157%; }
+    .intro-text:last-child {
       margin-right: 0; } }
