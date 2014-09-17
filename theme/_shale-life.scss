@@ -6,7 +6,6 @@ $bp-prototype: new-breakpoint(min-width 985px);
 
   @include media($bp-prototype) {
     @include span-columns(12);
-    @include omega();
   }
 
   h3 {
@@ -18,16 +17,16 @@ $bp-prototype: new-breakpoint(min-width 985px);
   @include media($bp-prototype) {
     display: block;
     margin-top: 0;
-    @include span-columns(6);
+    @include span-columns(8);
     @include omega();
   }
 }
 
 .intro-text {
-  // @include media($bp-prototype) {
-  //   @include span-columns(8);
-  //   max-width: 61%;
-  // }
+  @include media($bp-prototype) {
+    @include span-columns(10);
+    margin-left: 5%;
+  }
 }
 
 .mini-map {
@@ -39,7 +38,7 @@ $bp-prototype: new-breakpoint(min-width 985px);
   };
 
   @include media($bp-prototype) {
-    @include span-columns(6);
+    @include span-columns(4);
     margin-top: 0;
 
     img {
@@ -52,8 +51,7 @@ $bp-prototype: new-breakpoint(min-width 985px);
 .share {
   display: inline-block;
   float: left;
-  max-width: 25px;
-  margin: 0em 2em 0 0;
+  max-width: 0;
 
   i {
     font-size: 2em;
@@ -73,6 +71,7 @@ $bp-prototype: new-breakpoint(min-width 985px);
 .video-wrapper { 
   @include media($bp-prototype) {
     @include span-columns(10);
+    margin-left: 5%;
   }
 }
 

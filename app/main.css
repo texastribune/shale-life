@@ -1038,8 +1038,7 @@ pre {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 100%;
-      margin-right: 0; }
+      width: 100%; }
       .context-box:last-child {
         margin-right: 0; } }
   .context-box h3 {
@@ -1052,9 +1051,19 @@ pre {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 48.82117%;
+    width: 65.88078%;
     margin-right: 0; }
     .context:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 985px) {
+  .intro-text {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+    margin-left: 5%; }
+    .intro-text:last-child {
       margin-right: 0; } }
 
 .mini-map {
@@ -1067,7 +1076,7 @@ pre {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 48.82117%;
+      width: 31.76157%;
       margin-top: 0; }
       .mini-map:last-child {
         margin-right: 0; }
@@ -1078,8 +1087,7 @@ pre {
 .share {
   display: inline-block;
   float: left;
-  max-width: 25px;
-  margin: 0em 2em 0 0; }
+  max-width: 0; }
   .share i {
     font-size: 2em;
     margin-bottom: 1em; }
@@ -1094,6 +1102,7 @@ pre {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 82.94039%; }
+    width: 82.94039%;
+    margin-left: 5%; }
     .video-wrapper:last-child {
       margin-right: 0; } }
