@@ -75,8 +75,7 @@ $bp-prototype: new-breakpoint(min-width 985px);
   margin-bottom: 1em;
 
   @include media($bp-prototype) {
-    @include span-columns(10);
-    @include shift(1);
+    @include span-columns(12);
   }
 }
 
