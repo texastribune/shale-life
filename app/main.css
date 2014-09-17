@@ -1109,7 +1109,7 @@ pre {
  *
  * Copyright 2012 WooThemes
  * Free to use under the GPLv2 license.
- * http://www.gnu.org/licenses/gpl-2.0.html
+ * http://www.gnu.org/licenses/gpl-2..html
  *
  * Contributing author: Tyler Smith (@mbmufffin)
  */
@@ -1124,9 +1124,9 @@ pre {
 .slides,
 .flex-control-nav,
 .flex-direction-nav {
+  list-style: none;
   margin: 0;
-  padding: 0;
-  list-style: none; }
+  padding: 0; }
 
 /* Icon Fonts
 *********************************/
@@ -1140,34 +1140,33 @@ pre {
 /* FlexSlider Necessary Styles
 *********************************/
 .flexslider {
+  clear: both;
   margin: 0;
   padding: 0;
-  clear: both; }
+  position: relative; }
 
-.flexslider .slides > li {
-  display: none;
-  -webkit-backface-visibility: hidden; }
+.slides > li {
+  -webkit-backface-visibility: hidden;
+  display: none; }
 
 /* Hide the slides before the JS is loaded. Avoids image jumping */
-.flexslider .slides img {
-  width: 100%;
+.slides img {
   display: block;
   float: left;
-  margin-bottom: 1em; }
-
-.flexslider .slides h4 {
-  width: 100%;
+  margin-bottom: 1em;
+  width: 100%; }
+.slides h4 {
   color: #222222;
   font: 700 1.9em Helvetica;
+  margin: 1em .5em;
   text-align: center;
-  margin: 1em 0.5em; }
-
-.flexslider .slides p {
+  width: 100%; }
+.slides p {
   color: #222222;
   font: 300 1em helvetica;
   line-height: 1.4em;
-  text-align: left;
-  margin: 0.75em 0.5em 0 0.5em; }
+  margin: .75em .5em 0;
+  text-align: left; }
 
 .flex-pauseplay span {
   text-transform: capitalize; }
@@ -1184,9 +1183,6 @@ pre {
 html[xmlns] .slides {
   display: block; }
 
-* html .slides {
-  height: 1%; }
-
 /* No JavaScript Fallback */
 /* If you are not using another script, such as Modernizr, make sure you
  * include js that eliminates this class on page load */
@@ -1195,45 +1191,26 @@ html[xmlns] .slides {
 
 /* FlexSlider Default Theme
 *********************************/
-.flexslider {
-  margin: 0 0 0.5em;
-  border-top: 1px solid #ffc200;
-  position: relative;
-  zoom: 1;
-  clear: both; }
-
 .flex-viewport {
-  max-height: 2000px;
   transition: all 1s ease; }
 
-.loading .flex-viewport {
-  max-height: 300px; }
-
-.flexslider .slides {
-  zoom: 1;
-  max-height: 300px; }
-
-.carousel li {
-  margin-right: 5px; }
-
 /* Direction Nav */
-.flex-direction-nav {
-  *height: 0; }
-
 .flex-direction-nav a {
+  -moz-transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
   display: block;
-  width: 50px;
   height: 50px;
   margin: -20px 0 0;
-  position: absolute;
-  top: 50%;
-  z-index: 10;
-  overflow: hidden;
   opacity: 0;
-  cursor: pointer;
-  color: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  position: absolute;
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
-  transition: all .3s ease; }
+  top: 50%;
+  transition: all .3s ease;
+  width: 50px;
+  z-index: 10; }
 
 .flex-direction-nav .flex-prev {
   background: url(https://s3.amazonaws.com/apps.texastribune.org/branding/previous-arrow44x44.png) no-repeat 50%;
@@ -1245,39 +1222,39 @@ html[xmlns] .slides {
   text-align: right; }
 
 .flexslider:hover .flex-prev {
-  opacity: 0.7;
+  opacity: .7;
   left: 10px; }
 
 .flexslider:hover .flex-next {
-  opacity: 0.7;
+  opacity: .7;
   right: 10px; }
 
 .flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {
   opacity: 1; }
 
 .flex-direction-nav .flex-disabled {
-  opacity: 0 !important;
+  cursor: default;
   filter: alpha(opacity=0);
-  cursor: default; }
+  opacity: 0 !important; }
 
 .flex-direction-nav a:before {
+  display: inline-block;
   font-family: "flexslider-icon";
-  font-size: 40px;
-  display: inline-block; }
+  font-size: 40px; }
 
 /* Pause/Play */
 .flex-pauseplay a {
-  display: block;
-  width: 20px;
-  height: 20px;
-  position: absolute;
   bottom: 5px;
-  left: 10px;
-  opacity: 0.8;
-  z-index: 10;
-  overflow: hidden;
+  color: #000;
   cursor: pointer;
-  color: #000; }
+  display: block;
+  height: 20px;
+  left: 10px;
+  opacity: .8;
+  overflow: hidden;
+  position: absolute;
+  width: 20px;
+  z-index: 10; }
 
 .flex-pauseplay a:before {
   font-family: "flexslider-icon";
@@ -1297,7 +1274,7 @@ html[xmlns] .slides {
   bottom: -40px;
   text-align: center;
   border-bottom: 1px solid #ffc200;
-  margin: 0 0 0.5em 0;
+  margin: 0 0 .5em 0;
   clear: both; }
 
 .flex-control-nav li {
@@ -1318,44 +1295,38 @@ html[xmlns] .slides {
   border-radius: 20px;
   -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3); }
-
-.flex-control-paging li a:hover {
-  background: #333;
-  background: rgba(0, 0, 0, 0.7); }
-
-.flex-control-paging li a.flex-active {
-  background: #000;
-  background: rgba(0, 0, 0, 0.9);
-  cursor: default; }
+  .flex-control-paging li a:hover {
+    background: #333;
+    background: rgba(0, 0, 0, 0.7); }
+  .flex-control-paging li a .flex-active {
+    background: #000;
+    background: rgba(0, 0, 0, 0.9);
+    cursor: default; }
 
 .flex-control-thumbs {
   margin: 5px 0 0;
-  position: static;
-  overflow: hidden; }
-
-.flex-control-thumbs li {
-  width: 25%;
-  float: left;
-  margin: 0; }
-
-.flex-control-thumbs img {
-  width: 100%;
-  display: block;
-  opacity: .7;
-  cursor: pointer; }
-
-.flex-control-thumbs img:hover {
-  opacity: 1; }
-
-.flex-control-thumbs .flex-active {
-  opacity: 1;
-  cursor: default; }
+  overflow: hidden;
+  position: static; }
+  .flex-control-thumbs li {
+    width: 25%;
+    float: left;
+    margin: 0; }
+  .flex-control-thumbs img {
+    cursor: pointer;
+    display: block;
+    opacity: .7;
+    width: 100%; }
+    .flex-control-thumbs img:hover {
+      opacity: 1; }
+  .flex-control-thumbs .flex-active {
+    cursor: default;
+    opacity: 1; }
 
 @media screen and (max-width: 860px) {
   .flex-direction-nav .flex-prev {
-    opacity: 0.2;
+    opacity: .2;
     left: 10px; }
 
   .flex-direction-nav .flex-next {
-    opacity: 0.2;
+    opacity: .2;
     right: 10px; } }
