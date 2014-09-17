@@ -73,9 +73,6 @@ $bp-prototype: new-breakpoint(min-width 985px);
 
 .video-wrapper { 
   margin-bottom: 1em;
-
-  @include media($bp-prototype) {
-    @include span-columns(12);
-  }
+  float: none;
 }
 
