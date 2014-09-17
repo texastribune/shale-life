@@ -2,10 +2,9 @@ $bp-prototype: new-breakpoint(min-width 985px);
 
 .context-box {
   border: 1px solid $teal;
-  margin: 1em 0;
 
   @include media($bp-prototype) {
-    @include span-columns(12);
+    @include span-columns(6);
   }
 
   h3 {
@@ -24,8 +23,7 @@ $bp-prototype: new-breakpoint(min-width 985px);
 
 .intro-text {
   @include media($bp-prototype) {
-    @include span-columns(10);
-    margin-left: 5%;
+    @include span-columns(6);
   }
 }
 
@@ -49,13 +47,18 @@ $bp-prototype: new-breakpoint(min-width 985px);
 }
 
 .share {
-  display: inline-block;
-  float: left;
-  max-width: 2.5em;
+  text-align: left;
+
+  h1 {
+    display: inline;
+  }
 
   i {
+    display: inline;
     font-size: 2em;
-    margin-bottom: 1em;
+    line-height: 0;
+    margin: 0 0 0 1em;
+    text-align: right;
   }
 
   a {
@@ -66,16 +69,14 @@ $bp-prototype: new-breakpoint(min-width 985px);
       text-decoration: none;
     }
   }
-
-  @include media($bp-prototype) {
-    max-width: 0;
-  }
 }
 
 .video-wrapper { 
+  margin-bottom: 1em;
+
   @include media($bp-prototype) {
     @include span-columns(10);
-    margin-left: 5%;
+    @include shift(1);
   }
 }
 

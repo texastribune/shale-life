@@ -1031,14 +1031,13 @@ pre {
   width: 100%; }
 
 .context-box {
-  border: 1px solid #008990;
-  margin: 1em 0; }
+  border: 1px solid #008990; }
   @media screen and (min-width: 985px) {
     .context-box {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 100%; }
+      width: 48.82117%; }
       .context-box:last-child {
         margin-right: 0; } }
   .context-box h3 {
@@ -1061,8 +1060,7 @@ pre {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 82.94039%;
-    margin-left: 5%; }
+    width: 48.82117%; }
     .intro-text:last-child {
       margin-right: 0; } }
 
@@ -1085,27 +1083,29 @@ pre {
         width: 125px; } }
 
 .share {
-  display: inline-block;
-  float: left;
-  max-width: 2.5em; }
+  text-align: left; }
+  .share h1 {
+    display: inline; }
   .share i {
+    display: inline;
     font-size: 2em;
-    margin-bottom: 1em; }
+    line-height: 0;
+    margin: 0 0 0 1em;
+    text-align: right; }
   .share a {
     color: #777777; }
     .share a:hover {
       color: #008990;
       text-decoration: none; }
-  @media screen and (min-width: 985px) {
-    .share {
-      max-width: 0; } }
 
-@media screen and (min-width: 985px) {
-  .video-wrapper {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 82.94039%;
-    margin-left: 5%; }
-    .video-wrapper:last-child {
-      margin-right: 0; } }
+.video-wrapper {
+  margin-bottom: 1em; }
+  @media screen and (min-width: 985px) {
+    .video-wrapper {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%;
+      margin-left: 8.5298%; }
+      .video-wrapper:last-child {
+        margin-right: 0; } }
