@@ -1075,8 +1075,8 @@ pre {
       .mini-map:last-child {
         margin-right: 0; }
       .mini-map img {
-        max-height: 175px;
-        max-width: 175px; } }
+        height: 175px;
+        width: 175px; } }
 
 .video-wrapper {
   float: left;

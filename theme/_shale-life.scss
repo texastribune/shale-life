@@ -24,7 +24,7 @@ $bp-prototype: new-breakpoint(min-width 800px);
 
 .mini-map {
   margin-right: 1em;
-  
+
   img {
     height: 100px;
     width: 100px;
@@ -35,8 +35,8 @@ $bp-prototype: new-breakpoint(min-width 800px);
     margin-top: 0;
 
     img {
-      max-height: 175px;
-      max-width: 175px;
+      height: 175px;
+      width: 175px;
     }
   }
 }
