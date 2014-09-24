@@ -1,5 +1,25 @@
 $bp-prototype: new-breakpoint(min-width 985px);
 
+.mast-text {
+  @include media($default-480) {
+    display: none;
+  }
+}
+
+.trib-logo {
+  @include media($default-480) {
+    display: none;
+  }
+}
+
+.trib-logo-mini {
+  display: none;
+  @include media($default-480) {
+    height: 2em;
+    display: block;
+  }
+}
+
 .context-box {
   // border: 1px solid $teal;
   margin-bottom: 1em;
@@ -48,14 +68,7 @@ $bp-prototype: new-breakpoint(min-width 985px);
 }
 
 .share {
-  display: inline;
-
-  i {
-    display: block;
-    font-size: 1.5em;
-    line-height: 0;
-    margin-bottom: 1em;
-  }
+  margin: .5em 0 0 1em;
 
   a {
     color: rgb(119, 119, 119);
@@ -70,6 +83,5 @@ $bp-prototype: new-breakpoint(min-width 985px);
 .video-wrapper { 
   margin-bottom: 1em;
   float: none;
-  @extend %content-block;
 }
 
