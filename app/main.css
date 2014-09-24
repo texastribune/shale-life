@@ -1145,7 +1145,7 @@ pre {
 
 .slides > li {
   -webkit-backface-visibility: hidden;
-  background-color: whitesmoke;
+  background-color: #282828;
   display: none;
   padding: .5em;
   margin: 0 .5em 1em; }
@@ -1154,16 +1154,15 @@ pre {
 .slides img {
   display: block;
   float: left;
-  margin-bottom: 1em;
+  margin-bottom: .5em;
   width: 100%; }
-.slides h4 {
-  color: #222222;
-  font: 700 1.9em Helvetica;
-  margin: 1em .5em;
+.slides h3 {
+  color: #666666;
+  font: 700 1.2em Helvetica;
   text-align: center;
   width: 100%; }
 .slides p {
-  color: #222222;
+  color: #666666;
   font: 300 1em helvetica;
   line-height: 1.4em;
   margin: .75em .5em 0;

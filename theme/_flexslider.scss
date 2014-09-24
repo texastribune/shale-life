@@ -55,7 +55,7 @@
 
 .slides > li {
   -webkit-backface-visibility: hidden;
-  background-color: $background-gray;
+  background-color: $bodytext-black;
   display: none;
   padding: .5em;
   margin: 0 .5em 1em; 
@@ -67,20 +67,19 @@
   img {
     display: block; 
     float: left; 
-    margin-bottom: 1em; 
+    margin-bottom: .5em; 
     width: 100%; 
   }  
 
-  h4 {
-    color: rgb(34, 34, 34); 
-    font: 700 1.9em Helvetica; 
-    margin: 1em .5em; 
+  h3 {
+    color: $text-gray; 
+    font: 700 1.2em Helvetica; 
     text-align: center; 
     width: 100%; 
   }  
 
   p { 
-    color: rgb(34, 34, 34);
+    color: $text-gray;
     font: 300 1em helvetica; 
     line-height: 1.4em; 
     margin: .75em .5em 0; 
