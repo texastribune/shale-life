@@ -372,7 +372,7 @@ th {
     display: table;
     clear: both; }
 
-.content-block, .banner .grand-header, .share-row, .shareline, .about, .prose, .prose ul {
+.content-block, .banner .grand-header, .shareline, .about, .prose, .prose ul, .video-wrapper {
   padding: 0 1.25em; }
 
 @media screen and (max-width: 480px) {
@@ -1032,7 +1032,7 @@ pre {
   width: 100%; }
 
 .context-box {
-  border: 1px solid #008990; }
+  margin-bottom: 1em; }
   @media screen and (min-width: 985px) {
     .context-box {
       float: left;
@@ -1084,15 +1084,12 @@ pre {
         width: 125px; } }
 
 .share {
-  text-align: left; }
-  .share h1 {
-    display: inline; }
+  display: inline; }
   .share i {
-    display: inline;
-    font-size: 2em;
+    display: block;
+    font-size: 1.5em;
     line-height: 0;
-    margin: 0 0 0 1em;
-    text-align: right; }
+    margin-bottom: 1em; }
   .share a {
     color: #777777; }
     .share a:hover {
@@ -1143,11 +1140,15 @@ pre {
   clear: both;
   margin: 0;
   padding: 0;
-  position: relative; }
+  position: relative;
+  margin: 1em; }
 
 .slides > li {
   -webkit-backface-visibility: hidden;
-  display: none; }
+  background-color: whitesmoke;
+  display: none;
+  padding: .5em;
+  margin: 0 .5em 1em; }
 
 /* Hide the slides before the JS is loaded. Avoids image jumping */
 .slides img {
@@ -1273,7 +1274,6 @@ html[xmlns] .slides {
   width: 100%;
   bottom: -40px;
   text-align: center;
-  border-bottom: 1px solid #ffc200;
   margin: 0 0 .5em 0;
   clear: both; }
 
@@ -1287,8 +1287,7 @@ html[xmlns] .slides {
   width: 11px;
   height: 11px;
   display: block;
-  background: #666;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 137, 144, 0.3);
   cursor: pointer;
   text-indent: -9999px;
   -o-border-radius: 20px;
@@ -1296,12 +1295,10 @@ html[xmlns] .slides {
   -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3); }
   .flex-control-paging li a:hover {
-    background: #333;
-    background: rgba(0, 0, 0, 0.7); }
-  .flex-control-paging li a .flex-active {
-    background: #000;
-    background: rgba(0, 0, 0, 0.9);
-    cursor: default; }
+    background: #008990; }
+
+.flex-control-paging li a.flex-active {
+  background: #008990; }
 
 .flex-control-thumbs {
   margin: 5px 0 0;

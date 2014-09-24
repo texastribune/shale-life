@@ -1,7 +1,8 @@
 $bp-prototype: new-breakpoint(min-width 985px);
 
 .context-box {
-  border: 1px solid $teal;
+  // border: 1px solid $teal;
+  margin-bottom: 1em;
 
   @include media($bp-prototype) {
     @include span-columns(6);
@@ -47,18 +48,13 @@ $bp-prototype: new-breakpoint(min-width 985px);
 }
 
 .share {
-  text-align: left;
-
-  h1 {
-    display: inline;
-  }
+  display: inline;
 
   i {
-    display: inline;
-    font-size: 2em;
+    display: block;
+    font-size: 1.5em;
     line-height: 0;
-    margin: 0 0 0 1em;
-    text-align: right;
+    margin-bottom: 1em;
   }
 
   a {
@@ -74,5 +70,6 @@ $bp-prototype: new-breakpoint(min-width 985px);
 .video-wrapper { 
   margin-bottom: 1em;
   float: none;
+  @extend %content-block;
 }
 

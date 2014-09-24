@@ -1,6 +1,7 @@
 // Tribune Colors
 $tribune-yellow: rgb(255, 194, 0);
 $teal: rgb(0, 137, 144);
+$teal-transparent: transparentize($teal, .7);
 
 // Shades of Gray
 $black: rgb(0, 0, 0);
