@@ -1,3 +1,8 @@
+function setHeight() {
+  windowHeight = $(window).innerHeight();
+  $('.banner').css('min-height', windowHeight);
+};
+
 $(document).ready(function() {
   $(".video-wrapper").fitVids();
 
@@ -8,10 +13,6 @@ $(document).ready(function() {
     itemMargin: 5
   });
 
-  function setHeight() {
-    windowHeight = $(window).innerHeight();
-    $('.banner').css('min-height', windowHeight);
-  };
   setHeight();
   
   $(window).resize(function() {
