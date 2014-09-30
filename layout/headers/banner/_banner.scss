@@ -1,9 +1,13 @@
 /* Header Banner */
+// Lead-Banner Settings
+$banner-height: 600px;
+$grand-header-image-url: 'http://placekitten.com/1080/600';
 
 .banner {
   background-color: lighten($masthead-black, 15%);
   display: table;
-  height: $banner-height; //Set $banner-height in helpers/variables
+  // height: 600px;
+  // max-height: $banner-height; 
   margin: 0 0 1.5em;
   position: relative;
   width: 100%;
@@ -53,7 +57,7 @@
   }
 
   .grand-header-image {
-    background-image: url($grand-header-image-url); //Set $grand-header-image-url in helpers/variables
+    background-image: url($grand-header-image-url); 
     background-position: center center;
     background-size: cover;
     bottom: 0;
