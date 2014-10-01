@@ -1032,19 +1032,49 @@ tr:nth-child(odd) td {
 pre {
   width: 100%; }
 
-@media screen and (min-width: 900px) {
-  .story-wrapper div {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 23.23176%; }
-    .story-wrapper div:last-child {
+.story-wrapper {
+  margin-right: 0; }
+  @media screen and (min-width: 400px) {
+    .story-wrapper div {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .story-wrapper div:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 600px) {
+    .story-wrapper div {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      margin-right: 0;
+      padding: 0.5em; }
+      .story-wrapper div:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 800px) {
+    .story-wrapper div {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
       margin-right: 0; }
-    .story-wrapper div:nth-child(4n) {
-      margin-right: 0; } }
+      .story-wrapper div:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 1000px) {
+    .story-wrapper div {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%;
+      margin-right: 0; }
+      .story-wrapper div:last-child {
+        margin-right: 0; } }
 
 .story-box {
   border: 1px solid white; }
+  .story-box img {
+    width: 100%; }
 
 .context-box {
   margin-bottom: 1em; }

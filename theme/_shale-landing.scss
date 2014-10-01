@@ -1,9 +1,80 @@
-$bp-landing: new-breakpoint(min-width 900px);
+$bp-landing-large: new-breakpoint(min-width 1000px);
+$bp-landing-medium: new-breakpoint(min-width 800px);
+$bp-landing-small: new-breakpoint(min-width 600px);
+$bp-landing-tiny: new-breakpoint(min-width 400px);
+
+
+@mixin breakpoint($media) {
+  @if $media == tiny {
+    @include media ($bp-landing-tiny) {
+      @content ;
+    }
+  }
+
+  @else if $media == small {
+    @include media ($bp-landing-small) {
+      @content ;
+    }
+  }
+
+  @else if $media == med {
+    @include media ($bp-landing-medium) {
+      @content ;
+    }
+  }
+
+  @else if $media == large {
+    @include media ($bp-landing-large) {
+      @content ;
+    }    
+  }
+}
 
 .story-wrapper {
-  @include div-grid($bp-landing, 12, 4, 2);
+  @include omega();
+
+  @include breakpoint(tiny) {
+    div {
+      @include span-columns(12);
+    }
+  }
+
+  @include breakpoint(small) {
+    div {
+      @include span-columns (6);
+      @include omega();
+      @include pad(1em/2);
+    }
+  }
+
+  @include breakpoint(med) {
+    div {
+      @include span-columns (4);
+      @include omega();
+    }
+  }
+
+  @include breakpoint(large) {
+    div {
+      @include span-columns (3);
+      @include omega();
+    }
+  }
+
+  // @include media($bp-landing-large) {
+  //   div {
+  //     @include span-columns(12 / 4 of 12);
+  //     @include omega(4+n);
+  //   }
+  // }
+
+
 }
 
 .story-box {
   border: 1px solid white;
+
+  img {
+    width: 100%;
+  }
 }
