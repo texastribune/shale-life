@@ -39,6 +39,7 @@
   @include media($bp) {
     div {
       @include span-columns($col-width / $number-div of $col-width);
+      @include omega($number-div+n);
     }
   }
 }

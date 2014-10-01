@@ -671,6 +671,8 @@ dd {
     margin-right: 2.35765%;
     width: 23.23176%; }
     .footer-container div:last-child {
+      margin-right: 0; }
+    .footer-container div:nth-child(4n) {
       margin-right: 0; } }
 
 .footer {
@@ -1029,6 +1031,20 @@ tr:nth-child(odd) td {
 
 pre {
   width: 100%; }
+
+@media screen and (min-width: 900px) {
+  .story-wrapper div {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    .story-wrapper div:last-child {
+      margin-right: 0; }
+    .story-wrapper div:nth-child(4n) {
+      margin-right: 0; } }
+
+.story-box {
+  border: 1px solid white; }
 
 .context-box {
   margin-bottom: 1em; }

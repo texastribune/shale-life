@@ -1,1 +1,9 @@
-$bp-landing: new-breakpoint(min-width 985px);
+$bp-landing: new-breakpoint(min-width 900px);
+
+.story-wrapper {
+  @include div-grid($bp-landing, 12, 4, 2);
+}
+
+.story-box {
+  border: 1px solid white;
+}
