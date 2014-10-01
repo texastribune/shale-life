@@ -1,3 +1,10 @@
+var $container = $('#story-boxes');
+//initialize
+$container.masonry({
+  itemSelector: '.story-box'
+});
+
+
 function setHeight() {
   windowHeight = $(window).innerHeight();
   $('.banner').css('min-height', windowHeight);
