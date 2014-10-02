@@ -1,28 +1,28 @@
-var $container = $('#story-boxes');
-//initialize
-$container.masonry({
-  itemSelector: '.story-box'
-});
-
-
 function setHeight() {
   windowHeight = $(window).innerHeight();
   $('.banner').css('min-height', windowHeight);
 };
 
+
+
+
+
+
 $(document).ready(function() {
   $(".video-wrapper").fitVids();
-
-  $('.flexslider').flexslider({
-    animation: "slide",
-    animationLoop: true,
-    itemWidth: 210,
-    itemMargin: 5
-  });
 
   setHeight();
   
   $(window).resize(function() {
     setHeight();
   });
+
+  var $container = $('#story-boxes').masonry();
+// layout Masonry again after all images have loaded
+  $container.imagesLoaded( function() {
+    $container.masonry({
+      itemSelector: '.story-box'
+    });
+  });
+
 });

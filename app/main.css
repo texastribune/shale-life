@@ -1032,63 +1032,6 @@ tr:nth-child(odd) td {
 pre {
   width: 100%; }
 
-@media screen and (min-width: 400px) {
-  .story-wrapper div {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%; }
-    .story-wrapper div:nth-child(2n) {
-      margin-right: 2.35765%; }
-    .story-wrapper div:nth-child(2n+1) {
-      clear: none; }
-    .story-wrapper div:last-child {
-      margin-right: 0; } }
-@media screen and (min-width: 600px) {
-  .story-wrapper div {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%; }
-    .story-wrapper div:last-child {
-      margin-right: 0; }
-    .story-wrapper div:nth-child(2n) {
-      margin-right: 0; }
-    .story-wrapper div:nth-child(2n+1) {
-      clear: left; } }
-@media screen and (min-width: 800px) {
-  .story-wrapper div {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%; }
-    .story-wrapper div:nth-child(2n) {
-      margin-right: 2.35765%; }
-    .story-wrapper div:nth-child(2n+1) {
-      clear: none; }
-    .story-wrapper div:last-child {
-      margin-right: 0; }
-    .story-wrapper div:nth-child(3n) {
-      margin-right: 0; }
-    .story-wrapper div:nth-child(3n+1) {
-      clear: left; } }
-@media screen and (min-width: 1000px) {
-  .story-wrapper div {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 23.23176%; }
-    .story-wrapper div:nth-child(3n) {
-      margin-right: 2.35765%; }
-    .story-wrapper div:nth-child(3n+1) {
-      clear: none; }
-    .story-wrapper div:last-child {
-      margin-right: 0; }
-    .story-wrapper div:nth-child(4n) {
-      margin-right: 0; }
-    .story-wrapper div:nth-child(4n+1) {
-      clear: left; } }
-
 .story-box {
   border: 1px solid white; }
   .story-box img {

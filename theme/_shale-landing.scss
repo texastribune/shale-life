@@ -37,35 +37,35 @@ $bp-landing-tiny: new-breakpoint(min-width 400px);
 
 .story-wrapper {
  
-  @include breakpoint(tiny) {
-    div {
-      @include omega-reset(2n);
-      @include span-columns(12);
-    }
-  }
+  // @include breakpoint(tiny) {
+  //   div {
+  //     @include omega-reset(2n);
+  //     @include span-columns(12);
+  //   }
+  // }
 
-  @include breakpoint(small) {
-    div {
-      @include span-columns (6);
-      @include omega(2n);
-    }
-  }
+  // @include breakpoint(small) {
+  //   div {
+  //     @include span-columns (6);
+  //     @include omega(2n);
+  //   }
+  // }
 
-  @include breakpoint(med) {
-    div {
-      @include omega-reset(2n);
-      @include span-columns (4);
-      @include omega(3n);
-    }
-  }
+  // @include breakpoint(med) {
+  //   div {
+  //     @include omega-reset(2n);
+  //     @include span-columns (4);
+  //     @include omega(3n);
+  //   }
+  // }
 
-  @include breakpoint(large) {
-    div {
-      @include omega-reset(3n);
-      @include span-columns (3);
-      @include omega(4n);
-    }
-  }
+  // @include breakpoint(large) {
+  //   div {
+  //     @include omega-reset(3n);
+  //     @include span-columns (3);
+  //     @include omega(4n);
+  //   }
+  // }
 
 }
 
