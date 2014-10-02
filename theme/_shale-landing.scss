@@ -39,6 +39,7 @@ $bp-landing-tiny: new-breakpoint(min-width 400px);
  
   @include breakpoint(tiny) {
     div {
+      @include omega-reset(2n);
       @include span-columns(12);
     }
   }
@@ -66,18 +67,19 @@ $bp-landing-tiny: new-breakpoint(min-width 400px);
     }
   }
 
-  // @include media($bp-landing-large) {
-  //   div {
-  //     @include span-columns(12 / 4 of 12);
-  //     @include omega(4+n);
-  //   }
-  // }
-
-
 }
 
 .story-box {
   border: 1px solid white;
+
+  img {
+    width: 100%;
+  }
+}
+
+.story-box.w2 {
+  
+  border: 1px solid green;
 
   img {
     width: 100%;

@@ -1038,6 +1038,10 @@ pre {
     display: block;
     margin-right: 2.35765%;
     width: 100%; }
+    .story-wrapper div:nth-child(2n) {
+      margin-right: 2.35765%; }
+    .story-wrapper div:nth-child(2n+1) {
+      clear: none; }
     .story-wrapper div:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 600px) {
@@ -1088,6 +1092,11 @@ pre {
 .story-box {
   border: 1px solid white; }
   .story-box img {
+    width: 100%; }
+
+.story-box.w2 {
+  border: 1px solid green; }
+  .story-box.w2 img {
     width: 100%; }
 
 .context-box {
