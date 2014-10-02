@@ -551,7 +551,6 @@ dd {
         .banner .grand-header p {
           font-size: 1.5em; } }
   .banner .grand-header-image {
-    background-image: url("http://placekitten.com/1080/600");
     background-position: center center;
     background-size: cover;
     bottom: 0;
@@ -559,6 +558,8 @@ dd {
     position: absolute;
     right: 0;
     top: 0; }
+    .banner .grand-header-image img {
+      width: 100%; }
 
 /* Static Nav-Bar */
 .nav-bar {

@@ -1,6 +1,7 @@
 function setHeight() {
   windowHeight = $(window).innerHeight();
-  $('.banner').css('min-height', windowHeight);
+  $('.grand-header-image').css('min-height', windowHeight);
+  $('.image-replace').css('min-height', windowHeight);
 };
 
 $(document).ready(function() {

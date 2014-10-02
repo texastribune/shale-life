@@ -57,7 +57,7 @@ $grand-header-image-url: 'http://placekitten.com/1080/600';
   }
 
   .grand-header-image {
-    background-image: url($grand-header-image-url); 
+    // background-image: url($grand-header-image-url); 
     background-position: center center;
     background-size: cover;
     bottom: 0;
@@ -65,5 +65,8 @@ $grand-header-image-url: 'http://placekitten.com/1080/600';
     position: absolute;
     right: 0;
     top: 0;
+    img {
+      width: 100%;
+    }
   }
 }
