@@ -35,36 +35,69 @@ $bp-landing-tiny: new-breakpoint(min-width 400px);
   &:nth-child(#{$nth}+1) { clear: none }
 }
 
+
+
 .story-wrapper {
- 
-  @include breakpoint(tiny) {
-    div {
-      @include span-columns(12);
-    }
-  }
-
   @include breakpoint(small) {
-    div {
-      @include span-columns (6);
-      @include omega(2n);
-    }
+    @include span-columns(6);
+    @include omega(2n);
   }
-
   @include breakpoint(med) {
-    div {
-      @include omega-reset(2n);
-      @include span-columns (4);
-      @include omega(3n);
-    }
+    @include omega-reset(2n);
+    @include span-columns(4);
+    @include omega(3n);
+  }
+  @include breakpoint(large) {
+    @include omega-reset(3n);
+    @include span-columns(3);
+    @include omega(4n);
   }
 
-  @include breakpoint(large) {
-    div {
-      @include omega-reset(3n);
-      @include span-columns (3);
-      @include omega(4n);
+}
+ 
+.story-wrapper > .story-box { 
+  img {
+      width: 100%;
     }
-  }
+}
+
+
+// .story-wrapper {  
+//   div.story-box {
+//     display: inline-block;
+
+//     img {
+//       width: 100%;
+//     }
+//   }
+
+//   @include breakpoint(tiny) {
+//     div.story-box {
+//       border: 1px solid white;
+//       width: 100%;
+//     }
+//   }
+
+//   @include breakpoint(small) {
+//     div.story-box {
+//       border: 1px solid white;
+//       width: 50%;
+//     }
+//   }
+
+//   @include breakpoint(med) {
+//     div.story-box {
+//       border: 1px solid white;
+//       width: 33.3333%;
+//     }
+//   }
+
+//   @include breakpoint(large) {
+//     div.story-box {
+//       border: 1px solid white;
+//       width: 25%;
+//     }
+//   }
 
   // @include media($bp-landing-large) {
   //   div {
@@ -74,12 +107,4 @@ $bp-landing-tiny: new-breakpoint(min-width 400px);
   // }
 
 
-}
-
-.story-box {
-  border: 1px solid white;
-
-  img {
-    width: 100%;
-  }
-}
+// }
