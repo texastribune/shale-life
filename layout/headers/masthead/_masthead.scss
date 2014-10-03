@@ -1,4 +1,5 @@
 /* Tribune Masthead */
+$bp-masthead-small: new-breakpoint(min-width 600px);
 
 .masthead {
   background-color: $masthead-black;
@@ -8,9 +9,23 @@
   .branding {
     float: left;
     padding: .75em .25em .375em;
+  }
 
-    .trib-logo {
-      height: 1.5em;
+  .trib-logo {
+    height: 1.5em;
+  }
+
+  .trib-logo.mobile {
+    display: inline-block;
+    @include media($bp-masthead-small) {
+      display: none;
+    }
+  }
+
+  .trib-logo.desktop {
+    display: none;
+    @include media($bp-masthead-small) {
+      display: inline-block;
     }
   }
 

@@ -503,8 +503,18 @@ dd {
   .masthead .branding {
     float: left;
     padding: .75em .25em .375em; }
-    .masthead .branding .trib-logo {
-      height: 1.5em; }
+  .masthead .trib-logo {
+    height: 1.5em; }
+  .masthead .trib-logo.mobile {
+    display: inline-block; }
+    @media screen and (min-width: 600px) {
+      .masthead .trib-logo.mobile {
+        display: none; } }
+  .masthead .trib-logo.desktop {
+    display: none; }
+    @media screen and (min-width: 600px) {
+      .masthead .trib-logo.desktop {
+        display: inline-block; } }
   .masthead .home {
     color: white;
     float: right;
