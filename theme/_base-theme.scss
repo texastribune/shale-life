@@ -31,7 +31,7 @@ hr {
   background-color: $line-gray;
   border: 0 none;
   height: 2px;
-  @include white-space(2);
+  margin-bottom: 2em;
 
   &.thin {
     height: 1px;

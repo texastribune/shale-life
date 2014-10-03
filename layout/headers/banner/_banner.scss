@@ -32,7 +32,7 @@ $grand-header-image-url: 'http://placekitten.com/1000/800';
       font-weight: 800;
       line-height: 1.15;
       text-shadow: $black 3px 3px 0;
-      @include white-space(.5);
+      margin-bottom: .5em;
 
       @include media($default-768) {
         font-size: 3.5em;
@@ -47,7 +47,7 @@ $grand-header-image-url: 'http://placekitten.com/1000/800';
       letter-spacing: .0625em;
       line-height: 1.15;
       text-shadow: $black 2px 2px 0;
-      @include white-space(1);
+      margin-bottom: 1em;;
 
       @include media($default-768) {
         font-size: 1.5em;
