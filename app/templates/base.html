@@ -13,16 +13,24 @@
   <!-- endbuild -->
   <!-- build:css(.tmp) styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   <!-- endbuild -->
 </head>
 <body>
 
+<!-- Masthead -->
 <header class="masthead">
-  <div class="container">
-    <div class="branding">
-      <a href="//www.texastribune.org/"><img class="trib-logo" alt="The Texas Tribune" src="/images/tt-logo-white.png"></a>
-    </div>
+ <div class="container">
+  <div class="branding">
+    <a href="http://www.texastribune.org/">
+      <img class="trib-logo mobile" alt="The Texas Tribune" src="//s3.amazonaws.com/apps.texastribune.org/branding/TT-logo-white.dd56ad79c0da.png">
+      <img class="trib-logo desktop" alt="The Texas Tribune" src="//s3.amazonaws.com/apps.texastribune.org/branding/TxTrib-logo-white500x55.png">
+    </a>
   </div>
+  <div class="home">
+    <i class="fa fa-home"></i>
+  </div>
+ </div>
 </header>
 
 {% block content %}{% endblock %}

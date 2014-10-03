@@ -1,0 +1,20 @@
+/* Masthead override */
+
+$bp-masthead: new-breakpoint(max-width 480px);
+
+
+.trib-logo.desktop {
+  display: inline-block;
+
+  @include media($bp-masthead) {
+    display: none;
+  }
+}
+
+.trib-logo.mobile {
+  display: none;
+
+  @include media($bp-masthead) {
+    display: inline-block;
+  }
+}
