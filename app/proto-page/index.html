@@ -1,27 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Shale Life - Prototype</title>
-  <link rel="stylesheet" href="../styles/main.css">
-  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-</head>
-<body>
+{% extends 'app/templates/base.html' %}
 
-<!-- Masthead -->
-<!-- <header class="masthead">
- <div class="container">
-  <div class="branding">
-    <a href="http://www.texastribune.org/">
-      <img class="trib-logo mobile" alt="The Texas Tribune" src="//s3.amazonaws.com/apps.texastribune.org/branding/TT-logo-white.dd56ad79c0da.png">
-      <img class="trib-logo desktop" alt="The Texas Tribune" src="//s3.amazonaws.com/apps.texastribune.org/branding/TxTrib-logo-white500x55.png">
-    </a>
-  </div>
-  <div class="home">
-    <i class="fa fa-home"></i>
-  </div>
- </div>
-</header> -->
+{% block content %}
 
 <div class="container">
 <!--     <div class="video-wrapper">
@@ -29,17 +8,23 @@
     </div>
  -->
   <!-- Headline, Byline -->
-  <section class="page-header">
-    <h1>An In-Flight Opportunity</h1>
-    <h3>Helvetica raw denim hella, post-ironic banh mi Thundercats</h2>
+  <section class="lead-content">
 
-    <div class="share-story">
-      <i class="fa fa-facebook"></i>
-      <i class="fa fa-twitter"></i>
+    <div class="lead-content-box">
+     <div class="lead-image"></div>
+     <header class="grand-header">
+        <h1>An In-Flight Opportunity</h1>
+        <h3>Helvetica raw denim hella, post-ironic banh mi Thundercats</h3>
+      <div class="share-story">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+      </div>
+     </header>
     </div>
+
   </section>
 
-  <section class="story-content">
+  <section class="descriptive-content">
     <div>
       <h2>Cat Saves Planet from Apocolypse, Dies in Action</h2>
       <p>Beard keytar tousled Brooklyn Helvetica, chia Pitchfork brunch shabby chic trust fund. +1 Austin scenester flannel Banksy typewriter mlkshk narwhal, drinking vinegar letterpress Portland biodiesel umami. PBR messenger bag tote bag shabby chic, brunch ugh bitters kogi small batch pop-up Bushwick wayfarers actually beard hella. Helvetica raw denim hella, post-ironic banh mi Thundercats synth normcore tilde pickled literally. Carles gentrify crucifix tattooed raw denim. Authentic paleo Thundercats shabby chic mumblecore. Gluten-free Vice Neutra iPhone ethical distillery.</p>
@@ -52,7 +37,7 @@
     </div>
   </section>
 
-  <section class="story-context">
+  <section class="context">
     <div class="prose">
       <div class="context-box explainer-text">
         <div class="mini-map">
@@ -152,35 +137,4 @@
 
 </div> <!-- close div.container -->
 
-
-<footer class="footer">
-  <div class="container">
-    <div class="content-block">
-    <nav class="first-nav">
-      <ul>
-        <li>© 2014 <a href="http://www.texastribune.org/">The Texas Tribune</a></li>
-      </ul>
-    </nav>
-    <nav class="last-nav">
-      <ul>
-        <li><a href="http://www.texastribune.org/about/">About Us</a></li>
-        <li><a href="http://www.texastribune.org/contact/">Contact Us</a></li>
-        <li><a href="http://www.texastribune.org/support-us/donors-and-members/">Who Funds Us?</a></li>
-        <li><a href="http://www.texastribune.org/terms-of-service/">Terms of Service</a></li>
-        <li><a href="http://www.texastribune.org/ethics/">Code of Ethics</a></li>
-        <li><a href="http://www.texastribune.org/privacy/">Privacy Policy</a></li>
-        <li class="donor-item"><a href="https://www.texastribune.org/join/">Donate</a></li>
-      </ul>
-    </nav>
-    </div>
-  </div>
-</footer>
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="../scripts/jquery.fitvids.js"></script>
-<script src="../scripts/jquery.flexslider.js"></script>
-<script src="../scripts/script.js"></script>
-
-
-</body>
-</html>
+{% endblock %}

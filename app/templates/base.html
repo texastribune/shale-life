@@ -12,7 +12,7 @@
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css(.tmp) styles/main.css -->
-  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="../styles/main.css">
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   <!-- endbuild -->
 </head>
@@ -28,32 +28,33 @@
     </a>
     <a href=""><i class="fa fa-home"></i></a>
   </div>
-
  </div>
 </header>
 
 {% block content %}{% endblock %}
 
 
-<footer class="tribune-footer">
-<div class="container">
-  <nav class="first-nav">
-    <ul>
-      <li>&copy; 2014 <a href="http://www.texastribune.org/">The Texas Tribune</a></li>
-    </ul>
-  </nav>
-  <nav class="last-nav">
-    <ul>
-      <li><a href="http://www.texastribune.org/about/">About Us</a></li>
-      <li><a href="http://www.texastribune.org/contact/">Contact Us</a></li>
-      <li><a href="http://www.texastribune.org/support-us/donors-and-members/">Who Funds Us?</a></li>
-      <li><a href="http://www.texastribune.org/terms-of-service/">Terms of Service</a></li>
-      <li><a href="http://www.texastribune.org/ethics/">Code of Ethics</a></li>
-      <li><a href="http://www.texastribune.org/privacy/">Privacy Policy</a></li>
-      <li class="donor-item"><a href="https://www.texastribune.org/join/">Donate</a></li>
-    </ul>
-  </nav>
-</div>
+<footer class="footer">
+  <div class="container">
+    <div class="content-block">
+    <nav class="first-nav">
+      <ul>
+        <li>© 2014 <a href="http://www.texastribune.org/">The Texas Tribune</a></li>
+      </ul>
+    </nav>
+    <nav class="last-nav">
+      <ul>
+        <li><a href="http://www.texastribune.org/about/">About Us</a></li>
+        <li><a href="http://www.texastribune.org/contact/">Contact Us</a></li>
+        <li><a href="http://www.texastribune.org/support-us/donors-and-members/">Who Funds Us?</a></li>
+        <li><a href="http://www.texastribune.org/terms-of-service/">Terms of Service</a></li>
+        <li><a href="http://www.texastribune.org/ethics/">Code of Ethics</a></li>
+        <li><a href="http://www.texastribune.org/privacy/">Privacy Policy</a></li>
+        <li class="donor-item"><a href="https://www.texastribune.org/join/">Donate</a></li>
+      </ul>
+    </nav>
+    </div>
+  </div>
 </footer>
 
 
@@ -72,7 +73,11 @@
 </script>
 
 <!-- build:js({app,.tmp}) scripts/main.js -->
-<script src="scripts/main.js"></script>
+<script src="../scripts/main.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="../scripts/jquery.fitvids.js"></script>
+<script src="../scripts/jquery.flexslider.js"></script>
+<script src="../scripts/script.js"></script>
 <!-- endbuild -->
 
 </body>
