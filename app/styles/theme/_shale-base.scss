@@ -4,7 +4,8 @@ $bp-shale-lg: new-breakpoint(min-width 985px);
 
 // Header
 
-header {
+.grand-header,
+.story {
   @include media($bp-shale-lg) {
     @include span-columns (10 of 12);
     @include shift(1);
@@ -32,6 +33,12 @@ h3 {
     text-align: left;
 }
 
+p {
+  font-size: 1em;
+  font-family: pt-sans;
+  line-height: 1.2em;
+  text-align: left;
+}
 
 hr.shale-yellow {
   background-color: $yellow;
@@ -54,9 +61,6 @@ hr.shale-yellow {
     color: $white;
     display: inline-block;
     font-weight: 400;
-    font-size: 1em;
-    font-familiy: pt-sans;
-    line-height: 1.2em;
     text-align: left;
 
     a {
@@ -88,3 +92,93 @@ hr.shale-yellow {
   font-family: pt-sans;
   text-align: left;
 }
+
+// story-content
+
+.story-content {
+  background-color: $tan-transparent;
+}
+
+h2 {
+  color: $dark-denim;
+  font-weight: 600;
+  font-size: 1.5em;
+  font-family: pt-sans;
+  letter-spacing: .05em;
+  line-height: 1.2em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.story {
+  @include media($bp-shale-lg) {
+    @include span-columns(6);
+  }
+
+  p {
+    color: $off-black;
+    font-weight: 500;
+    margin: .5em 0 2em;
+  }
+
+  .byline {
+    color: $dark-denim;
+    font-style: italic;
+    font-weight: 400;
+    font-size: .95em;
+    line-height: 1.3em;
+  }
+
+}
+
+h4 {
+  clear: both;
+  color: $dark-denim;
+  font-family: pt-sans-narrow;
+  font-size: 1.5em;
+  font-weight: 600;
+  letter-spacing: .05em;
+  line-height: 1.2em;
+  position: relative;
+  text-align: left;
+}
+
+
+.map {
+  @include media($bp-shale-lg) {
+    @include span-columns(4);
+  }
+
+  img {
+    width: 90%;
+  }
+}
+
+.data-box {
+  @include media($bp-shale-lg) {
+    @include span-columns (6 of 12);
+    @include shift(1);
+  }
+
+  table {
+    color: $off-white;
+    font-size: .9em;
+    font-family: pt-sans;
+    letter-spacing: 1px;
+  }
+
+  th {
+    color: $white;
+    font-weight: 800;
+    font-size: 1em;
+    line-height: 1.2em;
+  }
+
+  tr {
+    &:nth-child(odd) td {
+      background-color: $grey;
+    }
+  }
+
+}
+
