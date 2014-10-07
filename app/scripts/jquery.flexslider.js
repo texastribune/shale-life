@@ -599,7 +599,7 @@
 
           if ('hidden' in document) return 'hidden';
           for (var i = 0; i < prefixes.length; i++) {
-            if ((prefixes[i] + 'Hidden') in document) 
+            if ((prefixes[i] + 'Hidden') in document)
             methods.pauseInvisible.visProp = prefixes[i] + 'Hidden';
           }
           if (methods.pauseInvisible.visProp) {
@@ -614,7 +614,7 @@
                 else (slider.vars.initDelay > 0) ? setTimeout(slider.play, slider.vars.initDelay) : slider.play(); //Didn't init before: simply init or wait for it
               }
             });
-          }       
+          }
         },
         isHidden: function() {
           return document[methods.pauseInvisible.visProp] || false;
@@ -870,7 +870,7 @@
         if (vertical && !carousel) {
           slider.container.height((slider.count + slider.cloneCount) * 200 + "%").css("position", "absolute").width("100%");
           setTimeout(function(){
-            slider.newSlides.css({"display": "block"});
+            slider.newSlides.css({"display": "inline-block"});
             slider.doMath();
             slider.viewport.height(slider.h);
             slider.setProps(sliderOffset * slider.h, "init");
@@ -880,19 +880,19 @@
           slider.setProps(sliderOffset * slider.computedW, "init");
           setTimeout(function(){
             slider.doMath();
-            slider.newSlides.css({"width": slider.computedW, "float": "left", "display": "block"});
+            slider.newSlides.css({"width": slider.computedW, "display": "inline-block"});
             // SMOOTH HEIGHT:
             if (slider.vars.smoothHeight) methods.smoothHeight();
           }, (type === "init") ? 100 : 0);
         }
       } else { // FADE:
-        slider.slides.css({"width": "100%", "float": "left", "marginRight": "-100%", "position": "relative"});
+        slider.slides.css({"width": "100%", "marginRight": "-100%", "position": "relative"});
         if (type === "init") {
           if (!touch) {
             //slider.slides.eq(slider.currentSlide).fadeIn(slider.vars.animationSpeed, slider.vars.easing);
-            slider.slides.css({ "opacity": 0, "display": "block", "zIndex": 1 }).eq(slider.currentSlide).css({"zIndex": 2}).animate({"opacity": 1},slider.vars.animationSpeed,slider.vars.easing);
+            slider.slides.css({ "opacity": 0, "display": "inline-block", "zIndex": 1 }).eq(slider.currentSlide).css({"zIndex": 2}).animate({"opacity": 1},slider.vars.animationSpeed,slider.vars.easing);
           } else {
-            slider.slides.css({ "opacity": 0, "display": "block", "webkitTransition": "opacity " + slider.vars.animationSpeed / 1000 + "s ease", "zIndex": 1 }).eq(slider.currentSlide).css({ "opacity": 1, "zIndex": 2});
+            slider.slides.css({ "opacity": 0, "display": "inline-block", "webkitTransition": "opacity " + slider.vars.animationSpeed / 1000 + "s ease", "zIndex": 1 }).eq(slider.currentSlide).css({ "opacity": 1, "zIndex": 2});
           }
         }
         // SMOOTH HEIGHT:

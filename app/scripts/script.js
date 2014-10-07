@@ -23,13 +23,14 @@ $(document).ready(function() {
 
   $('.flexslider').flexslider({
     animation: "slide",
-    animationLoop: true,
-    itemWidth: 210,
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 200,
     itemMargin: 5
   });
 
   setHeight();
-  
+
   $(window).resize(function() {
     setHeight();
   });
