@@ -2,6 +2,17 @@
 
 $bp-shale-lg: new-breakpoint(min-width 985px);
 
+.lead-image {
+  background-image: url('http://placehold.it/1000x1500');
+  background-position: center center;
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  position: relative;
+}
+
 // Header
 
 .grand-header,
@@ -47,14 +58,9 @@ hr.shale-yellow {
   margin-bottom: 2em;
 }
 
-.fa-chevron-circle-left,
-.fa-chevron-circle-right {
-  color: $red;
-}
-
-
 .lead-text-box {
   display: inline-block;
+  margin-bottom: 3em;
 
   p {
     // .slideshow-text
@@ -72,16 +78,39 @@ hr.shale-yellow {
   }
 }
 
-.slideshow-nav,
-.share-story {
+.slideshow-nav {
   @include media($bp-shale-lg) {
-    @include span-columns(1);
+    @include span-columns(2);
   }
 }
 
+.share-story {
+  @include media($bp-shale-lg) {
+    @include span-columns(1);
+    @include omega();
+  }
+}
+
+.fa-chevron-circle-left,
+.fa-chevron-circle-right {
+  color: transparentize($red, .2);
+  font-size: 2.5em;
+  margin-left: .5em;
+
+  &:hover {
+    color: $red;
+  }
+}
+
+.fa-facebook,
+.fa-twitter {
+  color: $white;
+  font-size: 1em;
+  margin-left: .5em;
+}
 .slideshow-text {
   @include media($bp-shale-lg) {
-    @include span-columns(8);
+    @include span-columns(7);
   }
 }
 
@@ -111,6 +140,8 @@ h2 {
 }
 
 .story {
+  margin-top: 1em;
+
   @include media($bp-shale-lg) {
     @include span-columns(6);
   }
@@ -155,6 +186,8 @@ h4 {
 }
 
 .data-box {
+  margin-top: 1em;
+
   @include media($bp-shale-lg) {
     @include span-columns (6 of 12);
     @include shift(1);
