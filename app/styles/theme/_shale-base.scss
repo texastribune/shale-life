@@ -1,0 +1,90 @@
+//Breakpoints
+
+$bp-shale-lg: new-breakpoint(min-width 985px);
+
+// Header
+
+header {
+  @include media($bp-shale-lg) {
+    @include span-columns (10 of 12);
+    @include shift(1);
+  }
+}
+
+h1 {
+  color: $white;
+  font-weight: 300;
+  font-size: 12em;
+  font-family: league-gothic;
+  line-height: .95em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+h3 {
+  // .subheader,
+  // .nav-slide-story
+    color: $white;
+    font-weight: 600;
+    font-size: 1.5em;
+    font-family: pt-sans;
+    letter-spacing: .06em;
+    text-align: left;
+}
+
+
+hr.shale-yellow {
+  background-color: $yellow;
+  border: 0 none;
+  height: 2px;
+  margin-bottom: 2em;
+}
+
+.fa-chevron-circle-left,
+.fa-chevron-circle-right {
+  color: $red;
+}
+
+
+.lead-text-box {
+  display: inline-block;
+
+  p {
+    // .slideshow-text
+    color: $white;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 1em;
+    font-familiy: pt-sans;
+    line-height: 1.2em;
+    text-align: left;
+
+    a {
+      text-decoration: none;
+      &:hover {
+        color: $light-denim;
+      }
+    }
+  }
+}
+
+.slideshow-nav,
+.share-story {
+  @include media($bp-shale-lg) {
+    @include span-columns(1);
+  }
+}
+
+.slideshow-text {
+  @include media($bp-shale-lg) {
+    @include span-columns(8);
+  }
+}
+
+.slideshow-title {
+  color: $white;
+  font-weight: 500;
+  font-size: 1.3em;
+  font-family: pt-sans;
+  text-align: left;
+}
