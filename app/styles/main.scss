@@ -8,7 +8,7 @@
 $teal-transparent: transparentize($teal, .7);
 
 // app specific script
-
+@import 'helpers/shale-colors';
 @import 'theme/shale-landing';
 @import 'theme/proto-page';
 @import 'theme/flexslider';
