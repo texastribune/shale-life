@@ -45,5 +45,8 @@ $(document).ready(function() {
 
   $(window).resize(function() {
     setHeight('.banner', window);
+    setHeight('.story-box', '.story');
+    setPosition('.story-box', '.lead-header');
+    setLead();
   });
 });
