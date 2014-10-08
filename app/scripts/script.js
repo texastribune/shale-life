@@ -1,11 +1,16 @@
 function setHeight(target, reference) {
-  refHeight = $(reference).innerHeight();
+  var refHeight = $(reference).innerHeight();
   $(target).css('min-height', refHeight);
 }
 
 function setPosition(target, reference) {
-  refPosition = $(reference).height();
+  var refPosition = $(reference).height();
   $(target).css('top', refPosition);
+}
+
+function setLead () {
+  var leadHeight = $('.story-box').height() + $('.lead-header').height();
+  $('.lead-content').css('height', leadHeight);
 }
 
 $(function() {
@@ -24,9 +29,9 @@ $(function() {
 });
 
 $(document).ready(function() {
-  $(".video-wrapper").fitVids();
+  $('.video-wrapper').fitVids();
   $('.flexslider').flexslider({
-    animation: "slide",
+    animation: 'slide',
     animationLoop: false,
     slideshow: false,
     itemWidth: 200,
@@ -36,6 +41,7 @@ $(document).ready(function() {
   setHeight('.banner', window);
   setHeight('.story-box', '.story');
   setPosition('.story-box', '.lead-header');
+  setLead();
 
   $(window).resize(function() {
     setHeight('.banner', window);
