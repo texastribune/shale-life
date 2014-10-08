@@ -1,0 +1,132 @@
+// $bp-prototype: new-breakpoint(min-width 985px);
+// .lead-content-box {
+//   height: 1000px;
+//   position: relative;
+//   width: 100%;
+//     .grand-header {
+//     @extend %content-block;
+//     display: table-cell;
+//     padding: 0 1.25em;
+//     position: relative;
+//     text-align: center;
+//     vertical-align: middle;
+
+//     a {
+//       color: $white;
+//     }
+
+//     //Project Title
+//     h1 {
+//       color: $white;
+//       font-family: $base-serif;
+//       font-size: 2.5em;
+//       font-weight: 800;
+//       line-height: 1.15;
+//       text-shadow: $black 3px 3px 0;
+//       margin-bottom: .5em;
+
+//       @include media($default-768) {
+//         font-size: 3.5em;
+//       }
+//     }
+
+//     //Project Subtitle
+//     p {
+//       color: $white;
+//       font-family: $base-sans-serif;
+//       font-size: 1.25em;
+//       letter-spacing: .0625em;
+//       line-height: 1.15;
+//       text-shadow: $black 2px 2px 0;
+//       margin-bottom: 1em;;
+
+//       @include media($default-768) {
+//         font-size: 1.5em;
+//       }
+//     }
+
+//   }
+// }
+// .lead-image {
+//   // background-image: url('http://placehold.it/1000x1500');
+//   background-position: center center;
+//   background-size: cover;
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   top: 0;
+// }
+
+// .context-box {
+//   // border: 1px solid $teal;
+//   margin-bottom: 1em;
+
+//   @include media($bp-prototype) {
+//     @include span-columns(6);
+//   }
+
+//   h3 {
+//     margin: 0;
+//   }
+// }
+
+// .context {
+//   @include media($bp-prototype) {
+//     display: block;
+//     margin-top: 0;
+//     @include span-columns(8);
+//     @include omega();
+//   }
+// }
+
+// .intro-text {
+//   @include media($bp-prototype) {
+//     @include span-columns(6);
+//   }
+// }
+
+// .mini-map {
+//   margin-right: 1em;
+
+//   img {
+//     height: 100px;
+//     width: 100px;
+//   };
+
+//   @include media($bp-prototype) {
+//     @include span-columns(4);
+//     margin-top: 0;
+
+//     img {
+//       height: 125px;
+//       width: 125px;
+//     }
+//   }
+// }
+
+// .share {
+//   display: inline;
+
+//   i {
+//     display: block;
+//     font-size: 1.5em;
+//     line-height: 0;
+//     margin-bottom: 1em;
+//   }
+
+//   a {
+//     color: rgb(119, 119, 119);
+
+//     &:hover {
+//       color: $teal;
+//       text-decoration: none;
+//     }
+//   }
+// }
+
+// .video-wrapper {
+//   margin-bottom: 1em;
+//   float: none;
+// }
+

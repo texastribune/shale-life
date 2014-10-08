@@ -1,0 +1,285 @@
+//Breakpoints
+
+$bp-shale-lg: new-breakpoint(min-width 985px);
+
+.lead-content {
+  background-color: lighten($masthead-black, 15%);
+  display: table;
+  // height: 600px;
+  // max-height: $banner-height;
+  margin: 0 0 1.5em;
+  position: relative;
+  width: 100%;
+}
+
+.lead-image {
+  background-image: url('http://placekitten.com/1000/1050');
+  background-position: center center;
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.content-wrapper {
+  position: absolute;
+}
+// Header
+
+.lead-header {
+  @extend %content-block;
+  display: table-cell;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+
+  @include media($bp-shale-lg) {
+    @include span-columns (10 of 12);
+    @include shift(1);
+  }
+}
+
+.story {
+  @extend %content-block;
+  display: table-cell;
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+
+  @include media($bp-shale-lg) {
+    @include span-columns (10 of 12);
+    @include shift(1);
+  }
+}
+
+.story-box {
+  background-color: $tan-transparent;
+  position: relative;
+}
+
+h1 {
+  color: $white;
+  font-weight: 300;
+  font-size: 12em;
+  font-family: league-gothic;
+  line-height: .95em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+h3 {
+  // .subheader,
+  // .nav-slide-story
+    color: $white;
+    font-weight: 600;
+    font-size: 1.5em;
+    font-family: pt-sans;
+    letter-spacing: .06em;
+    text-align: left;
+}
+
+p {
+  font-size: 1em;
+  font-family: pt-sans;
+  line-height: 1.2em;
+  text-align: left;
+}
+
+hr.shale-yellow {
+  background-color: $yellow;
+  border: 0 none;
+  height: 2px;
+  margin-bottom: 2em;
+}
+
+.lead-text-box {
+  display: inline-block;
+  margin-bottom: 3em;
+
+  p {
+    // .slideshow-text
+    color: $white;
+    display: inline-block;
+    font-weight: 400;
+    text-align: left;
+
+    a {
+      text-decoration: none;
+      &:hover {
+        color: $light-denim;
+      }
+    }
+  }
+}
+
+.slideshow-nav {
+  @include media($bp-shale-lg) {
+    @include span-columns(2);
+  }
+}
+
+.share-story {
+  @include media($bp-shale-lg) {
+    @include span-columns(1);
+    @include omega();
+  }
+}
+
+.fa-chevron-circle-left,
+.fa-chevron-circle-right {
+  color: transparentize($red, .2);
+  font-size: 2.5em;
+  margin-left: .5em;
+
+  &:hover {
+    color: $red;
+  }
+}
+
+.fa-facebook,
+.fa-twitter {
+  color: $white;
+  font-size: 1em;
+  margin-left: .5em;
+}
+.slideshow-text {
+  @include media($bp-shale-lg) {
+    @include span-columns(7);
+  }
+}
+
+.slideshow-title {
+  color: $white;
+  font-weight: 500;
+  font-size: 1.3em;
+  font-family: pt-sans;
+  text-align: left;
+}
+
+// story-content
+
+h2 {
+  color: $dark-denim;
+  font-weight: 600;
+  font-size: 1.5em;
+  font-family: pt-sans;
+  letter-spacing: .05em;
+  line-height: 1.2em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.story-prose {
+  margin-top: 1em;
+
+  @include media($bp-shale-lg) {
+    @include span-columns(6 of 10);
+  }
+
+  p {
+    color: $off-black;
+    font-weight: 500;
+    margin: .5em 0 2em;
+  }
+
+  .byline {
+    color: $dark-denim;
+    font-style: italic;
+    font-weight: 400;
+    font-size: .95em;
+    line-height: 1.3em;
+  }
+
+}
+
+h4 {
+  clear: both;
+  color: $dark-denim;
+  font-family: pt-sans-narrow;
+  font-size: 1.5em;
+  font-weight: 600;
+  letter-spacing: .05em;
+  line-height: 1.2em;
+  position: relative;
+  text-align: left;
+}
+
+
+.map {
+  @include media($bp-shale-lg) {
+    @include span-columns(4 of 10);
+  }
+
+  img {
+    width: 90%;
+  }
+}
+
+.data-context {
+  position: relative;
+}
+
+.data-box {
+  margin-top: 1em;
+
+  @include media($bp-shale-lg) {
+    @include span-columns (6 of 12);
+    @include shift(1);
+  }
+
+  table {
+    color: $off-white;
+    font-size: .9em;
+    font-family: pt-sans;
+    letter-spacing: 1px;
+  }
+
+  th {
+    color: $white;
+    font-weight: 800;
+    font-size: 1em;
+    line-height: 1.2em;
+  }
+
+  tr {
+    &:nth-child(odd) td {
+      background-color: $grey;
+    }
+  }
+
+}
+
+.nav-carousel {
+  background-color: $dark-denim;
+  position: relative;
+}
+
+/*START ABOUT*/
+
+// h2 .about-header {
+//   color: rgb(105, 138, 173);
+//   font: 600 1.5em pt-sans;
+//   letter-spacing: 0.05em;
+//   line-height: 1.2em;
+//   text-align: left;
+//   text-transform: uppercase;
+// }
+
+// .about-name {
+//   color: rgb(240, 240, 240);
+//   font: 800 1.1em pt-sans;
+//   letter-spacing: 1px;
+//   text-align: left;
+// }
+
+// .about-body-text {
+//   color: rgb(240, 240, 240);
+//   font: 400 1em pt-sans;
+//   line-height: 1.2em;
+//   text-align: left;
+// }
+
+// a :hover .about-body-text { color: rgb(151, 199, 249); }
+

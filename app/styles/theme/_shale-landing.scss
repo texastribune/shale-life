@@ -3,56 +3,21 @@ $bp-landing-medium: new-breakpoint(min-width 800px);
 $bp-landing-small: new-breakpoint(min-width 600px);
 $bp-landing-tiny: new-breakpoint(min-width 400px);
 
-
-@mixin breakpoint($media) {
-  @if $media == tiny {
-    @include media ($bp-landing-tiny) {
-      @content ;
-    }
-  }
-
-  @else if $media == small {
-    @include media ($bp-landing-small) {
-      @content ;
-    }
-  }
-
-  @else if $media == med {
-    @include media ($bp-landing-medium) {
-      @content ;
-    }
-  }
-
-  @else if $media == large {
-    @include media ($bp-landing-large) {
-      @content ;
-    }    
-  }
-}
-
-@mixin omega-reset($nth) {
-  &:nth-child(#{$nth}) { margin-right: flex-gutter($grid-columns, $gutter); }
-  &:nth-child(#{$nth}+1) { clear: none }
-}
-
-
-
 .story-wrapper {
-  @include breakpoint(small) {
+  @include breakpoint(small, $bp-landing-small) {
     @include span-columns(6);
     @include omega(2n);
   }
-  @include breakpoint(med) {
+  @include breakpoint(med, $bp-landing-medium) {
     @include omega-reset(2n);
     @include span-columns(4);
     @include omega(3n);
   }
-  @include breakpoint(large) {
+  @include breakpoint(large, $bp-landing-large) {
     @include omega-reset(3n);
     @include span-columns(3);
     @include omega(4n);
   }
-
 }
  
 .story-wrapper > .story-box { 

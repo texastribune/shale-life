@@ -1,0 +1,38 @@
+/* Masthead override */
+
+$bp-masthead: new-breakpoint(max-width 480px);
+
+.branding {
+  color: $white;
+  font-size: 1em;
+  padding: 0.75em .5em 0.375em;
+  width: 0%;
+
+  img {
+    float: left;
+    padding-left: .5em;
+  }
+
+  i {
+    color: $white;
+    float: right;
+    font-size: 2em;
+    padding-right: .5em;
+  }
+}
+
+.trib-logo.desktop {
+  display: inline-block;
+
+  @include media($bp-masthead) {
+    display: none;
+  }
+}
+
+.trib-logo.mobile {
+  display: none;
+
+  @include media($bp-masthead) {
+    display: inline-block;
+  }
+}

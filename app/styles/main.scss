@@ -1,0 +1,18 @@
+// dependencies: bourbon + neat
+@import 'bourbon/dist/bourbon';
+@import 'neat/app/assets/stylesheets/neat';
+
+// loads base and helpers
+@import 'newsapps-styles/initialize';
+
+$teal-transparent: transparentize($teal, .7);
+
+// app specific script
+@import 'helpers/shale-colors';
+
+@import 'theme/shale-base';
+@import 'theme/shale-landing';
+@import 'theme/proto-page';
+@import 'theme/flexslider';
+
+@import 'layout/shale-masthead';

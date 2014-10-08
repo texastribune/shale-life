@@ -1,6 +1,27 @@
-{% extends 'app/templates/base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shale Life - Prototype</title>
+  <link rel="stylesheet" href="main.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
 
-{% block content %}
+<!-- Masthead -->
+<header class="masthead">
+ <div class="container">
+  <div class="branding">
+    <a href="http://www.texastribune.org/">
+     <img class="trib-logo" alt="The Texas Tribune" src="//s3.amazonaws.com/apps.texastribune.org/branding/TxTrib-logo-white500x55.png">
+    </a>
+  </div>
+  <div class="home">
+    Shale Life
+    <i class="fa fa-home"></i>
+  </div>
+ </div>
+</header>
 
 <section class="landing-lead">
   <div class="banner">
@@ -31,7 +52,7 @@
       <div class="story-box">
         <div class="delayed-image-load-A" data-src="http://placekitten.com/g/{width}/200" data-alt="alternative text"></div>
       </div>
-    </div>
+    </div>      
     <div class="story-wrapper">
       <div class="story-box">
         <div class="delayed-image-load-B" data-src="http://placekitten.com/g/{width}/600" data-alt="alternative text"></div>
@@ -45,18 +66,18 @@
       <div class="story-box">
         <div class="delayed-image-load-B" data-src="http://placekitten.com/g/{width}/600" data-alt="alternative text"></div>
       </div>
-    </div>
+    </div>      
     <div class="story-wrapper">
       <div class="story-box">
         <div class="delayed-image-load-A" data-src="http://placekitten.com/g/{width}/200" data-alt="alternative text"></div>
       </div>
       <div class="story-box">
         <div class="delayed-image-load-B" data-src="http://placekitten.com/g/{width}/600" data-alt="alternative text"></div>
-      </div>
+      </div>     
       <div class="story-box">
         <div class="delayed-image-load-A" data-src="http://placekitten.com/g/{width}/200" data-alt="alternative text"></div>
       </div>
-    </div>
+    </div>      
     <div class="story-wrapper">
       <div class="story-box">
         <div class="delayed-image-load-A" data-src="http://placekitten.com/g/{width}/200" data-alt="alternative text"></div>
@@ -99,9 +120,9 @@
 <script src="scripts/jquery.flexslider.js"></script>
 <script src="scripts/script.js"></script>
 <!-- <script>
-    new Imager({
-      availableWidths: [200, 260, 320, 600],
-      availablePixelRatios: [1, 1.3, 2]
+    new Imager({ 
+      availableWidths: [200, 260, 320, 600], 
+      availablePixelRatios: [1, 1.3, 2] 
     });
 </script> -->
 <script>
@@ -113,5 +134,5 @@
         availableWidths: [220, 280, 340, 620]
     });
 </script>
-
-{% endblock %}
+</body>
+</html>
