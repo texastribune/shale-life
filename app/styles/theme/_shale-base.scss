@@ -1,6 +1,8 @@
 //Breakpoints
 
-$bp-shale-lg: new-breakpoint(min-width 985px);
+$bp-shale-lg: new-breakpoint(min-width 1000px);
+$bp-shale-med: new-breakpoint(min-width 600.1px max-width 999.99px);
+$bp-shale-small: new-breakpoint(max-width 600px);
 
 .lead-content {
   background-color: lighten($masthead-black, 15%);
@@ -21,6 +23,10 @@ $bp-shale-lg: new-breakpoint(min-width 985px);
   position: absolute;
   right: 0;
   top: 0;
+
+  @include media($bp-shale-lg) {
+      background-image: url('http://placekitten.com/600/800');
+  }
 }
 
 .content-wrapper {
@@ -30,13 +36,14 @@ $bp-shale-lg: new-breakpoint(min-width 985px);
 
 .lead-header {
   @extend %content-block;
+  @include span-columns (10 of 12);
+
   display: table-cell;
   position: relative;
   text-align: center;
   vertical-align: middle;
 
   @include media($bp-shale-lg) {
-    @include span-columns (10 of 12);
     @include shift(1);
   }
 }
@@ -62,11 +69,19 @@ $bp-shale-lg: new-breakpoint(min-width 985px);
 h1 {
   color: $white;
   font-weight: 300;
-  font-size: 12em;
+  font-size: 6em;
   font-family: league-gothic;
   line-height: .95em;
   text-align: left;
   text-transform: uppercase;
+
+  @include media($bp-shale-lg) {
+    font-size: 12em;
+  }
+
+  @include media($bp-shale-med) {
+    font-size: 10em;
+  }
 }
 
 h3 {
