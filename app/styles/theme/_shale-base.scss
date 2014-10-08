@@ -2,25 +2,62 @@
 
 $bp-shale-lg: new-breakpoint(min-width 985px);
 
+.lead-content {
+  background-color: lighten($masthead-black, 15%);
+  display: table;
+  // height: 600px;
+  // max-height: $banner-height;
+  margin: 0 0 1.5em;
+  position: relative;
+  width: 100%;
+}
+
 .lead-image {
-  background-image: url('http://placehold.it/1000x1500');
+  background-image: url('http://placekitten.com/1000/1050');
   background-position: center center;
   background-size: cover;
   bottom: 0;
   left: 0;
+  position: absolute;
   right: 0;
   top: 0;
-  position: relative;
 }
 
+.content-wrapper {
+  position: absolute;
+}
 // Header
 
-.grand-header,
-.story {
+.lead-header {
+  @extend %content-block;
+  display: table-cell;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+
   @include media($bp-shale-lg) {
     @include span-columns (10 of 12);
     @include shift(1);
   }
+}
+
+.story {
+  @extend %content-block;
+  display: table-cell;
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+
+  @include media($bp-shale-lg) {
+    @include span-columns (10 of 12);
+    @include shift(1);
+  }
+}
+
+.story-box {
+  background-color: $tan-transparent;
+  position: relative;
+
 }
 
 h1 {
@@ -123,10 +160,6 @@ hr.shale-yellow {
 }
 
 // story-content
-
-.story-content {
-  background-color: $tan-transparent;
-}
 
 h2 {
   color: $dark-denim;
