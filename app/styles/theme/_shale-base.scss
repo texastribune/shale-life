@@ -130,12 +130,19 @@ hr.shale-yellow {
 }
 
 .slideshow-nav {
+  @include media($bp-shale-med) {
+    @include span-columns(2);
+  }
   @include media($bp-shale-lg) {
     @include span-columns(2);
   }
 }
 
 .share-story {
+  @include media($bp-shale-med) {
+    @include span-columns(1);
+    @include omega();
+  }
   @include media($bp-shale-lg) {
     @include span-columns(1);
     @include omega();
@@ -160,6 +167,10 @@ hr.shale-yellow {
   margin-left: .5em;
 }
 .slideshow-text {
+  @include media($bp-shale-med) {
+    @include span-columns(7);
+  }
+
   @include media($bp-shale-lg) {
     @include span-columns(7);
   }
@@ -188,6 +199,10 @@ h2 {
 
 .story-prose {
   margin-top: 1em;
+
+  @include media($bp-shale-med) {
+    @include span-columns(6 of 10);
+  }
 
   @include media($bp-shale-lg) {
     @include span-columns(6 of 10);
@@ -223,6 +238,10 @@ h4 {
 
 
 .map {
+  @include media($bp-shale-med) {
+    @include span-columns(4 of 10);
+  }
+
   @include media($bp-shale-lg) {
     @include span-columns(4 of 10);
   }
