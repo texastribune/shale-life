@@ -4,68 +4,7 @@ $bp-shale-lg: new-breakpoint(min-width 1000px);
 $bp-shale-med: new-breakpoint(min-width 600.1px max-width 999.99px);
 $bp-shale-small: new-breakpoint(max-width 600px);
 
-.lead-content {
-  background-color: lighten($masthead-black, 15%);
-  display: table;
-  // height: 600px;
-  // max-height: $banner-height;
-  margin: 0 0 1.5em;
-  position: relative;
-  width: 100%;
-}
-
-.lead-image {
-  background-image: url('http://placekitten.com/1000/1050');
-  background-position: center center;
-  background-size: cover;
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-
-  @include media($bp-shale-lg) {
-      background-image: url('http://placekitten.com/600/800');
-  }
-}
-
-.content-wrapper {
-  position: absolute;
-}
-// Header
-
-.lead-header {
-  @extend %content-block;
-  @include span-columns (10 of 12);
-
-  display: table-cell;
-  position: relative;
-  text-align: center;
-  vertical-align: middle;
-
-  @include media($bp-shale-lg) {
-    @include shift(1);
-  }
-}
-
-.story {
-  @extend %content-block;
-  display: table-cell;
-  position: absolute;
-  text-align: center;
-  vertical-align: middle;
-
-  @include media($bp-shale-lg) {
-    @include span-columns (10 of 12);
-    @include shift(1);
-  }
-}
-
-.story-box {
-  background-color: $tan-transparent;
-  position: relative;
-}
-
+// Short-Hed
 h1 {
   color: $white;
   font-weight: 300;
@@ -84,15 +23,36 @@ h1 {
   }
 }
 
+h2,
+h3,
+h4 {
+  color: $dark-denim;
+  font-weight: 600;
+  font-size: 1.5em;
+  font-family: pt-sans;
+  letter-spacing: .05em;
+  line-height: 1.2em;
+  text-align: left;
+}
+
+// Long-Hed
+h2 {
+  text-transform: uppercase;
+}
+
+// Main Tagline, Slideshow Title
 h3 {
-  // .subheader,
-  // .nav-slide-story
     color: $white;
-    font-weight: 600;
-    font-size: 1.5em;
-    font-family: pt-sans;
     letter-spacing: .06em;
-    text-align: left;
+}
+
+h4 {
+  clear: both;
+  font-family: pt-sans-narrow;
+  font-size: 1.5em;
+  font-weight: 600;
+  position: relative;
+  text-align: left;
 }
 
 p {
@@ -109,93 +69,8 @@ hr.shale-yellow {
   margin-bottom: 2em;
 }
 
-.lead-text-box {
-  display: inline-block;
-  margin-bottom: 3em;
-
-  p {
-    // .slideshow-text
-    color: $white;
-    display: inline-block;
-    font-weight: 400;
-    text-align: left;
-
-    a {
-      text-decoration: none;
-      &:hover {
-        color: $light-denim;
-      }
-    }
-  }
-}
-
-.slideshow-nav {
-  @include media($bp-shale-med) {
-    @include span-columns(2);
-  }
-  @include media($bp-shale-lg) {
-    @include span-columns(2);
-  }
-}
-
-.share-story {
-  @include media($bp-shale-med) {
-    @include span-columns(1);
-    @include omega();
-  }
-  @include media($bp-shale-lg) {
-    @include span-columns(1);
-    @include omega();
-  }
-}
-
-.fa-chevron-circle-left,
-.fa-chevron-circle-right {
-  color: transparentize($red, .2);
-  font-size: 2.5em;
-  margin-left: .5em;
-
-  &:hover {
-    color: $red;
-  }
-}
-
-.fa-facebook,
-.fa-twitter {
-  color: $white;
-  font-size: 1em;
-  margin-left: .5em;
-}
-.slideshow-text {
-  @include media($bp-shale-med) {
-    @include span-columns(7);
-  }
-
-  @include media($bp-shale-lg) {
-    @include span-columns(7);
-  }
-}
-
-.slideshow-title {
-  color: $white;
-  font-weight: 500;
-  font-size: 1.3em;
-  font-family: pt-sans;
-  text-align: left;
-}
-
 // story-content
 
-h2 {
-  color: $dark-denim;
-  font-weight: 600;
-  font-size: 1.5em;
-  font-family: pt-sans;
-  letter-spacing: .05em;
-  line-height: 1.2em;
-  text-align: left;
-  text-transform: uppercase;
-}
 
 .story-prose {
   margin-top: 1em;
@@ -224,17 +99,7 @@ h2 {
 
 }
 
-h4 {
-  clear: both;
-  color: $dark-denim;
-  font-family: pt-sans-narrow;
-  font-size: 1.5em;
-  font-weight: 600;
-  letter-spacing: .05em;
-  line-height: 1.2em;
-  position: relative;
-  text-align: left;
-}
+
 
 
 .map {
@@ -256,6 +121,7 @@ h4 {
 }
 
 .data-box {
+  @extend %content-block;
   margin-top: 1em;
 
   @include media($bp-shale-lg) {

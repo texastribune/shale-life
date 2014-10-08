@@ -1,0 +1,14 @@
+.data-context {
+  position: relative;
+}
+
+.data-box {
+  @extend %content-block;
+  margin-top: 1em;
+
+  @include media($bp-shale-lg) {
+    @include span-columns (6 of 12);
+    @include shift(1);
+  }
+
+}
