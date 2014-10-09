@@ -86,12 +86,15 @@ $bp-shale-small: new-breakpoint(max-width 600px);
 }
 
 .slideshow-text {
+
   @include media($bp-shale-med) {
     @include span-columns(7);
+    @include shift(2);
   }
 
   @include media($bp-shale-lg) {
     @include span-columns(7);
+    @include shift(2);
   }
 }
 

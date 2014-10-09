@@ -16,10 +16,11 @@
 
   .flex-direction-nav {
     .flex-next {
-      background: url(https://s3.amazonaws.com/apps.texastribune.org/branding/next-arrow44x44%202.png) no-repeat 50%;
-      left: 105% !important;
-      top: 65%;
+      background: url(../../assets/icons/btn-arrow-right.png) no-repeat;
+      left: 7% !important;
+      top: 115%;
       opacity: 1 !important;
+      width: 100%;
 
       &:hover {
 
@@ -27,10 +28,12 @@
     }
 
     .flex-prev {
-      background: url(https://s3.amazonaws.com/apps.texastribune.org/branding/previous-arrow44x44.png) no-repeat 50%;
-      left: 105% !important;
-      top: 45%;
+      background: url(../../assets/icons/btn-arrow-left.png) no-repeat;
+      left: 0% !important;
+      top: 115%;
       opacity: 1 !important;
+      width: 100%;
+
     }
   }
 
