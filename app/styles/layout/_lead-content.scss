@@ -7,8 +7,6 @@ $bp-shale-small: new-breakpoint(max-width 600px);
 .lead-content {
   background-color: lighten($masthead-black, 15%);
   display: table;
-  // height: 600px;
-  // max-height: $banner-height;
   margin: 0 0 1.5em;
   position: relative;
   width: 100%;
@@ -33,7 +31,7 @@ $bp-shale-small: new-breakpoint(max-width 600px);
 
 .lead-header {
   @extend %content-block;
-  @include span-columns (10 of 12);
+  @include span-columns(12);
 
   display: table-cell;
   position: relative;
@@ -41,6 +39,12 @@ $bp-shale-small: new-breakpoint(max-width 600px);
   vertical-align: middle;
 
   @include media($bp-shale-lg) {
+    @include span-columns (10 of 12);
+    @include shift(1);
+  }
+
+  @include media($bp-shale-med) {
+    @include span-columns (10 of 12);
     @include shift(1);
   }
 }
@@ -66,9 +70,6 @@ $bp-shale-small: new-breakpoint(max-width 600px);
 }
 
 .slideshow-nav {
-  @include media($bp-shale-med) {
-    @include span-columns(2);
-  }
   @include media($bp-shale-lg) {
     @include span-columns(2);
   }
@@ -86,12 +87,12 @@ $bp-shale-small: new-breakpoint(max-width 600px);
 }
 
 .slideshow-text {
-  @include media($bp-shale-med) {
-    @include span-columns(7);
+  @include media($bp-shale-lg) {
+    @include span-columns(8);
   }
 
-  @include media($bp-shale-lg) {
-    @include span-columns(7);
+  @include media($bp-shale-med) {
+    @include span-columns(8);
   }
 }
 
@@ -104,12 +105,13 @@ $bp-shale-small: new-breakpoint(max-width 600px);
 // }
 
 .share-story {
-  @include media($bp-shale-med) {
+  @include media($bp-shale-lg) {
     @include span-columns(1);
     @include omega();
   }
-  @include media($bp-shale-lg) {
-    @include span-columns(1);
+
+  @include media($bp-shale-med) {
+    @include span-columns(4);
     @include omega();
   }
 }
@@ -129,10 +131,16 @@ $bp-shale-small: new-breakpoint(max-width 600px);
 
 .story {
   @extend %content-block;
+  @include span-columns(12);
   display: table-cell;
   position: absolute;
   text-align: center;
   vertical-align: middle;
+
+  @include media($bp-shale-lg) {
+    @include span-columns (10 of 12);
+    @include shift(1);
+  }
 
   @include media($bp-shale-med) {
     @include span-columns (10 of 12);
@@ -142,12 +150,13 @@ $bp-shale-small: new-breakpoint(max-width 600px);
 
 .story-prose {
   margin-top: 1em;
+  @include span-columns(12);
 
-  @include media($bp-shale-med) {
+  @include media($bp-shale-lg) {
     @include span-columns(6 of 10);
   }
 
-  @include media($bp-shale-lg) {
+  @include media($bp-shale-med) {
     @include span-columns(6 of 10);
   }
 
@@ -168,11 +177,13 @@ $bp-shale-small: new-breakpoint(max-width 600px);
 }
 
 .map {
-  @include media($bp-shale-med) {
+  @include span-columns(12);
+
+  @include media($bp-shale-lg) {
     @include span-columns(4 of 10);
   }
 
-  @include media($bp-shale-lg) {
+  @include media($bp-shale-med) {
     @include span-columns(4 of 10);
   }
 

@@ -1,7 +1,7 @@
 //Breakpoints
 
-$bp-shale-lg: new-breakpoint(min-width 740px);
-$bp-shale-med: new-breakpoint(min-width 600.1px max-width 999.99px);
+$bp-shale-lg: new-breakpoint(min-width 735px);
+$bp-shale-med: new-breakpoint(min-width 600px max-width 735px);
 $bp-shale-small: new-breakpoint(max-width 600px);
 
 // Short-Hed
@@ -11,12 +11,16 @@ h1 {
   font-size: 5em;
   font-family: league-gothic;
   line-height: .95em;
+  margin-top: .25em;
   text-align: left;
   text-transform: uppercase;
 
   @include media($bp-shale-lg) {
     font-size: 10em;
-    margin-top: .25em;
+  }
+
+  @include media($bp-shale-med) {
+    font-size: 8em;
   }
 }
 
