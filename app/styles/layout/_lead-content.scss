@@ -45,6 +45,10 @@ $bp-shale-small: new-breakpoint(max-width 600px);
   }
 }
 
+.lead-headline {
+  min-height: 2em;
+}
+
 .lead-text-box {
   display: inline-block;
   margin-bottom: 3em;
