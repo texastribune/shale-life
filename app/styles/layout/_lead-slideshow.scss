@@ -1,5 +1,65 @@
 .slideshow {
+
+  /* Direction Nav */
+  .flex-direction-nav a  {
+    color: rgba(0, 0, 0, .8);
+    cursor: pointer;
+    display: block;
+    height: 50px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, .3);
+    top: 50%;
+    z-index: 10;
+    }
+
+  .flex-direction-nav {
+    .flex-next {
+      background: url(https://s3.amazonaws.com/apps.texastribune.org/branding/next-arrow44x44%202.png) no-repeat 50%;
+      right: 0 !important;
+      opacity: 1 !important;
+
+      &:hover {
+
+      }
+    }
+
+    .flex-prev {
+      background: url(https://s3.amazonaws.com/apps.texastribune.org/branding/previous-arrow44x44.png) no-repeat 50%;
+      left: 0 !important;
+      opacity: 1 !important;
+    }
+  }
+
+
+
+  .flex-direction-nav .flex-disabled {
+    cursor: default;
+    filter:alpha(opacity=0);
+    opacity: 0 !important;
+    }
+
+  .flex-direction-nav a:before  {
+    display: inline-block;
+    font-family: "flexslider-icon";
+    font-size: 40px;
+  }
+
   .flex-control-nav {
     display: none;
   }
+
+  .slides {
+    li {
+    }
+  }
+
+}
+
+
+
+.flexslider.slideshow {
+  width: 90%;
+  margin: 0 auto;
 }
