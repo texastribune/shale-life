@@ -17,7 +17,8 @@
   .flex-direction-nav {
     .flex-next {
       background: url(https://s3.amazonaws.com/apps.texastribune.org/branding/next-arrow44x44%202.png) no-repeat 50%;
-      right: 0 !important;
+      left: 105% !important;
+      top: 65%;
       opacity: 1 !important;
 
       &:hover {
@@ -27,7 +28,8 @@
 
     .flex-prev {
       background: url(https://s3.amazonaws.com/apps.texastribune.org/branding/previous-arrow44x44.png) no-repeat 50%;
-      left: 0 !important;
+      left: 105% !important;
+      top: 45%;
       opacity: 1 !important;
     }
   }
