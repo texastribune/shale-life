@@ -30,7 +30,18 @@ $(function() {
 
 $(document).ready(function() {
   $('.video-wrapper').fitVids();
-  $('.flexslider').flexslider({
+  $('.slideshow').flexslider({
+    animation: 'slide',
+    animationLoop: false,
+    slideshow: false,
+    start: function(slider) {
+      setHeight('.story-box', '.story');
+      setPosition('.story-box', '.lead-header');
+      setLead();
+    }
+  });
+
+  $('.nav-slider').flexslider({
     animation: 'slide',
     animationLoop: false,
     slideshow: false,
@@ -39,9 +50,7 @@ $(document).ready(function() {
   });
 
   setHeight('.banner', window);
-  setHeight('.story-box', '.story');
-  setPosition('.story-box', '.lead-header');
-  setLead();
+
 
   $(window).resize(function() {
     setHeight('.banner', window);
