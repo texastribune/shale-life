@@ -1,6 +1,6 @@
 //Breakpoints
 
-$bp-shale-lg: new-breakpoint(min-width 1000px);
+$bp-shale-lg: new-breakpoint(min-width 740px);
 $bp-shale-med: new-breakpoint(min-width 600.1px max-width 999.99px);
 $bp-shale-small: new-breakpoint(max-width 600px);
 
@@ -8,25 +8,22 @@ $bp-shale-small: new-breakpoint(max-width 600px);
 h1 {
   color: $white;
   font-weight: 300;
-  font-size: 6em;
+  font-size: 5em;
   font-family: league-gothic;
   line-height: .95em;
   text-align: left;
   text-transform: uppercase;
 
   @include media($bp-shale-lg) {
-    font-size: 12em;
-  }
-
-  @include media($bp-shale-med) {
     font-size: 10em;
+    margin-top: .25em;
   }
 }
 
 h2,
 h3,
 h4 {
-  color: $dark-denim;
+  color: $denim;
   font-weight: 600;
   font-size: 1.5em;
   font-family: pt-sans;
@@ -37,6 +34,7 @@ h4 {
 
 // Long-Hed
 h2 {
+  color: $dark-denim;
   text-transform: uppercase;
 }
 
@@ -44,6 +42,7 @@ h2 {
 h3 {
     color: $white;
     letter-spacing: .06em;
+    margin-top: .5em;
 }
 
 h4 {
@@ -66,94 +65,29 @@ hr.shale-yellow {
   background-color: $yellow;
   border: 0 none;
   height: 2px;
-  margin-bottom: 2em;
+  margin: 1em 0;
 }
 
 // story-content
 
-
-.story-prose {
-  margin-top: 1em;
-
-  @include media($bp-shale-med) {
-    @include span-columns(6 of 10);
-  }
-
-  @include media($bp-shale-lg) {
-    @include span-columns(6 of 10);
-  }
-
-  p {
-    color: $off-black;
-    font-weight: 500;
-    margin: .5em 0 2em;
-  }
-
-  .byline {
-    color: $dark-denim;
-    font-style: italic;
-    font-weight: 400;
-    font-size: .95em;
-    line-height: 1.3em;
-  }
-
+table {
+  color: $off-white;
+  font-size: .9em;
+  font-family: pt-sans;
+  letter-spacing: 1px;
 }
 
-
-
-
-.map {
-  @include media($bp-shale-med) {
-    @include span-columns(4 of 10);
-  }
-
-  @include media($bp-shale-lg) {
-    @include span-columns(4 of 10);
-  }
-
-  img {
-    width: 90%;
-  }
+th {
+  color: $white;
+  font-weight: 800;
+  font-size: 1em;
+  line-height: 1.2em;
 }
 
-.data-context {
-  position: relative;
-}
-
-.data-box {
-  @extend %content-block;
-  margin-top: 1em;
-
-  @include media($bp-shale-lg) {
-    @include span-columns (6 of 12);
-    @include shift(1);
+tr {
+  &:nth-child(odd) td {
+    background-color: $grey;
   }
-
-  table {
-    color: $off-white;
-    font-size: .9em;
-    font-family: pt-sans;
-    letter-spacing: 1px;
-  }
-
-  th {
-    color: $white;
-    font-weight: 800;
-    font-size: 1em;
-    line-height: 1.2em;
-  }
-
-  tr {
-    &:nth-child(odd) td {
-      background-color: $grey;
-    }
-  }
-
-}
-
-.nav-carousel {
-  background-color: $dark-denim;
-  position: relative;
 }
 
 /*START ABOUT*/
