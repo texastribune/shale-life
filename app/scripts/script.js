@@ -39,15 +39,15 @@ $(document).ready(function() {
     controlNav: false,
     start: function(slider) {
       setHeight('.flex-viewport', '.flex-active-slide');
-      setPosition('.flex-next', '.flex-active-slide');
-      setPosition('.flex-prev', '.flex-active-slide');
+      setPosition('.flex-next', '.flex-active-slide > .slideshow-main');
+      setPosition('.flex-prev', '.flex-active-slide > .slideshow-main');
       setHeight('.story-box', '.story');
       $('.total-slides').text(slider.count-1);
     },
     after: function(slider) {
       setHeight('.flex-viewport', '.flex-active-slide');
-      setPosition('.flex-next', '.flex-active-slide');
-      setPosition('.flex-prev', '.flex-active-slide');
+      setPosition('.flex-next', '.flex-active-slide > .slideshow-main');
+      setPosition('.flex-prev', '.flex-active-slide > .slideshow-main');
       // setPosition('.story-box', '.flex-active-slide', 0);
       $('.current-slide').text(slider.currentSlide);
 

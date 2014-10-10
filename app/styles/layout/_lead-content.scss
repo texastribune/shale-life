@@ -94,7 +94,7 @@ $bp-shale-small: new-breakpoint(max-width 600px);
 
 .slideshow-caption {
   @include media($bp-shale-med) {
-    @include span-columns(7);
+    @include span-columns(6);
     @include shift(2);
   }
 
@@ -109,22 +109,38 @@ $bp-shale-small: new-breakpoint(max-width 600px);
 
 .share-story {
   @include media($bp-shale-med) {
-    @include span-columns(1);
+    @include span-columns(3);
     @include omega();
   }
   @include media($bp-shale-lg) {
-    @include span-columns(1);
+    @include span-columns(3);
     @include omega();
   }
 }
 
-.fa-facebook,
-.fa-twitter {
-  color: $white;
-  font-size: 1em;
-  margin-left: .5em;
+.facebook,
+.twitter {
+  display: inline-block;
+  height: 50px;
+  margin: 0 0 0 1em;
+  width: 50px;
 }
 
+.facebook {
+  background: url(../../assets/icons/ShaleLife-img-facebook-white002.png) no-repeat;
+
+  &:hover {
+    background: url(../../assets/icons/ShaleLife-img-facebook-onhover002.png) no-repeat;
+  }
+}
+
+.twitter {
+  background: url(../../assets/icons/ShaleLife-img-twitter-white.png) no-repeat;
+
+  &:hover {
+    background: url(../../assets/icons/ShaleLife-img-twitter-onhover.png) no-repeat;
+  }
+}
 
 .story-box {
   background-color: $tan-transparent;
