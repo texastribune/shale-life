@@ -32,20 +32,19 @@ $(function() {
 $(document).ready(function() {
   $('.video-wrapper').fitVids();
 
-  $('.slideshow').flexslider({
+  $('#slideshow').flexslider({
     animation: 'slide',
     animationLoop: false,
     slideshow: false,
     controlNav: false,
     start: function(slider) {
-      setHeight('.flex-viewport', '.flex-active-slide');
+      setHeight('#slideshow > .flex-viewport', '.flex-active-slide');
       setPosition('.flex-next', '.flex-active-slide > .slideshow-main', 35);
       setPosition('.flex-prev', '.flex-active-slide > .slideshow-main', 35);
-      setHeight('.story-box', '.story');
       $('.total-slides').text(slider.count-1);
     },
     after: function(slider) {
-      setHeight('.flex-viewport', '.flex-active-slide');
+      setHeight('#slideshow > .flex-viewport', '.flex-active-slide');
       $('.current-slide').text(slider.currentSlide);
 
       if (slider.currentSlide === 0) {
@@ -66,12 +65,13 @@ $(document).ready(function() {
     itemMargin: 5
   });
 
+  setHeight('.story-box', '.story');
   setHeight('.banner', window);
 
 
   $(window).resize(function() {
     setHeight('.banner', window);
-    setHeight('.story-box', '.story');
+    // setHeight('.story-box', '.story');
     setPosition('.flex-next', '.flex-active-slide > .slideshow-main', 25);
     setPosition('.flex-prev', '.flex-active-slide > .slideshow-main', 25);
   });

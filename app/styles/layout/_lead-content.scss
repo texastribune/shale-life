@@ -1,14 +1,12 @@
 //Breakpoints
 
-$bp-shale-lg: new-breakpoint(min-width 1000px);
+$bp-shale-lg: new-breakpoint(min-width 600px);
 $bp-shale-med: new-breakpoint(min-width 600.1px max-width 999.99px);
 $bp-shale-small: new-breakpoint(max-width 600px);
 
 .lead-content {
   background-color: lighten($masthead-black, 15%);
   display: table;
-  // height: 600px;
-  // max-height: $banner-height;
   margin: 0 0 1.5em;
   position: relative;
   width: 100%;
@@ -33,17 +31,18 @@ $bp-shale-small: new-breakpoint(max-width 600px);
 
 .lead-header,
 .story-box {
-  @extend %content-block;
-  @include span-columns (10 of 12);
-
-  display: table-cell;
+  display: block;
   position: relative;
   text-align: center;
   vertical-align: middle;
 
+  @extend %content-block;
+  @include span-columns (10 of 12);
+
   @include media($bp-shale-lg) {
     @include shift(1);
   }
+
 }
 
 .lead-text {
@@ -66,7 +65,7 @@ $bp-shale-small: new-breakpoint(max-width 600px);
 .slideshow-main {
   margin: 0;
   img {
-    margin: 1em 0;
+    margin: 0 0 1em;
     width: 100%;
   }
 }
@@ -121,24 +120,32 @@ $bp-shale-small: new-breakpoint(max-width 600px);
 .facebook,
 .twitter {
   display: inline-block;
-  height: 50px;
+  height: 2em;
   margin: 0 0 0 1em;
-  width: 50px;
+  width: 2em;
 }
 
 .facebook {
   background: url(../../assets/icons/ShaleLife-img-facebook-white002.png) no-repeat;
+  background-position: center center;
+  background-size: cover;
 
   &:hover {
     background: url(../../assets/icons/ShaleLife-img-facebook-onhover002.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
   }
 }
 
 .twitter {
   background: url(../../assets/icons/ShaleLife-img-twitter-white.png) no-repeat;
+  background-position: center center;
+  background-size: cover;
 
   &:hover {
     background: url(../../assets/icons/ShaleLife-img-twitter-onhover.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
   }
 }
 

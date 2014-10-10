@@ -1,4 +1,4 @@
-.slideshow {
+#slideshow {
   .flex-viewport {
     margin: 1em 0;
   }
@@ -34,11 +34,13 @@
   .flex-direction-nav {
     .flex-next {
       background: url(../../assets/icons/btn-arrow-right.png) no-repeat;
-      left: 5em !important;
-      // top: 90%;
+      background-position: center center;
+      background-size: cover;
+      height: 2em;
+      left: 4em !important;
       opacity: 1 !important;
       width: 100%;
-      max-width: 51px;
+      max-width: 2em;
 
       &:hover {
 
@@ -47,11 +49,13 @@
 
     .flex-prev {
       background: url(../../assets/icons/btn-arrow-left.png) no-repeat;
-      left: 1em !important;
-      // top: 90%;
+      background-position: center center;
+      background-size: cover;
+      height: 2em;
+      left: 0 !important;
       opacity: 1 !important;
       width: 100%;
-      max-width: 51px;
+      max-width: 2em;
 
     }
 
