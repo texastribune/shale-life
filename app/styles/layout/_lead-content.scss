@@ -63,7 +63,7 @@ $bp-shale-small: new-breakpoint(max-width 600px);
   }
 }
 
-.slideshow-image {
+.slideshow-main {
   margin: 0;
   img {
     margin: 1em 0;
@@ -132,7 +132,6 @@ $bp-shale-small: new-breakpoint(max-width 600px);
 }
 
 .story {
-  @extend %content-block;
   display: table-cell;
   position: absolute;
   text-align: center;

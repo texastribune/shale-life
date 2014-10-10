@@ -1,17 +1,18 @@
 function setHeight(target, reference) {
   var refHeight = $(reference).innerHeight();
-  $(target).css('min-height', refHeight);
+  $(target).css('height', refHeight);
 }
 
-function setPosition(target, reference, x) {
-  var refPosition = $(reference).height() + x;
+function setPosition(target, reference) {
+  var refPosition = $(reference).height();
   $(target).css('top', refPosition);
 }
 
-function setLead () {
-  var leadHeight = $('.story-box').height() + $('.lead-header').height();
-  $('.lead-content').css('height', leadHeight);
-}
+// Not currently using
+// function setLead () {
+//   var leadHeight = $('.story-box').height() + $('.lead-header').height();
+//   $('.lead-content').css('height', leadHeight);
+// }
 
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
@@ -37,17 +38,17 @@ $(document).ready(function() {
     slideshow: false,
     controlNav: false,
     start: function(slider) {
-      setPosition('.flex-next', '.flex-active-slide', 0);
-      setPosition('.flex-prev', '.flex-active-slide', 0);
+      setHeight('.flex-viewport', '.flex-active-slide');
+      setPosition('.flex-next', '.flex-active-slide');
+      setPosition('.flex-prev', '.flex-active-slide');
       setHeight('.story-box', '.story');
-      setPosition('.story-box', '.lead-header');
-      setLead();
       $('.total-slides').text(slider.count-1);
     },
     after: function(slider) {
-      setPosition('.flex-next', '.flex-active-slide', 0);
-      setPosition('.flex-prev', '.flex-active-slide', 0);
-      setPosition('.story-box', '.lead-header');
+      setHeight('.flex-viewport', '.flex-active-slide');
+      setPosition('.flex-next', '.flex-active-slide');
+      setPosition('.flex-prev', '.flex-active-slide');
+      // setPosition('.story-box', '.flex-active-slide', 0);
       $('.current-slide').text(slider.currentSlide);
 
     }
@@ -67,7 +68,5 @@ $(document).ready(function() {
   $(window).resize(function() {
     setHeight('.banner', window);
     setHeight('.story-box', '.story');
-    setPosition('.story-box', '.lead-header', 0);
-    setLead();
   });
 });

@@ -1,4 +1,11 @@
 .slideshow {
+  .flex-viewport {
+    margin: 1em 0;
+  }
+
+  .slides > li {
+    margin: 0;
+  }
 
   .slides {
 
