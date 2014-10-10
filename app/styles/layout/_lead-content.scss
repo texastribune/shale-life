@@ -15,7 +15,7 @@ $bp-shale-small: new-breakpoint(max-width 600px);
 }
 
 .lead-image {
-  background-image: url('http://placekitten.com/1000/1050');
+  background-image: url('../../assets/ShaleLife-background-placeholder.gif');
   background-position: center center;
   background-size: cover;
   bottom: 0;
@@ -25,7 +25,7 @@ $bp-shale-small: new-breakpoint(max-width 600px);
   top: 0;
 
   @include media($bp-shale-lg) {
-      background-image: url('http://placekitten.com/600/800');
+      background-image: url('../../assets/ShaleLife-background-placeholder.gif');
   }
 }
 

@@ -3,9 +3,9 @@ function setHeight(target, reference) {
   $(target).css('height', refHeight);
 }
 
-function setPosition(target, reference) {
+function setPosition(target, reference, x) {
   var refPosition = $(reference).height();
-  $(target).css('top', refPosition);
+  $(target).css('top', refPosition + x);
 }
 
 // Not currently using
@@ -39,15 +39,15 @@ $(document).ready(function() {
     controlNav: false,
     start: function(slider) {
       setHeight('.flex-viewport', '.flex-active-slide');
-      setPosition('.flex-next', '.flex-active-slide > .slideshow-main');
-      setPosition('.flex-prev', '.flex-active-slide > .slideshow-main');
+      setPosition('.flex-next', '.flex-active-slide > .slideshow-main', 25);
+      setPosition('.flex-prev', '.flex-active-slide > .slideshow-main', 25);
       setHeight('.story-box', '.story');
       $('.total-slides').text(slider.count-1);
     },
     after: function(slider) {
       setHeight('.flex-viewport', '.flex-active-slide');
-      setPosition('.flex-next', '.flex-active-slide > .slideshow-main');
-      setPosition('.flex-prev', '.flex-active-slide > .slideshow-main');
+      setPosition('.flex-next', '.flex-active-slide > .slideshow-main', 25);
+      setPosition('.flex-prev', '.flex-active-slide > .slideshow-main', 25);
       // setPosition('.story-box', '.flex-active-slide', 0);
       $('.current-slide').text(slider.currentSlide);
 
@@ -68,5 +68,7 @@ $(document).ready(function() {
   $(window).resize(function() {
     setHeight('.banner', window);
     setHeight('.story-box', '.story');
+    setPosition('.flex-next', '.flex-active-slide > .slideshow-main', 25);
+    setPosition('.flex-prev', '.flex-active-slide > .slideshow-main', 25);
   });
 });
