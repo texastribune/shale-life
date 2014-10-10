@@ -36,6 +36,12 @@
     }
   }
 
+  .flex-direction-nav {
+    .flex-next,
+    .flex-prev {
+      top: 50% !important;
+    }
+  }
   .flex-control-paging li a {
     background: $light-denim;
     border-radius: 20px;

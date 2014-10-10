@@ -1,7 +1,7 @@
 //Breakpoints
 
-$bp-shale-lg: new-breakpoint(min-width 600px);
-$bp-shale-med: new-breakpoint(min-width 600.1px max-width 999.99px);
+$bp-shale-lg: new-breakpoint(min-width 1080px);
+$bp-shale-med: new-breakpoint(min-width 600.1px max-width 1079.9px);
 $bp-shale-small: new-breakpoint(max-width 600px);
 
 .lead-content {
@@ -37,12 +37,15 @@ $bp-shale-small: new-breakpoint(max-width 600px);
   vertical-align: middle;
 
   @extend %content-block;
-  @include span-columns (10 of 12);
 
   @include media($bp-shale-lg) {
-    @include shift(1);
+    @include span-columns(12);
   }
 
+  @include media($bp-shale-med) {
+    @include span-columns(10 of 12);
+    @include shift(1);
+  }
 }
 
 .lead-text {
@@ -92,14 +95,21 @@ $bp-shale-small: new-breakpoint(max-width 600px);
 }
 
 .slideshow-caption {
+  @include span-columns(12);
+  margin-top: 3em;
+
   @include media($bp-shale-med) {
     @include span-columns(6);
     @include shift(2);
+    margin-top: 0;
+
   }
 
   @include media($bp-shale-lg) {
     @include span-columns(7);
     @include shift(2);
+    margin-top: 0;
+
   }
 }
 
@@ -151,7 +161,6 @@ $bp-shale-small: new-breakpoint(max-width 600px);
 
 .story-box {
   background-color: $tan-transparent;
-  // position: relative;
 }
 
 .story {
@@ -160,10 +169,10 @@ $bp-shale-small: new-breakpoint(max-width 600px);
   text-align: center;
   vertical-align: middle;
 
-  @include media($bp-shale-med) {
-    @include span-columns (10 of 12);
-    @include shift(1);
-  }
+  // @include media($bp-shale-med) {
+  //   @include span-columns (10 of 12);
+  //   @include shift(1);
+  // }
 }
 
 .story-prose {
