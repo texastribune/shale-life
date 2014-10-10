@@ -84,7 +84,7 @@ $(document).ready(function() {
     setHeight('.banner', window);
     setHeight('.story-box', '.story');
     setHeight('#slideshow > .flex-viewport', '.flex-active-slide');
-    // setPosition('.flex-next', '.flex-active-slide > .slideshow-main', 25);
-    // setPosition('.flex-prev', '.flex-active-slide > .slideshow-main', 25);
+    setPosition('.flex-next', '.flex-active-slide > .slideshow-main', 25);
+    setPosition('.flex-prev', '.flex-active-slide > .slideshow-main', 25);
   });
 });
