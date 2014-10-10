@@ -1,5 +1,14 @@
 .slideshow {
 
+  .slides {
+    li {
+      visibility: hidden;
+    }
+    .flex-active-slide {
+      visibility: visible !important;
+    }
+  }
+
   /* Direction Nav */
   .flex-direction-nav a  {
     color: rgba(0, 0, 0, .8);
@@ -12,15 +21,16 @@
     text-shadow: 1px 1px 0 rgba(255, 255, 255, .3);
     top: 50%;
     z-index: 10;
-    }
+  }
 
   .flex-direction-nav {
     .flex-next {
       background: url(../../assets/icons/btn-arrow-right.png) no-repeat;
       left: 7% !important;
-      top: 80%;
+      top: 90%;
       opacity: 1 !important;
       width: 100%;
+      max-width: 51px;
 
       &:hover {
 
@@ -30,35 +40,31 @@
     .flex-prev {
       background: url(../../assets/icons/btn-arrow-left.png) no-repeat;
       left: 0% !important;
-      top: 80%;
+      top: 90%;
       opacity: 1 !important;
       width: 100%;
+      max-width: 51px;
 
     }
-  }
 
-
-
-  .flex-direction-nav .flex-disabled {
-    cursor: default;
-    filter:alpha(opacity=0);
-    opacity: 0 !important;
+    .flex-disabled {
+      cursor: default;
+      filter:alpha(opacity=0);
+      opacity: 0 !important;
     }
 
-  .flex-direction-nav a:before  {
-    display: inline-block;
-    font-family: "flexslider-icon";
-    font-size: 40px;
+    a:before {
+      display: inline-block;
+      font-size: 40px;
+    }
+
   }
 
   .flex-control-nav {
     display: none;
   }
 
-  .slides {
-    li {
-    }
-  }
+
 
 }
 

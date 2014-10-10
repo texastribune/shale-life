@@ -30,14 +30,20 @@ $(function() {
 
 $(document).ready(function() {
   $('.video-wrapper').fitVids();
+
   $('.slideshow').flexslider({
     animation: 'slide',
     animationLoop: false,
     slideshow: false,
+    controlNav: false,
     start: function(slider) {
       setHeight('.story-box', '.story');
       setPosition('.story-box', '.lead-header');
       setLead();
+      $('.total-slides').text(slider.count-1);
+    },
+    after: function(slider) {
+      $('.current-slide').text(slider.currentSlide);
     }
   });
 
