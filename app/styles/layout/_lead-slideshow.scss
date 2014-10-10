@@ -1,6 +1,7 @@
 .slideshow {
 
   .slides {
+
     li {
       visibility: hidden;
     }
@@ -11,7 +12,7 @@
 
   /* Direction Nav */
   .flex-direction-nav a  {
-    color: rgba(0, 0, 0, .8);
+    // color: rgba(0, 0, 0, .8);
     cursor: pointer;
     display: block;
     height: 50px;
@@ -26,8 +27,8 @@
   .flex-direction-nav {
     .flex-next {
       background: url(../../assets/icons/btn-arrow-right.png) no-repeat;
-      left: 7% !important;
-      top: 90%;
+      left: 5em !important;
+      // top: 90%;
       opacity: 1 !important;
       width: 100%;
       max-width: 51px;
@@ -39,8 +40,8 @@
 
     .flex-prev {
       background: url(../../assets/icons/btn-arrow-left.png) no-repeat;
-      left: 0% !important;
-      top: 90%;
+      left: 1em !important;
+      // top: 90%;
       opacity: 1 !important;
       width: 100%;
       max-width: 51px;
@@ -63,14 +64,5 @@
   .flex-control-nav {
     display: none;
   }
-
-
-
 }
 
-
-
-.flexslider.slideshow {
-  width: 90%;
-  margin: 0 auto;
-}

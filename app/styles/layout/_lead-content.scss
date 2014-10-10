@@ -31,7 +31,8 @@ $bp-shale-small: new-breakpoint(max-width 600px);
 
 // Header
 
-.lead-header {
+.lead-header,
+.story-box {
   @extend %content-block;
   @include span-columns (10 of 12);
 
@@ -47,13 +48,8 @@ $bp-shale-small: new-breakpoint(max-width 600px);
 
 .lead-text {
   color: $white;
-  font-size: 1em;
+  font-size: 1.1em;
   text-align: left;
-
-  h4 {
-    font-weight: 500;
-    text-align: left;
-  }
 
   p {
     font-weight: 400;
@@ -68,16 +64,22 @@ $bp-shale-small: new-breakpoint(max-width 600px);
 }
 
 .slideshow-image {
-  @include span-columns(10);
-  @include shift(1);
-
+  margin: 0;
   img {
+    margin: 1em 0;
     width: 100%;
   }
 }
 
 .slideshow-title {
   @include span-columns(6 of 10);
+
+  h4 {
+    color: $white;
+    font-size: 1.3em;
+    font-weight: 500;
+    text-align: left;
+  }
 }
 
 .slide-count {
@@ -85,6 +87,7 @@ $bp-shale-small: new-breakpoint(max-width 600px);
   @include omega();
 
   p {
+    margin-right: 1em;
     text-align: right;
   }
 }
@@ -125,7 +128,7 @@ $bp-shale-small: new-breakpoint(max-width 600px);
 
 .story-box {
   background-color: $tan-transparent;
-  position: relative;
+  // position: relative;
 }
 
 .story {

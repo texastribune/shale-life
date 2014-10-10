@@ -3,8 +3,8 @@ function setHeight(target, reference) {
   $(target).css('min-height', refHeight);
 }
 
-function setPosition(target, reference) {
-  var refPosition = $(reference).height();
+function setPosition(target, reference, x) {
+  var refPosition = $(reference).height() + x;
   $(target).css('top', refPosition);
 }
 
@@ -37,13 +37,19 @@ $(document).ready(function() {
     slideshow: false,
     controlNav: false,
     start: function(slider) {
+      setPosition('.flex-next', '.flex-active-slide', 0);
+      setPosition('.flex-prev', '.flex-active-slide', 0);
       setHeight('.story-box', '.story');
       setPosition('.story-box', '.lead-header');
       setLead();
       $('.total-slides').text(slider.count-1);
     },
     after: function(slider) {
+      setPosition('.flex-next', '.flex-active-slide', 0);
+      setPosition('.flex-prev', '.flex-active-slide', 0);
+      setPosition('.story-box', '.lead-header');
       $('.current-slide').text(slider.currentSlide);
+
     }
   });
 
@@ -61,7 +67,7 @@ $(document).ready(function() {
   $(window).resize(function() {
     setHeight('.banner', window);
     setHeight('.story-box', '.story');
-    setPosition('.story-box', '.lead-header');
+    setPosition('.story-box', '.lead-header', 0);
     setLead();
   });
 });
