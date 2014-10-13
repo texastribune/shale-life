@@ -1,7 +1,6 @@
 #slideshow {
   .flex-viewport {
     margin: 1em 0;
-    width: 100%;
   }
 
   .slides > li {
@@ -48,11 +47,11 @@
       }
 
       @include media($bp-shale-med) {
-        left: 4em !important;
+        left: 3em !important;
       }
 
       @include media($bp-shale-lg) {
-        left: 3em !important;
+        left: 9em !important;
       }
     }
 
@@ -72,6 +71,9 @@
         opacity: 0 !important;
       }
 
+      @include media($bp-shale-lg) {
+        left: 5em !important;
+      }
     }
 
 

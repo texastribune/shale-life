@@ -39,12 +39,9 @@
   }
 
   @include media($bp-shale-lg) {
-    @include span-columns(12);
+    @include span-columns(10 of 12);
+    @include shift(1);
   }
-}
-
-.lead-header {
-  margin-top: 3em;
 }
 
 .lead-text {
@@ -98,39 +95,39 @@
   }
 }
 
-.slideshow-start {
-  @include span-columns(8);
-  @include shift(4);
-
-  @include media($bp-shale-med) {
-    @include span-columns(6);
-    @include shift(2);
-    margin-top: 0;
-  }
-
-  @include media($bp-shale-lg) {
-    @include span-columns(4);
-    @include shift(2);
-    margin-top: 0;
-
-  }
-}
-
+.slideshow-start,
 .slideshow-caption {
-  @include span-columns(8);
-  @include shift(4);
+  @include span-columns(10);
+  margin: 0 0 .5em 5em;
 
   @include media($bp-shale-med) {
     @include span-columns(7);
-    @include shift(2);
+    @include shift(0);
+    margin-left: 5em;
+    text-align: left;
   }
 
   @include media($bp-shale-lg) {
-    @include span-columns(7);
-    @include shift(2);
-
+    @include span-columns(6);
+    margin-left: 11em;
+    text-align: left;
   }
 }
+
+// .slideshow-caption {
+//   @include span-columns(8);
+//   @include shift(4);
+
+//   @include media($bp-shale-med) {
+//     @include span-columns(7);
+//     @include shift(2);
+//   }
+
+//   @include media($bp-shale-lg) {
+//     @include span-columns(6);
+//     @include shift(3);
+//   }
+// }
 .share-story {
   @include span-columns(12);
   border-top: 2px solid $yellow;
@@ -146,7 +143,7 @@
     padding-top: 0;
   }
   @include media($bp-shale-lg) {
-    @include span-columns(2);
+    @include span-columns(3);
     @include omega();
     border-left: 2px solid $yellow;
     border-top: 0;
@@ -159,7 +156,7 @@
 .twitter {
   display: inline-block;
   height: 2em;
-  margin: 0 0 .5em 1em;
+  margin: 0 .25em 1em .25em;
   width: 2em;
 }
 

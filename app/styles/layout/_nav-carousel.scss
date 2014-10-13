@@ -25,6 +25,10 @@
       position: absolute;
       text-align: left;
       width: 200px;
+
+      &:hover {
+        background-color: transparentize($red, .1);
+      }
     }
 
     p {

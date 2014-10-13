@@ -5,22 +5,22 @@ function setHeight(target, reference) {
 
 function setPosition(target, reference, x) {
   var refTop = $(reference).height();
-  var refMargin = $(reference).css('margin-left');
+  // var refMargin = $(reference).css('margin-left');
   $(target).animate({
-    top: refTop + x,
-    'margin-left': refMargin
+    top: refTop + x
+    // 'margin-left': refMargin
   }, 200);
 }
 
 function positionNav(klass) {
     var $e = $('.flex-active-slide > .' + klass);
     if ($e.hasClass('slide-box')) {
-      setPosition('.flex-next', '.flex-active-slide > .nav-ref', 25);
-      setPosition('.flex-prev', '.flex-active-slide > .nav-ref', 25);
+      setPosition('.flex-next', '.flex-active-slide > .nav-ref', 20);
+      setPosition('.flex-prev', '.flex-active-slide > .nav-ref', 20);
       $('.lead-header').css('background-color', 'rgba(26, 26, 26, .7)');
     } else {
-      setPosition('.flex-next', '.flex-active-slide > .nav-ref', 35);
-      setPosition('.flex-prev', '.flex-active-slide > .nav-ref', 35);
+      setPosition('.flex-next', '.flex-active-slide > .nav-ref', 30);
+      setPosition('.flex-prev', '.flex-active-slide > .nav-ref', 30);
       $('.lead-header').css('background-color', 'rgba(26, 26, 26, 0)');
     }
 }
