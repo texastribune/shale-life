@@ -12,14 +12,30 @@
 
   @extend %content-block;
 
+  img {
+    display: none;
+  }
+
   @include media($bp-shale-med) {
     @include span-columns(10 of 12);
     @include shift(1);
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: 300px;
+    }
   }
 
   @include media($bp-shale-lg) {
     @include span-columns(12);
     @include shift(0);
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: 300px;
+    }
   }
 }
 
