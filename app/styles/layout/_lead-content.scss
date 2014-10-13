@@ -121,7 +121,7 @@
   @include shift(4);
 
   @include media($bp-shale-med) {
-    @include span-columns(8);
+    @include span-columns(7);
     @include shift(2);
   }
 
