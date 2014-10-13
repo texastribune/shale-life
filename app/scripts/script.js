@@ -70,12 +70,12 @@ $(document).ready(function() {
 
   setHeight('.story-box', '.story');
   setHeight('.banner', window);
-
+});
 
   $(window).resize(function() {
-    setHeight('.banner', window);
+    // setHeight('.banner', window);
+    $('.lead-header').css('max-width', $(window).outerWidth());
     setHeight('.story-box', '.story');
     setHeight('#slideshow > .flex-viewport', '.flex-active-slide');
     positionNav('nav-ref');
   });
-});

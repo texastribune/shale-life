@@ -2,13 +2,13 @@
 
 $bp-shale-lg: new-breakpoint(min-width 1081px);
 $bp-shale-med: new-breakpoint(min-width 765px max-width 1080px);
-$bp-shale-small: new-breakpoint(min-width 400px max-width 764px);
+$bp-shale-small: new-breakpoint(min-width 500px max-width 764px);
 
 // Short-Hed
 h1 {
   color: $white;
   font-weight: 300;
-  font-size: 4em;
+  font-size: 3em;
   font-family: league-gothic;
   line-height: .95em;
   text-align: left;
@@ -78,49 +78,7 @@ hr.shale-yellow {
 // story-content
 
 
-.story-prose {
-  margin-top: 1em;
 
-  @include media($bp-shale-med) {
-    @include span-columns(6 of 10);
-  }
-
-  @include media($bp-shale-lg) {
-    @include span-columns(6 of 10);
-  }
-
-  p {
-    color: $off-black;
-    font-weight: 500;
-    margin: .5em 0 2em;
-  }
-
-  .byline {
-    color: $dark-denim;
-    font-style: italic;
-    font-weight: 400;
-    font-size: .95em;
-    line-height: 1.3em;
-  }
-
-}
-
-
-
-
-// .map {
-//   @include media($bp-shale-med) {
-//     @include span-columns(4 of 10);
-//   }
-
-//   @include media($bp-shale-lg) {
-//     @include span-columns(4 of 10);
-//   }
-
-//   img {
-//     width: 90%;
-//   }
-// }
 
 table {
   color: $off-white;
