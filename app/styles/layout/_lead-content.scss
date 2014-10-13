@@ -24,7 +24,8 @@
 // Header
 
 .lead-header,
-.story-box {
+.story-box,
+.data-box {
   display: block;
   position: relative;
   text-align: center;
@@ -32,13 +33,13 @@
 
   @extend %content-block;
 
-  @include media($bp-shale-lg) {
-    @include span-columns(12);
-  }
-
   @include media($bp-shale-med) {
     @include span-columns(10 of 12);
     @include shift(1);
+  }
+
+  @include media($bp-shale-lg) {
+    @include span-columns(12);
   }
 }
 
@@ -191,15 +192,9 @@
 }
 
 .story {
-  display: table-cell;
   position: absolute;
   text-align: center;
   vertical-align: middle;
-
-  // @include media($bp-shale-med) {
-  //   @include span-columns (10 of 12);
-  //   @include shift(1);
-  // }
 }
 
 .story-prose {
@@ -247,4 +242,3 @@
     text-align: center;
   }
 }
-
