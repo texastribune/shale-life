@@ -112,23 +112,22 @@
   }
 
   @include media($bp-shale-lg) {
-    @include span-columns(7);
+    @include span-columns(8);
     @include shift(2);
     margin-top: 0;
 
   }
 }
 
-
-
-
 .share-story {
+  border-left: 2px solid $yellow;
+
   @include media($bp-shale-med) {
     @include span-columns(3);
     @include omega();
   }
   @include media($bp-shale-lg) {
-    @include span-columns(3);
+    @include span-columns(2);
     @include omega();
   }
 }
@@ -137,7 +136,7 @@
 .twitter {
   display: inline-block;
   height: 2em;
-  margin: 0 0 0 1em;
+  margin: 0 0 .5em 1em;
   width: 2em;
 }
 

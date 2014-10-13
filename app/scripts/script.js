@@ -15,8 +15,8 @@ function positionNav(x) {
       setPosition('.flex-prev', '.flex-active-slide > .nav-ref', 35);
       $('.lead-header').css('background-color', 'rgba(26, 26, 26, 0)');
     } else {
-      setPosition('.flex-next', '.flex-active-slide > .nav-ref', -55);
-      setPosition('.flex-prev', '.flex-active-slide > .nav-ref', -55);
+      setPosition('.flex-next', '.flex-active-slide > .nav-ref', -60);
+      setPosition('.flex-prev', '.flex-active-slide > .nav-ref', -60);
       $('.lead-header').css('background-color', 'rgba(26, 26, 26, .7)');
     }
 }
