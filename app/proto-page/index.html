@@ -18,8 +18,8 @@
             <li>
               <div class="nav-ref">
                 <h1>{{LOVING.SHORT_HEAD}}</h1>
-                <h3>Helvetica raw denim hella, post-ironic banh mi Thundercats</h3>
-              <hr class="shale-yellow">
+<!--                 <h3>{{LOVING.LONG_HEAD}}</h3>
+ -->              <hr class="shale-yellow">
               </div>
 
 
@@ -45,12 +45,12 @@
                   </p>
                 </div>
 
-                <img src="http://placehold.it/720x405">
+                <img src="{{ LOVING.PHOTO_1_URL }}">
 
               </div>
 
               <div class="slideshow-caption lead-text">
-                <p>Beard keytar tousled Brooklyn Helvetica, chia Pitchfork brunch shabby chic trust fund. +1 Austin scenester flannel Banksy typewriter mlkshk narwhal, drinking vinegar letterpress Portland biodiesel umami.</p>
+                <p>{{ LOVING.PHOTO_1_CAPTION }}</p>
               </div>
 
               <div class="share-story">
@@ -93,17 +93,16 @@
         <div class="story">
 
           <div class="story-prose">
-            <h2>Cat Saves Planet from Apocolypse, Dies in Action</h2>
-            <p>Beard keytar tousled Brooklyn Helvetica, chia Pitchfork brunch shabby chic trust fund. +1 Austin scenester flannel Banksy typewriter mlkshk narwhal, drinking vinegar letterpress Portland biodiesel umami. PBR messenger bag tote bag shabby chic, brunch ugh bitters kogi small batch pop-up Bushwick wayfarers actually beard hella. Helvetica raw denim hella, post-ironic banh mi Thundercats synth normcore tilde pickled literally. Carles gentrify crucifix tattooed raw denim. Authentic paleo Thundercats shabby chic mumblecore. Gluten-free Vice Neutra iPhone ethical distillery.</p>
+            <h2>{{ LOVING.LONG_HEAD }}</h2>
 
-            <p>Butcher Odd Future banh mi, leggings craft beer cardigan cray 8-bit Truffaut put a bird on it letterpress Thundercats. Actually Carles authentic selvage Echo Park blog. Direct trade forage mumblecore, kale chips Odd Future deep v skateboard fingerstache whatever mixtape. Pickled vegan salvia, roof party sartorial street art fap tote bag keytar Etsy Tumblr Brooklyn Helvetica. Letterpress tattooed distillery pour-over. Readymade pork belly chia banjo. Art party umami meggings, wayfarers 90's hoodie gastropub lomo actually slow-carb Neutra tousled Banksy lo-fi.</p>
+            {{ LOVING.INTRO_TEXT }}
 
-            <p class="byline">Produced by Main Staffers</p>
+            <p class="byline">{{ LOVING.BYLINE }}</p>
           </div>
 
           <div class="map">
             <img src="../assets/ShaleLife-TxMap-placeholder.gif">
-            <h4>County Longname</h4>
+            <h4>{{ LOVING.MAP }}</h4>
           </div>
 
         </div>
@@ -115,35 +114,38 @@
     <div class="container">
       <div class="data-box">
         <div class="data">
-          <h4>Chart Title Goes Here</h4>
+          <h4>Additional Information</h4>
           <hr class="shale-yellow">
           <table>
             <thead>
               <tr>
                 <th></th>
-                <th>2000</th>
-                <th>2010</th>
-                <th>2013</th>
+                <th>{{ LOVING.Data_Col1 }}</th>
+                <th>{{ LOVING.Data_Col2 }}</th>
+                <th>{{ LOVING.Data_Col3 }}</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td data-title="Title">Census Population</td>
-                <td data-title="2000">1,234</td>
-                <td data-title="2010">10,234</td>
-                <td data-title="2013">9,234</td>
+                <td data-title="Census Population">Census Population</td>
+                <td data-title="{{ LOVING.Data_Col1 }}">{{ LOVING.Pop2000 }}</td>
+                <td data-title="{{ LOVING.Data_Col2 }}">{{ LOVING.Pop2010 }}</td>
+                <td data-title="{{ LOVING.Data_Col2 }}">{{ LOVING.Pop2013 }}</td>
               </tr>
               <tr>
-                <td data-title="Title">Number of Hotels</td>
-                <td data-title="2000">5</td>
-                <td data-title="2010">24</td>
-                <td data-title="2013">18</td>
+                <td data-title="{{ LOVING.Data_Title_A }}">{{ LOVING.Data_Title_A }}</td>
+                <td data-title="{{ LOVING.Data_Col1 }}">{{ LOVING.Data_A_1 }}</td>
+                <td data-title="{{ LOVING.Data_Col2 }}">{{ LOVING.Data_A_2 }}</td>
+                <td data-title="{{ LOVING.Data_Col2 }}">{{ LOVING.Data_A_3 }}</td>
               </tr>
               <tr>
-                <td data-title="Title">Hotel Capacity</td>
-                <td data-title="2000">1,234</td>
-                <td data-title="2010">8,000</td>
-                <td data-title="2013">6,000</td>
+                <td data-title="{{ LOVING.Data_Title_B }}">{{ LOVING.Data_Title_B }}</td>
+                <td data-title="{{ LOVING.Data_Col1 }}">{{ LOVING.Data_B_1 }}</td>
+                <td data-title="{{ LOVING.Data_Col2 }}">{{ LOVING.Data_B_2 }}</td>
+                <td data-title="{{ LOVING.Data_Col2 }}">{{ LOVING.Data_B_3 }}</td>
+              </tr>
+              <tr>
+                <td colspan=4><em>Source: {{ LOVING.Source }}</em></td>
               </tr>
             </tbody>
           </table>
@@ -156,61 +158,6 @@
       </div>
 
 
-    </div>
-  </section>
-
-  <section class="nav-carousel">
-    <div class="flexslider nav-slider">
-      <ul class="slides">
-        <li>
-          <img src="http://placekitten.com/g/200/200" />
-          <h3>Story Title</h3>
-        </li>
-        <li>
-          <img src="http://placekitten.com/g/200/200" />
-          <h3>Story Title 2</h3>
-        </li>
-        <li>
-          <img src="http://placekitten.com/g/200/200" />
-          <h3>Story Title 3</h3>
-        </li>
-        <li>
-          <img src="http://placekitten.com/g/200/200" />
-          <h3>Story Title 4</h3>
-        </li>
-        <li>
-          <img src="http://placekitten.com/g/200/200" />
-          <h3>Story Title 5</h3>
-        </li>
-        <li>
-          <img src="http://placekitten.com/g/200/200" />
-          <h3>Story Title 6</h3>
-        </li>
-        <li>
-          <img src="http://placekitten.com/g/200/200" />
-          <h3>Story Title 7</h3>
-        </li>
-        <li>
-          <img src="http://placekitten.com/g/200/200" />
-          <h3>Story Title 8</h3>
-        </li>
-        <li>
-          <img src="http://placekitten.com/g/200/200" />
-          <h3>Story Title 9</h3>
-        </li>
-        <li>
-          <img src="http://placekitten.com/g/200/200" />
-          <h3>Story Title 10</h3>
-        </li>
-        <li>
-          <img src="http://placekitten.com/g/200/200" />
-          <h3>Story Title 11</h3>
-        </li>
-        <li>
-          <img src="http://placekitten.com/g/200/200" />
-          <h3>Story Title 12</h3>
-        </li>
-      </ul>
     </div>
   </section>
 

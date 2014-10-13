@@ -8,8 +8,81 @@
     "LONG_HEAD": "State's Emptiest County Filling Up With Oil Workers, Hope",
     "INTRO_TEXT": "<p>The smallest county in Texas by population may not hold that distinction for much longer. Loving County has about 90 people but swells by hundreds each day due to a flood of oil workers. While some complain about the added dust in the air and a spike in accidents, both from the surge in drilling trucks, County Judge Skeet Jones sees the oil boom as a lifeline from extinction.</p><p>He and other local officials are setting the stage for Loving County to welcome new residents and reverse a decades-long decline in population.</p>",
     "BYLINE":  "Story by Alana Rocha and Aman Batheja, photos by Ivan Pierre Aguirre",
-    "PHOTO_1_URL": "http://wwww.placekitten.com/720/405",
-    "PHOTO_1_CAPTION": "This is just a test caption. Something funny? Ok fine."
+    "MAP": "Glasscock County",
+    "PHOTO_1_URL": "http://placekitten.com/g/720/405",
+    "PHOTO_1_CAPTION": "This is just a test caption. Something funny? Ok fine.",
+    "Pop2000": "67",
+    "Pop2010": "82",
+    "Pop2013": "95",
+    "Data_Col1": "2000",
+    "Data_Col2": "2010",
+    "Data_Col3": "2013",
+    "Data_Title_A": "Oil production (barrels)",
+    "Data_Title_B": "Natural gas production (1k cubic feet)",
+    "Data_A_1": "124,000",
+    "Data_A_2": "112,000",
+    "Data_A_3": "506,000",
+    "Data_B_1": "124,000",
+    "Data_B_2": "112,000",
+    "Data_B_3": "506,000",
+    "Source": "U.S. Census Bureau, Texas Railroad Commission"
+  },
+
+  "COTTON_FARMERS": {
+    "SHORT_HEAD": "Drilling Fields",
+    "LONG_HEAD": "Cotton Farmers See Crop Destruction, Little Payoff"
+  },
+
+  "RESPONDERS": {
+    "SHORT_HEAD": "Responders in a Pinch"
+  },
+
+  "EAGLE_FORD_ACCIDENTS": {
+    "SHORT_HEAD": "Deadly Roads"
+  },
+
+  "KARNES": {
+    "SHORT_HEAD": "Looking Past Oil"
+  },
+
+  "FOOTBALL": {
+    "SHORT_HEAD": "Changed Lives"
+  },
+
+  "BUSES": {
+    "SHORT_HEAD": "A Bumpy Lifeline"
+  },
+
+  "CHALLENGE": {
+    "SHORT_HEAD": "Burdened by the Boom"
+  },
+
+  "OPPORTUNITY": {
+    "SHORT_HEAD": "Land of Opportunity"
+  },
+
+  "AIR_QUALITY": {
+    "SHORT_HEAD": "Eagle Ford Air "
+  },
+
+  "COUNTING_HEADS": {
+    "SHORT_HEAD": "How Big is the Boom?"
+  },
+
+  "PRISONS": {
+    "SHORT_HEAD": "A Corrections Crunch"
+  },
+
+  "MAN_CAMPS": {
+    "SHORT_HEAD": "Life in a Man Camp"
+  },
+
+  "CROP_DUSTER": {
+    "SHORT_HEAD": "An In-Flight Challenge"
+  },
+
+  "BIG_LAKE": {
+    "SHORT_HEAD": "Above the Boom"
   }
 }
 
