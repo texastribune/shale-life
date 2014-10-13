@@ -1,5 +1,16 @@
 {
   "META": {
-  "project_title": "Life in the Shale"
+    "project_title": "Life in the Shale"
+  },
+
+  "LOVING": {
+    "SHORT_HEAD":  "Saving Loving County",
+    "LONG_HEAD": "State's Emptiest County Filling Up With Oil Workers, Hope",
+    "INTRO_TEXT": "<p>The smallest county in Texas by population may not hold that distinction for much longer. Loving County has about 90 people but swells by hundreds each day due to a flood of oil workers. While some complain about the added dust in the air and a spike in accidents, both from the surge in drilling trucks, County Judge Skeet Jones sees the oil boom as a lifeline from extinction.</p><p>He and other local officials are setting the stage for Loving County to welcome new residents and reverse a decades-long decline in population.</p>",
+    "BYLINE":  "Story by Alana Rocha and Aman Batheja, photos by Ivan Pierre Aguirre",
+    "PHOTO_1_URL": "http://wwww.placekitten.com/720/405",
+    "PHOTO_1_CAPTION": "This is just a test caption. Something funny? Ok fine."
   }
 }
+
+
