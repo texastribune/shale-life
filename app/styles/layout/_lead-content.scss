@@ -72,7 +72,7 @@
   }
 
   img {
-    margin: 0 0 1em;
+    margin-bottom: 1em;
     width: 100%;
   }
 }
@@ -120,12 +120,12 @@
   @include shift(4);
 
   @include media($bp-shale-med) {
-    @include span-columns(6);
+    @include span-columns(8);
     @include shift(2);
   }
 
   @include media($bp-shale-lg) {
-    @include span-columns(8);
+    @include span-columns(7);
     @include shift(2);
 
   }
@@ -240,6 +240,11 @@
 
   img {
     width: 90%;
+  }
+
+  h4 {
+    color: $off-black;
+    text-align: center;
   }
 }
 
