@@ -37,13 +37,17 @@
       background-position: center center;
       background-size: cover;
       height: 2em;
-      left: 2em !important;
+      left: 3em !important;
       opacity: .9 !important;
       width: 100%;
       max-width: 2em;
 
       &:hover {
         opacity: 1 !important;
+      }
+
+      @include media($bp-shale-med) {
+        left: 4em !important;
       }
 
       @include media($bp-shale-lg) {

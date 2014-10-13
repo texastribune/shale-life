@@ -6,14 +6,17 @@ function setHeight(target, reference) {
 function setPosition(target, reference, x) {
   var refTop = $(reference).height();
   var refMargin = $(reference).css('margin-left');
-  $(target).css('top', refTop + x).css('margin-left', refMargin);
+  $(target).animate({
+    top: refTop + x,
+    'margin-left': refMargin
+  }, 200);
 }
 
 function positionNav(klass) {
     var $e = $('.flex-active-slide > .' + klass);
     if ($e.hasClass('slide-box')) {
-      setPosition('.flex-next', '.flex-active-slide > .nav-ref', -40);
-      setPosition('.flex-prev', '.flex-active-slide > .nav-ref', -40);
+      setPosition('.flex-next', '.flex-active-slide > .nav-ref', 25);
+      setPosition('.flex-prev', '.flex-active-slide > .nav-ref', 25);
       $('.lead-header').css('background-color', 'rgba(26, 26, 26, .7)');
     } else {
       setPosition('.flex-next', '.flex-active-slide > .nav-ref', 35);

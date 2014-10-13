@@ -42,6 +42,10 @@
   }
 }
 
+.lead-header {
+  margin-top: 3em;
+}
+
 .lead-text {
   color: $white;
   font-size: 1.1em;
@@ -59,11 +63,9 @@
   }
 }
 
-// .first-slide {
-
-// }
-
 .slide-box {
+  @include span-columns(12);
+
   @include media($bp-shale-lg) {
     @include span-columns(10);
     @include shift(1);
@@ -73,11 +75,6 @@
     margin: 0 0 1em;
     width: 100%;
   }
-}
-
-.slideshow-main {
-  // margin: 0;
-
 }
 
 .slideshow-title {
@@ -100,35 +97,60 @@
   }
 }
 
-.slideshow-caption {
-  @include span-columns(12);
-  margin-top: 5em;
+.slideshow-start {
+  @include span-columns(8);
+  @include shift(4);
 
   @include media($bp-shale-med) {
     @include span-columns(6);
     @include shift(2);
     margin-top: 0;
-
   }
 
   @include media($bp-shale-lg) {
-    @include span-columns(8);
+    @include span-columns(4);
     @include shift(2);
     margin-top: 0;
 
   }
 }
 
+.slideshow-caption {
+  @include span-columns(8);
+  @include shift(4);
+
+  @include media($bp-shale-med) {
+    @include span-columns(6);
+    @include shift(2);
+  }
+
+  @include media($bp-shale-lg) {
+    @include span-columns(8);
+    @include shift(2);
+
+  }
+}
 .share-story {
-  border-left: 2px solid $yellow;
+  @include span-columns(12);
+  border-top: 2px solid $yellow;
+  margin: 1em 0 0;
+  padding-top: 1em;
 
   @include media($bp-shale-med) {
     @include span-columns(3);
     @include omega();
+    border-left: 2px solid $yellow;
+    border-top: 0;
+    margin: 0;
+    padding-top: 0;
   }
   @include media($bp-shale-lg) {
     @include span-columns(2);
     @include omega();
+    border-left: 2px solid $yellow;
+    border-top: 0;
+    margin: 0;
+    padding-top: 0;
   }
 }
 
