@@ -36,7 +36,7 @@ footer {
 
 .member-push {
   display: inline-block;
-  max-width: 280px;
+
   ul {
     display: inline-block;
   }
@@ -54,6 +54,10 @@ footer {
     float: right;
     margin: 1.5em 0 0;
     text-transform: uppercase;
+  }
+
+  @include media($bp-footer-med) {
+    max-width: 290px;
   }
 }
 
