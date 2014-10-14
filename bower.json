@@ -3,6 +3,8 @@
   "private": true,
   "dependencies": {
     "jquery": "1",
-    "newsapps-styles": "texastribune/newsapps-styles#base_theme"
+    "newsapps-styles": "texastribune/newsapps-styles#base_theme",
+    "fitvids": "~1.1.0",
+    "imager.js": "~0.3.0"
   }
 }
