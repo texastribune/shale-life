@@ -20,12 +20,12 @@
   <script>try{Typekit.load();}catch(e){}</script>
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-  <!-- build:css styles/vendor.css -->
+  <!-- build:css /styles/vendor.css -->
   <!-- bower:css -->
   <!-- endbower -->
   <!-- endbuild -->
-  <!-- build:css(.tmp) styles/main.css -->
-  <link rel="stylesheet" href="styles/main.css">
+  <!-- build:css(.tmp) /styles/main.css -->
+  <link rel="stylesheet" href="/styles/main.css">
   <!-- endbuild -->
 </head>
 <body>
@@ -161,13 +161,12 @@
   ga('create','UA-9827490-1');ga('send','pageview');
 </script>
 
-<!-- build:js({app,.tmp}) scripts/main.js -->
-<script src="../scripts/main.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="../scripts/jquery.fitvids.js"></script>
-<script src="../scripts/jquery.flexslider.js"></script>
-<script src="../scripts/script.js"></script>
+<!-- build:js({app,.tmp}) /scripts/main.js -->
+<script src="/scripts/jquery.flexslider.js"></script>
+<script src="/scripts/script.js"></script>
 <!-- endbuild -->
+
+{% block extra_script %}{% endblock %}
 
 </body>
 </html>
