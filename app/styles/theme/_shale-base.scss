@@ -1,14 +1,7 @@
 //Breakpoints
-
-<<<<<<< HEAD
-$bp-shale-lg: new-breakpoint(min-width 735px);
-$bp-shale-med: new-breakpoint(min-width 600px max-width 735px);
-$bp-shale-small: new-breakpoint(max-width 600px);
-=======
 $bp-shale-lg: new-breakpoint(min-width 1081px);
 $bp-shale-med: new-breakpoint(min-width 765px max-width 1080px);
 $bp-shale-small: new-breakpoint(min-width 500px max-width 764px);
->>>>>>> proto-slideshow
 
 // Short-Hed
 h1 {
