@@ -6,6 +6,16 @@
   <title>{{ META.project_title }} | The Texas Tribune</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:site_name" content="The Texas Tribune">
+  <meta property="og:description" content="">
+  <meta property="og:title" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
   <script src="//use.typekit.net/tsw6wfe.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -35,27 +45,103 @@
 
 {% block content %}{% endblock %}
 
+<section class="nav-carousel">
+  <div class="flexslider nav-slider">
+    <ul class="slides">
+      <li>
+        <img src="http://placekitten.com/g/200/200" />
+        <h3>{{ LOVING.SHORT_HEAD }}</h3>
+      </li>
+      <li>
+        <img src="http://placekitten.com/g/200/200" />
+        <h3>{{ COTTON_FARMERS.SHORT_HEAD }}</h3>
+      </li>
+      <li>
+        <img src="http://placekitten.com/g/200/200" />
+        <h3>{{ RESPONDERS.SHORT_HEAD }}</h3>
+      </li>
+      <li>
+        <img src="http://placekitten.com/g/200/200" />
+        <h3>{{ EAGLE_FORD_ACCIDENTS.SHORT_HEAD }}</h3>
+      </li>
+      <li>
+        <img src="http://placekitten.com/g/200/200" />
+        <h3>{{ KARNES.SHORT_HEAD }}</h3>
+      </li>
+      <li>
+        <img src="http://placekitten.com/g/200/200" />
+        <h3>{{ FOOTBALL.SHORT_HEAD }}</h3>
+      </li>
+      <li>
+        <img src="http://placekitten.com/g/200/200" />
+        <h3>{{ BUSES.SHORT_HEAD }}</h3>
+      </li>
+      <li>
+        <img src="http://placekitten.com/g/200/200" />
+        <h3>{{ CHALLENGE.SHORT_HEAD }}</h3>
+      </li>
+      <li>
+        <img src="http://placekitten.com/g/200/200" />
+        <h3>{{ OPPORTUNITY.SHORT_HEAD }}</h3>
+      </li>
+      <li>
+        <img src="http://placekitten.com/g/200/200" />
+        <h3>{{ AIR_QUALITY.SHORT_HEAD }}</h3>
+      </li>
+      <li>
+        <img src="http://placekitten.com/g/200/200" />
+        <h3>{{ COUNTING_HEADS.SHORT_HEAD }}</h3>
+      </li>
+      <li>
+        <img src="http://placekitten.com/g/200/200" />
+        <h3>{{ PRISONS.SHORT_HEAD }}</h3>
+      </li>
+      <li>
+        <img src="http://placekitten.com/g/200/200" />
+        <h3>{{ MAN_CAMPS.SHORT_HEAD }}</h3>
+      </li>
+      <li>
+        <img src="http://placekitten.com/g/200/200" />
+        <h3>{{ CROP_DUSTER.SHORT_HEAD }}</h3>
+      </li>
+      <li>
+        <img src="http://placekitten.com/g/200/200" />
+        <h3>{{ BIG_LAKE.SHORT_HEAD }}</h3>
+      </li>
+    </ul>
+  </div>
+</section>
+<footer class="container">
+  <div class="footer-logo">
+    <img src="http://placehold.it/200">
+    <p>© 2014 <a href="http://www.texastribune.org/">The Texas Tribune</a></p>
+  </div>
+  <div class="member-push">
+    <div class="button">Join Us</div>
+    <ul>
+      <li class="bold">Nonpartisan.</li>
+      <li class="bold">Nonprofit.</li>
+      <li class="bold">Statewide.</li>
+    </ul>
+    <div class="button">Sign Up</div>
+    <ul>
+      <li class="bold">Dig Deeper.</li>
+      <li>Subscribe to Trib+</li>
+      <li>Newsletters today</li>
+    </ul>
 
-<footer class="footer">
-  <div class="container">
-    <div class="content-block">
-    <nav class="first-nav">
-      <ul>
-        <li>© 2014 <a href="http://www.texastribune.org/">The Texas Tribune</a></li>
-      </ul>
-    </nav>
-    <nav class="last-nav">
-      <ul>
-        <li><a href="http://www.texastribune.org/about/">About Us</a></li>
-        <li><a href="http://www.texastribune.org/contact/">Contact Us</a></li>
-        <li><a href="http://www.texastribune.org/support-us/donors-and-members/">Who Funds Us?</a></li>
-        <li><a href="http://www.texastribune.org/terms-of-service/">Terms of Service</a></li>
-        <li><a href="http://www.texastribune.org/ethics/">Code of Ethics</a></li>
-        <li><a href="http://www.texastribune.org/privacy/">Privacy Policy</a></li>
-        <li class="donor-item"><a href="https://www.texastribune.org/join/">Donate</a></li>
-      </ul>
-    </nav>
-    </div>
+  </div>
+  <div class="footer-links">
+    <ul>
+      <li><a href="">About The Shale Life Project</a></li>
+      <li><a href="">Shale Life Supporters</a></li>
+      <li><a href="http://www.texastribune.org/about/">About The Texas Tribune</a></li>
+      <li><a href="https://www.texastribune.org/join/" style="color: #008990;">Donate to The Texas Tribune</a></li>
+      <li><a href="http://www.texastribune.org/contact/">Contact</a></li>
+      <li><a href="http://www.texastribune.org/terms-of-service/">Terms of Service</a></li>
+      <li><a href="http://www.texastribune.org/ethics/">Code of Ethics</a></li>
+      <li><a href="http://www.texastribune.org/privacy/">Privacy Policy</a></li>
+    </ul>
   </div>
 </footer>
 

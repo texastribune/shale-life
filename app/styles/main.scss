@@ -14,8 +14,10 @@ $teal-transparent: transparentize($teal, .7);
 @import 'theme/shale-landing';
 @import 'theme/proto-page';
 @import 'theme/flexslider';
+@import 'theme/shale-footer';
 
 @import 'layout/shale-masthead';
 @import 'layout/lead-content';
+@import 'layout/lead-slideshow';
 @import 'layout/data-context';
 @import 'layout/nav-carousel';

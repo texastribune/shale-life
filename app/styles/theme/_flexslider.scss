@@ -35,7 +35,7 @@
   margin: 0;
   padding: 0;
   position: relative;
-  margin: 1em;
+  // margin: 1em;
 }
 
 .slides > li {
@@ -46,9 +46,9 @@
 
  /* Hide the slides before the JS is loaded. Avoids image jumping */
 .slides {
-  // li {
-  //   width: 200px;
-  // }
+  li {
+    display: none;
+  }
 
   // img {
   //   position: relative;

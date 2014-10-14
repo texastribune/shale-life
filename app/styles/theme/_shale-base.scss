@@ -1,14 +1,20 @@
 //Breakpoints
 
+<<<<<<< HEAD
 $bp-shale-lg: new-breakpoint(min-width 735px);
 $bp-shale-med: new-breakpoint(min-width 600px max-width 735px);
 $bp-shale-small: new-breakpoint(max-width 600px);
+=======
+$bp-shale-lg: new-breakpoint(min-width 1081px);
+$bp-shale-med: new-breakpoint(min-width 765px max-width 1080px);
+$bp-shale-small: new-breakpoint(min-width 500px max-width 764px);
+>>>>>>> proto-slideshow
 
 // Short-Hed
 h1 {
   color: $white;
   font-weight: 300;
-  font-size: 5em;
+  font-size: 3em;
   font-family: league-gothic;
   line-height: .95em;
   margin-top: .25em;
@@ -22,6 +28,10 @@ h1 {
   @include media($bp-shale-med) {
     font-size: 8em;
   }
+
+  @include media($bp-shale-small) {
+    font-size: 6em;
+  }
 }
 
 h2,
@@ -33,6 +43,7 @@ h4 {
   font-family: pt-sans;
   letter-spacing: .05em;
   line-height: 1.2em;
+  margin-bottom: 1em;
   text-align: left;
 }
 
@@ -46,7 +57,8 @@ h2 {
 h3 {
     color: $white;
     letter-spacing: .06em;
-    margin-top: .5em;
+
+    margin-bottom: 1em;
 }
 
 h4 {
@@ -69,7 +81,7 @@ hr.shale-yellow {
   background-color: $yellow;
   border: 0 none;
   height: 2px;
-  margin: 1em 0;
+  margin-bottom: 1em;
 }
 
 // story-content
@@ -79,10 +91,16 @@ table {
   font-size: .9em;
   font-family: pt-sans;
   letter-spacing: 1px;
+
+  @include media($bp-table) {
+    border-top: 0;
+  }
+
 }
 
 th {
   color: $white;
+  border-bottom: 0;
   font-weight: 800;
   font-size: 1em;
   line-height: 1.2em;

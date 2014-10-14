@@ -20,11 +20,15 @@
     h3 {
       background-color: transparentize($red, .5);
       color: $white;
-      top: 4.5em;
+      top: 2.5em;
       padding: 1em;
       position: absolute;
       text-align: left;
       width: 200px;
+
+      &:hover {
+        background-color: transparentize($red, .1);
+      }
     }
 
     p {
@@ -36,6 +40,12 @@
     }
   }
 
+  .flex-direction-nav {
+    .flex-next,
+    .flex-prev {
+      top: 50% !important;
+    }
+  }
   .flex-control-paging li a {
     background: $light-denim;
     border-radius: 20px;

@@ -3,12 +3,48 @@
 }
 
 .data-box {
-  @extend %content-block;
-  margin-top: 1em;
+  display: block;
+  position: relative;
+  margin-bottom: 1em;
+  text-align: center;
+  vertical-align: middle;
+  @include span-columns(12);
 
-  @include media($bp-shale-lg) {
-    @include span-columns (6 of 12);
-    @include shift(1);
+  @extend %content-block;
+
+  img {
+    display: none;
   }
 
+  @include media($bp-shale-med) {
+    @include span-columns(10 of 12);
+    @include shift(1);
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+
+  @include media($bp-shale-lg) {
+    @include span-columns(12);
+    @include shift(0);
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+}
+
+.data {
+  @include media($bp-shale-med) {
+    @include span-columns(6 of 10);
+  }
+
+  @include media($bp-shale-lg) {
+    @include span-columns(8 of 12);
+  }
 }
