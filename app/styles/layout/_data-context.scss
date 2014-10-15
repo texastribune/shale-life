@@ -17,7 +17,7 @@
   }
 
   @include media($bp-shale-med) {
-    @include span-columns(10 of 12);
+    @include span-columns(10);
     @include shift(1);
 
     img {
@@ -41,10 +41,12 @@
 
 .data {
   @include media($bp-shale-med) {
-    @include span-columns(6 of 10);
+    @include span-columns(5 of 10);
+    @include omega();
   }
 
   @include media($bp-shale-lg) {
-    @include span-columns(8 of 12);
+    @include span-columns(6 of 10);
+    @include omega();
   }
 }

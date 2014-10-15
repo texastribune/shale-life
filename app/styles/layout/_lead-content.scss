@@ -157,38 +157,6 @@
   }
 }
 
-.facebook,
-.twitter {
-  display: inline-block;
-  height: 2em;
-  margin: 0 .25em 1em .25em;
-  width: 2em;
-}
-
-.facebook {
-  background: url(/images/icons/ShaleLife-img-facebook-white002.png) no-repeat;
-  background-position: center center;
-  background-size: cover;
-
-  &:hover {
-    background: url(/images/icons/ShaleLife-img-facebook-onhover002.png) no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
-}
-
-.twitter {
-  background: url(/images/icons/ShaleLife-img-twitter-white.png) no-repeat;
-  background-position: center center;
-  background-size: cover;
-
-  &:hover {
-    background: url(/images/icons/ShaleLife-img-twitter-onhover.png) no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
-}
-
 .story-box {
   background-color: $tan-transparent;
 }
@@ -227,15 +195,18 @@
 
 }
 
-.map {
+.map,
+.box-ad {
   @include span-columns(12);
 
   @include media($bp-shale-lg) {
     @include span-columns(4 of 10);
+    @include omega();
   }
 
   @include media($bp-shale-med) {
     @include span-columns(4 of 10);
+    @include omega();
   }
 
   img {
@@ -246,4 +217,16 @@
     color: $off-black;
     text-align: center;
   }
+}
+
+.box-ad {
+  float: right;
+  width: 350px;
+  height: 250px;
+}
+
+.banner-ad {
+
+  width: 728px;
+  height: 90px;
 }
