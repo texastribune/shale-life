@@ -69,7 +69,7 @@ $(document).ready(function() {
   });
 
   setHeight('.story-box', '.story');
-  setHeight('.banner', window);
+  setHeight('.landing-banner', window);
 });
 
 var waitForIt = (function () {
@@ -86,7 +86,7 @@ var waitForIt = (function () {
 })();
 
 $(window).resize(function() {
-  // setHeight('.banner', window);
+  setHeight('.landing-banner', window);
   $('.lead-header').css('max-width', $(window).outerWidth());
   waitForIt(function(){
     positionNav('nav-ref');
