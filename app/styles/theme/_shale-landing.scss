@@ -27,26 +27,38 @@ $lead-image-url: 'http://placekitten.com/1000/800';
   margin-top: 5%;
   vertical-align: middle;
 
+  h1 {
+    font-size: 7em;
+  }
+
+  @include media($bp-landing-small) {
+    @include span-columns(12);
+    @include shift(0);
+
+    h1 {
+      font-size: 10em;
+      // text-align: right;
+    }
+  }
+
+
+  @include media($bp-landing-medium) {
+    @include span-columns(10);
+    @include shift(1);
+
+    h1 {
+      font-size: 13em;
+      // text-align: right;
+    }
+  }
+
   @include media($bp-landing-large) {
     @include span-columns(10);
     @include shift(1);
-  }
 
-  h1 {
-    font-size: 7em;
-    text-align: right;
-
-    @include media($bp-landing-small) {
-      text-align: left;
-    }
-
-    @include media($bp-landing-medium) {
-      font-size: 10em;
-      text-align: left;
-    }
-     @include media($bp-landing-large) {
+    h1 {
       font-size: 15em;
-      text-align: left;
+      // text-align: left;
     }
   }
 
@@ -64,16 +76,29 @@ $lead-image-url: 'http://placekitten.com/1000/800';
 
 }
 
+.the-shale {
+  h1 {
+    margin-top: .25em;
+  }
+}
+
 .life {
+  h1 {
+    margin-bottom: 0;
+  }
+
   @include media($bp-landing-large) {
     @include span-columns(4);
+    h1 {
+     margin-bottom: .25em;
+    }
   }
 }
 
 .subtitle,
 .share-project {
   @include media($bp-landing-large) {
-    @include span-columns(6);
+    @include span-columns(7);
   }
 }
 
@@ -95,108 +120,19 @@ $lead-image-url: 'http://placekitten.com/1000/800';
 }
 
 .share-project {
+  @include span-columns(4);
   a {
-    text-align: center;
+    text-align: right;
   }
   margin: 0;
-
-  // @include media($bp-landing-tiny) {
-  //   float: right;
-  //   margin: .5em;
-  // }
-
-  // @include media($bp-landing-small) {
-  //   float: right;
-  //   margin: .5em;
-  // }
-
-  // @include media($bp-landing-medium) {
-  //   float: right;
-  //   margin: .5em;
-  // }
-
-  // @include media($bp-landing-large) {
-  //   float: right;
-  //   margin: .5em;
-  // }
 }
 
 .explore {
-  color: $white;
-  p {
-    text-align: center;
+  @include span-columns(8);
+  text-align: left;
+  margin-bottom: 1em;
+
+  @include media($bp-landing-large) {
+    @include span-columns(4);
   }
-  @include span-columns(12);
-
 }
-
-// .story-wrapper {
-//   @include breakpoint(small, $bp-landing-small) {
-//     @include span-columns(6);
-//     @include omega(2n);
-//   }
-//   @include breakpoint(med, $bp-landing-medium) {
-//     @include omega-reset(2n);
-//     @include span-columns(4);
-//     @include omega(3n);
-//   }
-//   @include breakpoint(large, $bp-landing-large) {
-//     @include omega-reset(3n);
-//     @include span-columns(3);
-//     @include omega(4n);
-//   }
-// }
-
-// .story-wrapper > .story-box {
-//   img {
-//       width: 100%;
-//     }
-// }
-
-
-// .story-wrapper {
-//   div.story-box {
-//     display: inline-block;
-
-//     img {
-//       width: 100%;
-//     }
-//   }
-
-//   @include breakpoint(tiny) {
-//     div.story-box {
-//       border: 1px solid white;
-//       width: 100%;
-//     }
-//   }
-
-//   @include breakpoint(small) {
-//     div.story-box {
-//       border: 1px solid white;
-//       width: 50%;
-//     }
-//   }
-
-//   @include breakpoint(med) {
-//     div.story-box {
-//       border: 1px solid white;
-//       width: 33.3333%;
-//     }
-//   }
-
-//   @include breakpoint(large) {
-//     div.story-box {
-//       border: 1px solid white;
-//       width: 25%;
-//     }
-//   }
-
-  // @include media($bp-landing-large) {
-  //   div {
-  //     @include span-columns(12 / 4 of 12);
-  //     @include omega(4+n);
-  //   }
-  // }
-
-
-// }
