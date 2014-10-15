@@ -140,18 +140,22 @@ $lead-image-url: 'http://placekitten.com/1000/800';
 
 .thumbnail {
   display: inline;
+  font-size: 0;
+  line-height: 0;
+  margin-top: -1px;
 }
 
 .square {
+  // width: 25%;
   img {
-    width: 24.5%;
+    width: 25%;
   }
 }
 
 .wide {
-  // width: 49%;
+  // width: 50%;
   img {
-    width: 49.5%;
+    width: 50%;
   }
 }
 
