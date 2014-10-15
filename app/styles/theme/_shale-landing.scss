@@ -136,3 +136,11 @@ $lead-image-url: 'http://placekitten.com/1000/800';
     @include span-columns(4);
   }
 }
+
+
+.square-thumbnail,
+.wide-thumbnail,
+.tall-thumbnail,
+.lg-square-thumbnail {
+  display: inline;
+}
