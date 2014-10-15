@@ -71,7 +71,7 @@ $lead-image-url: 'http://placekitten.com/1000/800';
 }
 
 .subtitle,
-.about-share-row {
+.share-project {
   @include media($bp-landing-large) {
     @include span-columns(6);
   }
@@ -100,25 +100,25 @@ $lead-image-url: 'http://placekitten.com/1000/800';
   }
   margin: 0;
 
-  @include media($bp-landing-tiny) {
-    float: right;
-    margin: .5em;
-  }
+  // @include media($bp-landing-tiny) {
+  //   float: right;
+  //   margin: .5em;
+  // }
 
-  @include media($bp-landing-small) {
-    float: right;
-    margin: .5em;
-  }
+  // @include media($bp-landing-small) {
+  //   float: right;
+  //   margin: .5em;
+  // }
 
-  @include media($bp-landing-medium) {
-    float: right;
-    margin: .5em;
-  }
+  // @include media($bp-landing-medium) {
+  //   float: right;
+  //   margin: .5em;
+  // }
 
-  @include media($bp-landing-large) {
-    float: right;
-    margin: .5em;
-  }
+  // @include media($bp-landing-large) {
+  //   float: right;
+  //   margin: .5em;
+  // }
 }
 
 .explore {

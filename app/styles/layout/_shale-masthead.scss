@@ -13,14 +13,38 @@ $bp-masthead: new-breakpoint(max-width 480px);
     padding-left: .5em;
   }
 
-  i {
+  i,
+  h3 {
     color: $white;
     float: right;
+  }
+
+  i {
     font-size: 2em;
-    padding-right: .5em;
+    padding: .1em .5em 0 0;
+  }
+
+  h3 {
+    font-size: 1em;
+    text-transform: uppercase;
+    border-left: 2px solid $yellow;
+    padding: .5em;
+  }
+
+  a {
+    color: $white;
   }
 }
 
+.more-stories {
+  float: right;
+  visibility: visible;
+  padding: .5em 1em;
+
+  @include media($bp-masthead) {
+    visibility: hidden;
+  }
+}
 .trib-logo.desktop {
   display: inline-block;
 
