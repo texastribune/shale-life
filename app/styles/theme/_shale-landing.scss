@@ -83,10 +83,6 @@ $lead-image-url: 'http://placekitten.com/1000/800';
   margin-top: 1.2em;
 }
 
-.about-share-row {
-
-}
-
 .about-button {
   border: 2px solid $yellow;
   float: left;
@@ -99,10 +95,40 @@ $lead-image-url: 'http://placekitten.com/1000/800';
 }
 
 .share-project {
-  float: right;
-  margin: .5em;
+  a {
+    text-align: center;
+  }
+  margin: 0;
+
+  @include media($bp-landing-tiny) {
+    float: right;
+    margin: .5em;
+  }
+
+  @include media($bp-landing-small) {
+    float: right;
+    margin: .5em;
+  }
+
+  @include media($bp-landing-medium) {
+    float: right;
+    margin: .5em;
+  }
+
+  @include media($bp-landing-large) {
+    float: right;
+    margin: .5em;
+  }
 }
 
+.explore {
+  color: $white;
+  p {
+    text-align: center;
+  }
+  @include span-columns(12);
+
+}
 
 // .story-wrapper {
 //   @include breakpoint(small, $bp-landing-small) {
