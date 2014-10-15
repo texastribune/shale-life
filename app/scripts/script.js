@@ -70,6 +70,18 @@ $(document).ready(function() {
 
   setHeight('.story-box', '.story');
   setHeight('.landing-banner', window);
+
+  // var $container = $('#landing-grid').masonry();
+
+  // // layout Masonry again after all images have loaded
+  // $container.imagesLoaded( function() {
+  //   $container.masonry({
+  //     itemSelector: '.thumbnail',
+  //     columnWidth: 100,
+  //     gutterWidth: 0
+  //   });
+  // });
+
 });
 
 var waitForIt = (function () {
