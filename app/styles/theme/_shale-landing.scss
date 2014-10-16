@@ -141,12 +141,15 @@ $lead-image-url: 'http://placekitten.com/1000/800';
 .thumbnail {
   display: inline-block;
   position: relative;
+  border: 1px solid black;
 
   h3 {
     background-color: transparentize($red, .5);
     color: $white;
     position: absolute;
     text-align: left;
+    bottom: 10%;
+    padding: .25em;
 
     &:hover {
       background-color: transparentize($red, .1);

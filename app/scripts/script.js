@@ -7,11 +7,19 @@ function setHeight(target, reference) {
 
 // Set thumbnail heights on landing based on width of square thumbnails
 function setThumbnails() {
-  var refWidth = $('.square').width();
-  $('.square').css('height', refWidth);
-  $('.tall').css('height', refWidth*2);
-  $('.wide').css('height', refWidth);
-  $('.lg-square').css('height', refWidth*2);
+  if ($(window).width() < 500) {
+    var refWidth = $(window).width();
+    $('.square').css('width', refWidth).css('height', refWidth);
+    $('.tall').css('width', refWidth).css('height', refWidth*2)
+    $('.wide').css('width', refWidth).css('height', refWidth/2);
+    $('.lg-square').css('width', refWidth).css('height', refWidth);
+  } else {
+    var refWidth = $(window).width()/4;
+    $('.square').css('height', refWidth).css('width', refWidth);
+    $('.tall').css('height', refWidth*2).css('width', refWidth);
+    $('.wide').css('height', refWidth).css('width', refWidth*2);
+    $('.lg-square').css('height', refWidth*2).css('width', refWidth*2);
+  }
 }
 
 // Set position of Slideshow direction buttons
