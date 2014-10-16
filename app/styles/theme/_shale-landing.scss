@@ -1,7 +1,7 @@
 $bp-landing-large: new-breakpoint(min-width 1000px);
-$bp-landing-medium: new-breakpoint(min-width 800px max-width 999px);
-$bp-landing-small: new-breakpoint(min-width 600px max-width 799px);
-$bp-landing-tiny: new-breakpoint(min-width 400px max-width 599px);
+$bp-landing-medium: new-breakpoint(min-width 600px max-width 999px);
+$bp-landing-small: new-breakpoint(min-width 400px max-width 599px);
+$bp-landing-tiny: new-breakpoint(min-width 399px);
 
 $lead-image-url: 'http://placekitten.com/1000/800';
 
@@ -28,7 +28,7 @@ $lead-image-url: 'http://placekitten.com/1000/800';
   vertical-align: middle;
 
   h1 {
-    font-size: 7em;
+    font-size: 5em;
   }
 
   @include media($bp-landing-small) {
@@ -140,9 +140,20 @@ $lead-image-url: 'http://placekitten.com/1000/800';
 
 .thumbnail {
   display: inline;
+  position: relative;
   font-size: 0;
   line-height: 0;
-  margin-top: -1px;
+
+  h3 {
+    background-color: transparentize($red, .5);
+    color: $white;
+    position: absolute;
+    text-align: left;
+
+    &:hover {
+      background-color: transparentize($red, .1);
+    }
+  }
 }
 
 .square {
