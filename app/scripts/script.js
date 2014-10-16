@@ -3,19 +3,12 @@ function setHeight(target, reference) {
   $(target).css('height', refHeight);
 }
 
-function setWide(target) {
-  var refHeight = $(target).width();
-  $(target).css('height', refHeight/2);
-}
-
-function setSquare(target) {
-  var refHeight = $(target).width();
-  $(target).css('height', refHeight);
-}
-
-function setTall(target) {
-  var refHeight = $(target).width();
-  $(target).css('height', refHeight*2);
+function setThumbnails() {
+  var refWidth = $('.square').width();
+  $('.square').css('height', refWidth);
+  $('.tall').css('height', refWidth*2);
+  $('.wide').css('height', refWidth);
+  $('.lg-square').css('height', refWidth*2);
 }
 
 function setPosition(target, reference, x) {
@@ -97,10 +90,7 @@ $(document).ready(function() {
   //   });
   // });
 
-  setWide('.wide');
-  setSquare('.square');
-  setSquare('.lg-square');
-  setTall('.tall');
+  setThumbnails();
 });
 
 var waitForIt = (function () {
@@ -125,8 +115,5 @@ $(window).resize(function() {
     setHeight('#slideshow > .flex-viewport', '.flex-active-slide');
   }, 200, "some unique string");
 
-  setWide('.wide');
-  setSquare('.square');
-  setSquare('.lg-square');
-  setTall('.tall');
+  setThumbnails();
 });
