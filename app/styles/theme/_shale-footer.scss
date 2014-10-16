@@ -37,11 +37,8 @@ footer {
 .footer-logo {
   padding-top: 1em;
   img {
-    float: right;
     margin-bottom: .5em;
-  }
-  p {
-    text-align: right;
+    max-width: 200px;
   }
 }
 .member-push {
@@ -57,7 +54,6 @@ footer {
   }
 
   .button {
-    background-color: transparentize($yellow, .1);
     color: $off-black;
     font-family: pt-sans-narrow;
     font-weight: 800;
@@ -65,10 +61,6 @@ footer {
     float: right;
     margin: 1.5em 0 0;
     text-transform: uppercase;
-
-    &:hover {
-      background-color: $yellow;
-    }
   }
 
   @include media($bp-footer-med) {

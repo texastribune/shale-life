@@ -45,7 +45,12 @@ $bp-masthead: new-breakpoint(max-width 480px);
     visibility: hidden;
   }
 }
-.trib-logo.desktop {
+
+.trib-shale-logo {
+  height: 2.5em;
+}
+
+.trib-shale-logo.desktop {
   display: inline-block;
 
   @include media($bp-masthead) {
@@ -53,7 +58,7 @@ $bp-masthead: new-breakpoint(max-width 480px);
   }
 }
 
-.trib-logo.mobile {
+.trib-shale-logo.mobile {
   display: none;
 
   @include media($bp-masthead) {
