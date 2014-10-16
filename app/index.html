@@ -76,82 +76,8 @@
     <h3>This is test</h3>
   </div>
   <div style="clear: both;"></div>
-
-
-<!--     <img class="wide thumbnail" src="http://placehold.it/400x200">
-
-
-    <img class="square thumbnail" src="http://placehold.it/200x200">
-
-
-    <img class="square thumbnail" src="http://placehold.it/200x200">
-
-
-    <img class="tall left thumbnail" src="http://placehold.it/200x400">
-
-
-    <img class="square thumbnail" src="http://placehold.it/200x200">
-  </div>
-  <div class="wide thumbnail">
-    <img src="http://placehold.it/400x200">
-  </div>
-  <div class="square thumbnail">
-    <img src="http://placehold.it/200x200">
-  </div>
-  <div class="wide thumbnail">
-    <img src="http://placehold.it/400x200">
-  </div>
-  <div class="lg-square left thumbnail">
-    <img src="http://placehold.it/400x400">
-  </div>
-  <div class="square thumbnail">
-    <img src="http://placehold.it/200x200">
-  </div>
-    <div class="tall right thumbnail">
-    <img src="http://placehold.it/200x400">
-  </div>
-  <div class="square thumbnail">
-    <img src="http://placehold.it/200x200">
-  </div>
-  <div class="square thumbnail">
-    <img src="http://placehold.it/200x200">
-  </div>
-  <div class="square thumbnail">
-    <img src="http://placehold.it/200x200">
-  </div>
-  <div class="wide thumbnail">
-    <img src="http://placehold.it/400x200">
-  </div>
- -->
 </section>
 
 
 {% endblock %}
 
-{% block extra_script %}
-
-<!-- <script>
-    new Imager({
-      availableWidths: [200, 260, 320, 600],
-      availablePixelRatios: [1, 1.3, 2]
-    });
-</script> -->
-
-<script>
-    var imgrPlaceholderA = new Imager('.delayed-image-load-wide', {
-        availableWidths: [200, 400, 800],
-        widthInterpolator: function(width) {
-          return width + 'x' + (width/2);
-        }
-    });
-
-    var imgrPlaceholderB = new Imager('.delayed-image-load-square', {
-        availableWidths: [200, 400, 600],
-        widthInterpolator: function(width) {
-          return width + 'x' + width;
-        }
-    });
-</script>
-<script type="text/javascript" src="/scripts/masonry.pkgd.min.js"></script>
-
-{% endblock %}
