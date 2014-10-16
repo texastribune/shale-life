@@ -7,18 +7,19 @@ function setHeight(target, reference) {
 
 // Set thumbnail heights on landing based on width of square thumbnails
 function setThumbnails() {
+  var refWidth = $(window).width();
+  var refWidthWide = $(window).width()/4;
+
   if ($(window).width() < 500) {
-    var refWidth = $(window).width();
     $('.square').css('width', refWidth).css('height', refWidth);
     $('.tall').css('width', refWidth).css('height', refWidth*2)
     $('.wide').css('width', refWidth).css('height', refWidth/2);
     $('.lg-square').css('width', refWidth).css('height', refWidth);
   } else {
-    var refWidth = $(window).width()/4;
-    $('.square').css('height', refWidth).css('width', refWidth);
-    $('.tall').css('height', refWidth*2).css('width', refWidth);
-    $('.wide').css('height', refWidth).css('width', refWidth*2);
-    $('.lg-square').css('height', refWidth*2).css('width', refWidth*2);
+    $('.square').css('height', refWidthWide).css('width', refWidthWide);
+    $('.tall').css('height', refWidthWide*2).css('width', refWidthWide);
+    $('.wide').css('height', refWidthWide).css('width', refWidthWide*2);
+    $('.lg-square').css('height', refWidthWide*2).css('width', refWidthWide*2);
   }
 }
 
@@ -110,6 +111,15 @@ $(document).ready(function() {
 
 // Reset heights/positions on window resize
 $(window).resize(function() {
+  setHeight('.landing-banner', window);
+  $('.lead-header').css('max-width', $(window).outerWidth());
+  positionNav('nav-ref');
+  setHeight('.story-box', '.story');
+  setHeight('#slideshow > .flex-viewport', '.flex-active-slide');
+  setThumbnails();
+});
+
+$(window).on( "orientationchange", function() {
   setHeight('.landing-banner', window);
   $('.lead-header').css('max-width', $(window).outerWidth());
   positionNav('nav-ref');
