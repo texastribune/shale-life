@@ -139,10 +139,8 @@ $lead-image-url: 'http://placekitten.com/1000/800';
 
 
 .thumbnail {
-  display: inline;
+  display: inline-block;
   position: relative;
-  font-size: 0;
-  line-height: 0;
 
   h3 {
     background-color: transparentize($red, .5);
@@ -156,32 +154,6 @@ $lead-image-url: 'http://placekitten.com/1000/800';
   }
 }
 
-.square {
-  // width: 25%;
-  img {
-    width: 25%;
-  }
-}
-
-.wide {
-  // width: 50%;
-  img {
-    width: 50%;
-  }
-}
-
-.lg-square {
-  width: 50%;
-  img {
-    width: 100%;
-  }
-}
-.tall {
-  width: 25%;
-  img {
-    width: 100%;
-  }
-}
 .left {
   float: left;
 }
@@ -190,3 +162,30 @@ $lead-image-url: 'http://placekitten.com/1000/800';
   float: right;
 }
 
+.wide {
+  background-image: url('http://placehold.it/400x200');
+  background-position: center center;
+  background-size: cover;
+  width: 50%;
+}
+
+.square {
+  background-image: url('http://placehold.it/200x200');
+  background-position: center center;
+  background-size: cover;
+  width: 25%;
+}
+
+.lg-square {
+  background-image: url('http://placehold.it/400x400');
+  background-position: center center;
+  background-size: cover;
+  width: 50%;
+}
+
+.tall {
+  background-image: url('http://placehold.it/200x400');
+  background-position: center center;
+  background-size: cover;
+  width: 25%;
+}

@@ -3,6 +3,21 @@ function setHeight(target, reference) {
   $(target).css('height', refHeight);
 }
 
+function setWide(target) {
+  var refHeight = $(target).width();
+  $(target).css('height', refHeight/2);
+}
+
+function setSquare(target) {
+  var refHeight = $(target).width();
+  $(target).css('height', refHeight);
+}
+
+function setTall(target) {
+  var refHeight = $(target).width();
+  $(target).css('height', refHeight*2);
+}
+
 function setPosition(target, reference, x) {
   var refTop = $(reference).height();
   // var refMargin = $(reference).css('margin-left');
@@ -82,6 +97,10 @@ $(document).ready(function() {
   //   });
   // });
 
+  setWide('.wide');
+  setSquare('.square');
+  setSquare('.lg-square');
+  setTall('.tall');
 });
 
 var waitForIt = (function () {
@@ -105,4 +124,9 @@ $(window).resize(function() {
     setHeight('.story-box', '.story');
     setHeight('#slideshow > .flex-viewport', '.flex-active-slide');
   }, 200, "some unique string");
+
+  setWide('.wide');
+  setSquare('.square');
+  setSquare('.lg-square');
+  setTall('.tall');
 });
