@@ -192,3 +192,7 @@ $lead-image-url: 'http://placekitten.com/1000/800';
   background-size: cover;
   width: 25%;
 }
+
+.hide-until-load {
+  visibility: hidden;
+}

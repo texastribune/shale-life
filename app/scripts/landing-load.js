@@ -21,6 +21,8 @@ function setThumbnails() {
     $('.wide').css('height', refWidthWide).css('width', refWidthWide*2);
     $('.lg-square').css('height', refWidthWide*2).css('width', refWidthWide*2);
   }
+
+  $('h3.hide-until-load').removeClass('hide-until-load');
 }
 
 // Create nice scroll on href='#id' clicks
