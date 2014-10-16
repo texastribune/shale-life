@@ -5,24 +5,6 @@ function setHeight(target, reference) {
   $(target).css('height', refHeight);
 }
 
-// Set thumbnail heights on landing based on width of square thumbnails
-function setThumbnails() {
-  var refWidth = $(window).width();
-  var refWidthWide = $(window).width()/4;
-
-  if ($(window).width() < 500) {
-    $('.square').css('width', refWidth).css('height', refWidth);
-    $('.tall').css('width', refWidth).css('height', refWidth*2)
-    $('.wide').css('width', refWidth).css('height', refWidth/2);
-    $('.lg-square').css('width', refWidth).css('height', refWidth);
-  } else {
-    $('.square').css('height', refWidthWide).css('width', refWidthWide);
-    $('.tall').css('height', refWidthWide*2).css('width', refWidthWide);
-    $('.wide').css('height', refWidthWide).css('width', refWidthWide*2);
-    $('.lg-square').css('height', refWidthWide*2).css('width', refWidthWide*2);
-  }
-}
-
 // Set position of Slideshow direction buttons
 function setPosition(targetA, targetB, reference, x) {
   var refTop = $(reference).height();
@@ -101,29 +83,19 @@ $(document).ready(function() {
 
   // Set height of tan box based on size of content inside
   setHeight('.story-box', '.story');
-
-  // Set height of landing banner to window size
-  setHeight('.landing-banner', window);
-
-  // Set height of thumbnails on landing
-  setThumbnails();
 });
 
 // Reset heights/positions on window resize
 $(window).resize(function() {
-  setHeight('.landing-banner', window);
   $('.lead-header').css('max-width', $(window).outerWidth());
   positionNav('nav-ref');
   setHeight('.story-box', '.story');
   setHeight('#slideshow > .flex-viewport', '.flex-active-slide');
-  setThumbnails();
 });
 
 $(window).on( "orientationchange", function() {
-  setHeight('.landing-banner', window);
   $('.lead-header').css('max-width', $(window).outerWidth());
   positionNav('nav-ref');
   setHeight('.story-box', '.story');
   setHeight('#slideshow > .flex-viewport', '.flex-active-slide');
-  setThumbnails();
 });
