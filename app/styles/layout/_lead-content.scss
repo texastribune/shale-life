@@ -1,3 +1,5 @@
+$bp-shale-ad: new-breakpoint(min-width 688px);
+
 .lead-content {
   background-color: lighten($masthead-black, 15%);
   display: table;
@@ -195,16 +197,10 @@
 
 }
 
-.map,
-.box-ad {
+.map {
   @include span-columns(12);
 
   @include media($bp-shale-lg) {
-    @include span-columns(4 of 10);
-    @include omega();
-  }
-
-  @include media($bp-shale-med) {
     @include span-columns(4 of 10);
     @include omega();
   }
@@ -219,6 +215,10 @@
   }
 }
 
+.ad-container {
+  margin: 0 auto;
+}
+
 .box-ad {
   float: right;
   width: 350px;
@@ -226,7 +226,6 @@
 }
 
 .banner-ad {
-
   width: 728px;
   height: 90px;
 }
