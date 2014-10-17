@@ -133,6 +133,22 @@
   }
 }
 
+.supporters-prompt {
+  // @extend %content-block;
+  @include span-columns(12);
+  margin: 0 0 .5em;
+
+  @include media($bp-shale-med) {
+    @include span-columns(8);
+    text-align: left;
+  }
+
+  @include media($bp-shale-lg) {
+    @include span-columns(8);
+    text-align: left;
+  }
+}
+
 // .slideshow-caption {
 //   @include span-columns(8);
 //   @include shift(4);

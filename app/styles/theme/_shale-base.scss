@@ -82,6 +82,10 @@ hr.shale-yellow {
   width: 100%;
 }
 
+.yellow {
+  color: $yellow;
+}
+
 // story-content
 
 table {
@@ -136,9 +140,9 @@ tr {
   background-position: center center;
   background-size: cover;
   &:hover {
+    background: url(/images/icons/ShaleLife-img-twitter-onhover.png) no-repeat;
     background-position: center center;
     background-size: cover;
-    background: url(/images/icons/ShaleLife-img-twitter-onhover.png) no-repeat;
   }
 }
 
