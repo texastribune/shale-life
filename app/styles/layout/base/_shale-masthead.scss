@@ -1,11 +1,10 @@
-/* Masthead override */
-
+// Masthead override
 $bp-masthead: new-breakpoint(min-width 800px);
 
 .branding {
   color: $white;
   font-size: 1em;
-  padding: 0.75em .5em 0.375em;
+  padding: .75em .5em .375em;
   width: 0%;
 
   img {
@@ -25,10 +24,10 @@ $bp-masthead: new-breakpoint(min-width 800px);
   }
 
   h3 {
-    font-size: 1em;
-    text-transform: uppercase;
     border-left: 2px solid $yellow;
+    font-size: 1em;
     padding: .5em;
+    text-transform: uppercase;
   }
 
   a {
@@ -48,20 +47,20 @@ $bp-masthead: new-breakpoint(min-width 800px);
 
 .trib-shale-logo {
   height: 2.5em;
-}
 
-.trib-shale-logo.mobile {
-  display: inline-block;
-
-  @include media($bp-masthead) {
-    display: none;
-  }
-}
-
-.trib-shale-logo.desktop {
-  display: none;
-
-  @include media($bp-masthead) {
+  &.mobile {
     display: inline-block;
+
+    @include media($bp-masthead) {
+      display: none;
+    }
+  }
+
+  &.desktop {
+    display: none;
+
+    @include media($bp-masthead) {
+      display: inline-block;
+    }
   }
 }

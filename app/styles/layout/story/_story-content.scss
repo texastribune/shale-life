@@ -1,5 +1,3 @@
-$bp-shale-ad: new-breakpoint(min-width 688px);
-
 .lead-content {
   background-color: lighten($masthead-black, 15%);
   display: table;
@@ -46,6 +44,22 @@ $bp-shale-ad: new-breakpoint(min-width 688px);
 
 .lead-header {
   padding-top: 3em;
+
+  h1 {
+    @include media($bp-landing-large) {
+      font-size: 12em;
+    }
+
+    @include media($bp-landing-medium) {
+      font-size: 9em;
+    }
+
+    @include media($bp-landing-small) {
+      font-size: 5em;
+    }
+
+  }
+
 }
 
 .lead-text {
@@ -180,6 +194,10 @@ $bp-shale-ad: new-breakpoint(min-width 688px);
     @include span-columns(6 of 10);
   }
 
+  @include media($bp-shale-small) {
+    @include span-columns(6 of 10);
+  }
+
   p {
     color: $off-black;
     font-weight: 500;
@@ -200,6 +218,16 @@ $bp-shale-ad: new-breakpoint(min-width 688px);
   @include span-columns(12);
 
   @include media($bp-shale-lg) {
+    @include span-columns(4 of 10);
+    @include omega();
+  }
+
+  @include media($bp-shale-med) {
+    @include span-columns(4 of 10);
+    @include omega();
+  }
+
+  @include media($bp-shale-small) {
     @include span-columns(4 of 10);
     @include omega();
   }
