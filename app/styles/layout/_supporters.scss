@@ -42,3 +42,45 @@
     padding-top: 0;
   }
 }
+
+.supporters {
+  @extend %content-block;
+  @include span-columns(12);
+  margin: 2em 0;
+
+  p {
+    color: $white;
+    font-size: 1.3em;
+    margin: 0 1em .5em 0;
+  }
+
+  @include media($bp-shale-lg) {
+    @include span-columns(10);
+    @include shift(1);
+
+    p {
+      display: inline-block;
+
+      width: 30%;
+    }
+  }
+
+  @include media($bp-shale-med) {
+    @include span-columns(10);
+    @include shift(1);
+
+    p {
+      display: inline-block;
+      width: 46%;
+    }
+  }
+
+  @include media($bp-shale-small) {
+    p {
+      display: inline-block;
+      width: 46%;
+    }
+  }
+}
+
+
