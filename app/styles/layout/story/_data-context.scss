@@ -1,4 +1,4 @@
-$bp-shale-ad: new-breakpoint(min-width 866px);
+$bp-shale-ad: new-breakpoint(min-width 870px);
 
 .data-context {
   position: relative;
@@ -42,7 +42,9 @@ $bp-shale-ad: new-breakpoint(min-width 866px);
 }
 
 .data {
-  @include media($bp-shale-med) {
+  @include span-columns(12);
+
+  @include media($bp-shale-ad) {
     @include span-columns(5 of 10);
     @include omega();
   }
@@ -54,15 +56,17 @@ $bp-shale-ad: new-breakpoint(min-width 866px);
 }
 
 .ad-container {
-  margin: 0 auto;
+  margin: 1em auto;
 }
 
 .box-ad {
-  float: none;
-  width: 350px;
-  height: 250px;
+  display: none;
+
   @include media($bp-shale-ad) {
+    display: block;
     float: right;
+    width: 350px;
+    height: 250px;
   }
 }
 
