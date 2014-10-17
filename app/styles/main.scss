@@ -11,13 +11,13 @@ $teal-transparent: transparentize($teal, .7);
 @import 'helpers/shale-colors';
 
 @import 'theme/shale-base';
-@import 'theme/shale-landing';
-@import 'theme/proto-page';
+@import 'theme/story-specifics';
 @import 'theme/flexslider';
-@import 'theme/shale-footer';
+@import 'layout/shale-landing';
+@import 'layout/base/shale-masthead';
+@import 'layout/base/shale-footer';
+@import 'layout/base/nav-carousel';
+@import 'layout/story/story-content';
+@import 'layout/story/story-slideshow';
+@import 'layout/story/data-context';
 
-@import 'layout/shale-masthead';
-@import 'layout/lead-content';
-@import 'layout/lead-slideshow';
-@import 'layout/data-context';
-@import 'layout/nav-carousel';

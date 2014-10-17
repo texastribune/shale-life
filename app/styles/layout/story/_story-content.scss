@@ -19,7 +19,7 @@ $bp-shale-ad: new-breakpoint(min-width 688px);
   top: 0;
 
   @include media($bp-shale-lg) {
-      background-image: url('/images/ShaleLife-background-placeholder.gif');
+    background-image: url('/images/ShaleLife-background-placeholder.gif');
   }
 }
 
@@ -27,14 +27,12 @@ $bp-shale-ad: new-breakpoint(min-width 688px);
 
 .lead-header,
 .story-box {
+  @extend %content-block;
   display: block;
   position: relative;
   text-align: center;
   vertical-align: middle;
   @include span-columns(12);
-
-  @extend %content-block;
-
   @include media($bp-shale-med) {
     @include span-columns(10 of 12);
     @include shift(1);
@@ -61,6 +59,7 @@ $bp-shale-ad: new-breakpoint(min-width 688px);
 
   a {
     text-decoration: none;
+
     &:hover {
       color: $light-denim;
     }
@@ -189,9 +188,9 @@ $bp-shale-ad: new-breakpoint(min-width 688px);
 
   .byline {
     color: $dark-denim;
+    font-size: .95em;
     font-style: italic;
     font-weight: 400;
-    font-size: .95em;
     line-height: 1.3em;
   }
 
@@ -221,11 +220,11 @@ $bp-shale-ad: new-breakpoint(min-width 688px);
 
 .box-ad {
   float: right;
-  width: 350px;
   height: 250px;
+  width: 350px;
 }
 
 .banner-ad {
-  width: 728px;
   height: 90px;
+  width: 728px;
 }
