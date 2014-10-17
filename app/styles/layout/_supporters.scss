@@ -7,6 +7,15 @@
   h3 {
     font-size: 1.3em;
   }
+
+  a {
+    border-bottom: 1px solid $yellow;
+
+    &:hover {
+      color: $light-denim;
+      border-bottom: 1px solid $light-denim;
+    }
+  }
   @include media($bp-shale-lg) {
     @include span-columns(8 of 10);
     border-right: 2px solid $yellow;
