@@ -1,0 +1,121 @@
+$bp-thumbnails: new-breakpoint(min-width 500px);
+
+//WIDE
+.LOVING_COUNTY {
+  .lead-image {
+    background-image: url('/images/ShaleLife-background-placeholder.gif');
+
+    @include media($bp-landing-large) {
+      background-image: url('/images/ShaleLife-background-placeholder.gif');
+    }
+  }
+
+  &.thumbnail {
+    background-image: url('http://placehold.it/400x200');
+
+    @include media($bp-thumbnails) {
+      background-image: url('http://placehold.it/400x200');
+    }
+  }
+}
+
+//SQUARE
+.COTTON_FARMERS {
+  .lead-image {
+    background-image: url('/images/ShaleLife-background-placeholder.gif');
+
+    @include media($bp-landing-large) {
+      background-image: url('/images/ShaleLife-background-placeholder.gif');
+    }
+  }
+
+  &.thumbnail {
+    background-image: url('http://placehold.it/200x200');
+
+    @include media($bp-thumbnails) {
+      background-image: url('http://placehold.it/200x200');
+    }
+  }
+}
+
+//TALL
+.RESPONDERS {
+  .lead-image {
+    background-image: url('/images/ShaleLife-background-placeholder.gif');
+
+    @include media($bp-landing-large) {
+      background-image: url('/images/ShaleLife-background-placeholder.gif');
+    }
+  }
+
+  &.thumbnail {
+    background-image: url('http://placehold.it/200x400');
+
+    @include media($bp-thumbnails) {
+      background-image: url('http://placehold.it/200x400');
+    }
+  }
+}
+
+//Big square
+.EAGLE_FORD_ACCIDENTS {
+  .lead-image {
+    background-image: url('/images/ShaleLife-background-placeholder.gif');
+
+    @include media($bp-landing-large) {
+      background-image: url('/images/ShaleLife-background-placeholder.gif');
+    }
+  }
+
+  &.thumbnail {
+    background-image: url('http://placehold.it/400x400');
+
+    @include media($bp-thumbnails) {
+      background-image: url('http://placehold.it/400x400');
+    }
+  }
+}
+
+.KARNES {
+
+}
+
+.FOOTBALL {
+
+}
+
+.BUSES {
+
+}
+
+.CHALLENGE {
+
+}
+
+.OPPORTUNITY {
+
+}
+
+.AIR_QUALITY {
+
+}
+
+.COUNTING_HEADS {
+
+}
+
+.PRISONS {
+
+}
+
+.MAN_CAMPS {
+
+}
+
+.CROP_DUSTER {
+
+}
+
+.BIG_LAKE {
+
+}

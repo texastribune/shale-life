@@ -148,31 +148,20 @@ $lead-image-url: 'http://placekitten.com/1000/800';
   float: right;
 }
 
-.wide {
-  background-image: url('http://placehold.it/400x200');
-  background-position: center center;
-  background-size: cover;
-  width: 50%;
-}
-
-.square {
-  background-image: url('http://placehold.it/200x200');
-  background-position: center center;
-  background-size: cover;
-  width: 25%;
-}
-
+.wide,
+.square,
+.tall,
 .lg-square {
-  background-image: url('http://placehold.it/400x400');
   background-position: center center;
   background-size: cover;
+}
+.wide,
+.lg-square {
   width: 50%;
 }
 
+.square,
 .tall {
-  background-image: url('http://placehold.it/200x400');
-  background-position: center center;
-  background-size: cover;
   width: 25%;
 }
 
