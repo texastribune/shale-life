@@ -1,6 +1,6 @@
 /* Masthead override */
 
-$bp-masthead: new-breakpoint(max-width 480px);
+$bp-masthead: new-breakpoint(min-width 800px);
 
 .branding {
   color: $white;
@@ -37,12 +37,12 @@ $bp-masthead: new-breakpoint(max-width 480px);
 }
 
 .more-stories {
-  float: right;
-  visibility: visible;
-  padding: .5em 1em;
+  visibility: hidden;
 
   @include media($bp-masthead) {
-    visibility: hidden;
+    float: right;
+    visibility: visible;
+    padding: .5em 1em;
   }
 }
 
@@ -50,7 +50,7 @@ $bp-masthead: new-breakpoint(max-width 480px);
   height: 2.5em;
 }
 
-.trib-shale-logo.desktop {
+.trib-shale-logo.mobile {
   display: inline-block;
 
   @include media($bp-masthead) {
@@ -58,7 +58,7 @@ $bp-masthead: new-breakpoint(max-width 480px);
   }
 }
 
-.trib-shale-logo.mobile {
+.trib-shale-logo.desktop {
   display: none;
 
   @include media($bp-masthead) {
