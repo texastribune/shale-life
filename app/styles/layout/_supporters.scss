@@ -1,8 +1,9 @@
 .supporters-prompt {
   @include span-columns(12);
-  border-bottom: 2px solid $yellow;
+  border-top: 2px solid $yellow;
+  // border-bottom: 2px solid $yellow;
   margin: 1em 2em 1.5em 0;
-  padding-right: 1.5em;
+  padding-top: 1.5em;
 
   h3 {
     font-size: 1.3em;
@@ -17,10 +18,10 @@
     }
   }
   @include media($bp-shale-lg) {
-    @include span-columns(8 of 10);
-    border-right: 2px solid $yellow;
-    border-bottom: 0;
-    text-align: left;
+    // @include span-columns(8 of 10);
+    // border-right: 2px solid $yellow;
+    // border-bottom: 0;
+    // text-align: left;
 
     h3 {
       font-size: 1.5em;
@@ -30,18 +31,18 @@
 
 }
 
-.share-supporters {
-  @include span-columns(12);
-  margin-bottom: 1em;
+// .share-supporters {
+//   @include span-columns(12);
+//   margin-bottom: 1em;
 
-  @include media($bp-shale-lg) {
-    @include span-columns(2);
-    @include omega();
-    border-top: 0;
-    margin: 1em 0 0;
-    padding-top: 0;
-  }
-}
+//   @include media($bp-shale-lg) {
+//     @include span-columns(2);
+//     @include omega();
+//     border-top: 0;
+//     margin: 1em 0 0;
+//     padding-top: 0;
+//   }
+// }
 
 .supporters {
   @extend %content-block;
