@@ -1,4 +1,5 @@
 var fs = require('fs');
+var marked = require('marked');
 var XLSX = require('xlsx');
 
 var SHEETS = [
@@ -38,9 +39,22 @@ SHEETS.forEach(function(sheet) {
     if (cell[0] === '!') { continue; }
     if (cell[0] === 'A') {
       var aCell = worksheet[cell];
-      var bCell = worksheet['B' + cell.match(/\d+/)[0]];
+      aCell = aCell ? aCell.v : '';
 
-      temp[aCell.v] = bCell ? bCell.v : '';
+      var cellNumber = cell.match(/\d+/)[0];
+
+      var bCell = worksheet['B' + cellNumber];
+      bCell = bCell ? bCell.v : '';
+
+      var cCell = worksheet['C' + cellNumber];
+      cCell = cCell ? cCell.v : '';
+
+
+      if (cCell === 'markdown') {
+        bCell = marked(bCell);
+      }
+
+      temp[aCell] = bCell;
     }
   }
 
