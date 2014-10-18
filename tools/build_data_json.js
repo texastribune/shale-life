@@ -2,6 +2,10 @@ var fs = require('fs');
 var marked = require('marked');
 var XLSX = require('xlsx');
 
+marked.setOptions({
+  smartypants: true
+});
+
 var SHEETS = [
   'META',
   'LANDING',
