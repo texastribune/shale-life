@@ -1,3 +1,4 @@
+'use strict';
 
 // Set element height based on height of reference element
 function setHeight(target, reference) {
@@ -93,7 +94,7 @@ $(window).resize(function() {
   setHeight('#slideshow > .flex-viewport', '.flex-active-slide');
 });
 
-$(window).on( "orientationchange", function() {
+$(window).on( 'orientationchange', function() {
   $('.lead-header').css('max-width', $(window).outerWidth());
   positionNav('nav-ref');
   setHeight('.story-box', '.story');
