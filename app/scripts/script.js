@@ -1,4 +1,6 @@
 'use strict';
+/* global YT */
+/* exported onYouTubeIframeAPIReady */
 
 // Set element height based on height of reference element
 function setHeight(target, reference) {
@@ -51,7 +53,6 @@ $(document).ready(function() {
   // Make videos responsive
   $('.video-wrapper').fitVids();
 
-
   //Create flexsliders
   // Top slideshow
   $('#slideshow').flexslider({
@@ -85,6 +86,31 @@ $(document).ready(function() {
   // Set height of tan box based on size of content inside
   setHeight('.story-box', '.story');
 });
+
+var tag = document.createElement('script');
+
+tag.src = 'https://www.youtube.com/iframe_api';
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+var player;
+
+var playButton = document.getElementById('js-play-button');
+
+function onPlayerReady(event) {
+  playButton.addEventListener('click', function() {
+    console.log(event);
+    event.target.playVideo();
+  });
+}
+
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('ytplayer', {
+    events: {
+      'onReady': onPlayerReady
+    }
+  });
+}
 
 // Reset heights/positions on window resize
 $(window).resize(function() {
