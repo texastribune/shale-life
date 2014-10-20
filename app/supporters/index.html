@@ -1,5 +1,15 @@
 {% extends 'app/templates/base.html' %}
 
+<!-- META data -->
+
+{% block title_row %}<title>Supporters | The Shale Life </title>{% endblock %}
+{% block description %}<meta name="description" content="{{ BUSES.SHORT_HEAD }}">{% endblock %}
+{% block og_description %}<meta property="og:description" content="{{ BUSES.SHORT_HEAD }}">{% endblock %}
+{% block og_title %}<meta property="og:title" content="Supporters | The Shale Life ">{% endblock %}
+{% block tw_title %}<meta name="twitter:title" content="Supporters | The Shale Life ">{% endblock %}
+
+
+<!-- Main Content -->
 {% block content %}
 
 <section class="lead-content">

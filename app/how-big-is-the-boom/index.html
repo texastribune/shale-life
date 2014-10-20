@@ -1,5 +1,20 @@
 {% extends 'app/templates/base.html' %}
 
+<!-- META data -->
+
+{% block title_row %}<title>{{ COUNTING_HEADS.SHORT_HEAD }} | The Shale Life </title>{% endblock %}
+{% block description %}<meta name="description" content="{{ COUNTING_HEADS.SHARE_TWEET }}">{% endblock %}
+{% block og_description %}<meta property="og:description" content="{{ COUNTING_HEADS.SHARE_TWEET }}">{% endblock %}
+{% block og_title %}<meta property="og:title" content="{{ COUNTING_HEADS.SHORT_HEAD }} | The Shale Life ">{% endblock %}
+{% block og_url %}<meta property="og:url" content="{{ COUNTING_HEADS.SHARE_URL }}">{% endblock %}
+{% block og_img %}<meta property="og:image" content="{{ COUNTING_HEADS.FACEBOOK_IMG }}">{% endblock %}
+{% block tw_title %}<meta name="twitter:title" content="{{ COUNTING_HEADS.SHORT_HEAD }} | The Shale Life ">{% endblock %}
+{% block tw_description %}<meta name="twitter:description" content="{{ COUNTING_HEADS.SHARE_TWEET }}">{% endblock %}
+{% block tw_url %}<meta name="twitter:url" content="{{ COUNTING_HEADS.SHARE_URL }}">{% endblock %}
+{% block tw_img %}<meta name="twitter:image" content="{{ COUNTING_HEADS.FACEBOOK_IMG }}">{% endblock %}
+
+
+<!-- Main Content -->
 {% block content %}
 
 
