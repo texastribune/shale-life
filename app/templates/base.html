@@ -36,12 +36,14 @@
   <script src="//use.typekit.net/tsw6wfe.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <!-- build:css /styles/vendor.css -->
   <!-- bower:css -->
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css(.tmp) /styles/main.css -->
+  <link rel="stylesheet" href="/scripts/jquery.fancybox.css">
   <link rel="stylesheet" href="/styles/main.css">
   <!-- endbuild -->
 
@@ -172,39 +174,40 @@
 </div>
 
 
+<footer>
+  <div class="footer-wrapper container">
+    <div class="footer-logo">
+      <img src="http://s3.amazonaws.com/apps.texastribune.org/branding/TT-logo-white.dd56ad79c0da.png">
+      <p>© 2014 <a href="http://www.texastribune.org/">The Texas Tribune</a></p>
+    </div>
+    <div class="member-push">
+      <div class="button">Join Us</div>
+      <ul>
+        <li class="bold">Nonpartisan.</li>
+        <li class="bold">Nonprofit.</li>
+        <li class="bold">Statewide.</li>
+      </ul>
+      <hr class="shale-yellow">
+      <div class="button">Sign Up</div>
+      <ul>
+        <li class="bold">Dig Deeper.</li>
+        <li>Subscribe to Trib+</li>
+        <li>Newsletters today</li>
+      </ul>
 
-<footer class="container">
-  <div class="footer-logo">
-    <img src="http://s3.amazonaws.com/apps.texastribune.org/branding/TT-logo-white.dd56ad79c0da.png">
-    <p>© 2014 <a href="http://www.texastribune.org/">The Texas Tribune</a></p>
-  </div>
-  <div class="member-push">
-    <div class="button">Join Us</div>
-    <ul>
-      <li class="bold">Nonpartisan.</li>
-      <li class="bold">Nonprofit.</li>
-      <li class="bold">Statewide.</li>
-    </ul>
-    <hr class="shale-yellow">
-    <div class="button">Sign Up</div>
-    <ul>
-      <li class="bold">Dig Deeper.</li>
-      <li>Subscribe to Trib+</li>
-      <li>Newsletters today</li>
-    </ul>
-
-  </div>
-  <div class="footer-links">
-    <ul>
-      <li><a href="">About The Shale Life Project</a></li>
-      <li><a href="../supporters">Shale Life Supporters</a></li>
-      <li><a href="http://www.texastribune.org/about/">About The Texas Tribune</a></li>
-      <li><a href="https://www.texastribune.org/join/" style="color: #008990;">Donate to The Texas Tribune</a></li>
-      <li><a href="http://www.texastribune.org/contact/">Contact</a></li>
-      <li><a href="http://www.texastribune.org/terms-of-service/">Terms of Service</a></li>
-      <li><a href="http://www.texastribune.org/ethics/">Code of Ethics</a></li>
-      <li><a href="http://www.texastribune.org/privacy/">Privacy Policy</a></li>
-    </ul>
+    </div>
+    <div class="footer-links">
+      <ul>
+        <li><a href="">About The Shale Life Project</a></li>
+        <li><a href="../supporters">Shale Life Supporters</a></li>
+        <li><a href="http://www.texastribune.org/about/">About The Texas Tribune</a></li>
+        <li><a href="https://www.texastribune.org/join/" style="color: #008990;">Donate to The Texas Tribune</a></li>
+        <li><a href="http://www.texastribune.org/contact/">Contact</a></li>
+        <li><a href="http://www.texastribune.org/terms-of-service/">Terms of Service</a></li>
+        <li><a href="http://www.texastribune.org/ethics/">Code of Ethics</a></li>
+        <li><a href="http://www.texastribune.org/privacy/">Privacy Policy</a></li>
+      </ul>
+    </div>
   </div>
 </footer>
 
@@ -214,6 +217,12 @@
 <!-- endbower -->
 <!-- endbuild -->
 
+<!-- Popup Player -->
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+ -->
+
+
+<!-- Google Analytics -->
 <script>
   (function(c,o,r,g,i,s){c.GoogleAnalyticsObject=g;c[g]||(c[g]=
   function(){(c[g].q=c[g].q||[]).push(arguments)});c[g].g=+new Date;
@@ -225,6 +234,7 @@
 
 <!-- build:js({app,.tmp}) /scripts/main.js -->
 <script src="/scripts/jquery.flexslider.js"></script>
+<script src="/scripts/jquery.fancybox.js"></script>
 <script src="/scripts/script.js"></script>
 <!-- endbuild -->
 

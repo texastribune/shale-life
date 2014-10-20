@@ -1,4 +1,6 @@
 'use strict';
+/* global YT */
+/* exported onYouTubeIframeAPIReady */
 
 // Set element height based on height of reference element
 function setHeight(target, reference) {
@@ -49,8 +51,7 @@ $(function() {
 $(document).ready(function() {
 
   // Make videos responsive
-  $('.video-wrapper').fitVids();
-
+  // $('.video-wrapper').fitVids();
 
   //Create flexsliders
   // Top slideshow
@@ -84,7 +85,85 @@ $(document).ready(function() {
 
   // Set height of tan box based on size of content inside
   setHeight('.story-box', '.story');
+
 });
+
+var tag = document.createElement('script');
+
+tag.src = 'https://www.youtube.com/iframe_api';
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+// var player;
+
+// var playButton = document.getElementById('js-play-button');
+
+// function onPlayerReady(event) {
+//   playButton.addEventListener('click', function() {
+//     console.log(event);
+//     event.target.playVideo();
+
+//   });
+// }
+
+// function onYouTubeIframeAPIReady() {
+//   player = new YT.Player('ytplayer', {
+//     events: {
+//       'onReady': onPlayerReady
+//     }
+//   });
+// }
+
+// Fires whenever a player has finished loading
+function onPlayerReady(event) {
+    event.target.playVideo();
+}
+
+// Fires when the player's state changes.
+function onPlayerStateChange(event) {
+    // Go to the next video after the current one is finished playing
+    if (event.data === 0) {
+        $.fancybox.next();
+    }
+}
+
+// The API will call this function when the page has finished downloading the JavaScript for the player API
+function onYouTubePlayerAPIReady() {
+
+  $(".fancybox")
+      .attr('rel', 'gallery')
+      .fancybox({
+          openEffect  : 'none',
+          closeEffect : 'fade',
+          nextEffect  : 'none',
+          prevEffect  : 'none',
+          padding     : 0,
+          margin      : 50,
+          type        : "iframe",
+          closeBtn    : true,
+          iframe      : {
+            preload: false
+          },
+          helpers     : {
+            overlay: {
+              css: {'background-color': 'rgba(26, 26, 26, .9)'}
+            }
+          },
+          beforeShow  : function() {
+            // Find the iframe ID
+            var id = $.fancybox.inner.find('iframe').attr('id');
+
+            // Create video player object and add event listeners
+            var player = new YT.Player(id, {
+                events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+          }
+      });
+
+}
 
 // Reset heights/positions on window resize
 $(window).resize(function() {

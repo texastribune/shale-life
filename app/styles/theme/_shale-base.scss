@@ -117,7 +117,8 @@ tr {
 
 .facebook,
 .twitter,
-.down-arrow {
+.down-arrow,
+.play-button {
   display: inline-block;
   height: 2em;
   margin-right: 1em;
@@ -151,6 +152,27 @@ tr {
   background-position: center center;
   background-size: cover;
 }
+
+.play-button {
+  background: url(/images/icons/ShaleLife-btn-play.png) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0);
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+//Override button yellow
+.play-button:hover:not(:disabled),
+.play-button:hover:not(:disabled) ,
+.play-button:active:not(:disabled),
+.play-button:focus:not(:disabled) {
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
 
 .ad-container {
   margin: 0 auto;
