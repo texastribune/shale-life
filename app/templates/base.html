@@ -41,7 +41,7 @@
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css(.tmp) /styles/main.css -->
-  <link rel="stylesheet" href="/scripts/jquery-ui/jquery-ui.css">
+  <link rel="stylesheet" href="/scripts/jquery.fancybox.css">
   <link rel="stylesheet" href="/styles/main.css">
   <!-- endbuild -->
 
@@ -213,20 +213,12 @@
 <!-- build:js /scripts/vendor.js -->
 <!-- bower:js -->
 <!-- endbower -->
-<script src="/scripts/jquery-ui/jquery-ui.js"></script>
 <!-- endbuild -->
 
 <!-- Popup Player -->
 <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
  -->
 
-<script type="text/javascript" src="/scripts/popup-player.js"></script>
-<script type="text/javascript">
-  $(function () {
-    $.fn.YouTubePopup.defaults.draggable = true;
-    $("button.youtube").YouTubePopup({ idAttribute: 'id' });
-  });
-</script>
 
 <!-- Google Analytics -->
 <script>
@@ -239,8 +231,9 @@
 </script>
 
 <!-- build:js({app,.tmp}) /scripts/main.js -->
-
+<script src="http://www.youtube.com/player_api"></script>
 <script src="/scripts/jquery.flexslider.js"></script>
+<script src="/scripts/jquery.fancybox.js"></script>
 <script src="/scripts/script.js"></script>
 <!-- endbuild -->
 
