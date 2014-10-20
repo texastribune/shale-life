@@ -1,5 +1,20 @@
 {% extends 'app/templates/base.html' %}
 
+<!-- META data -->
+
+{% block title_row %}<title>{{ CROP_DUSTER.SHORT_HEAD }} | The Shale Life </title>{% endblock %}
+{% block description %}<meta name="description" content="{{ CROP_DUSTER.SHARE_TWEET }}">{% endblock %}
+{% block og_description %}<meta property="og:description" content="{{ CROP_DUSTER.SHARE_TWEET }}">{% endblock %}
+{% block og_title %}<meta property="og:title" content="{{ CROP_DUSTER.SHORT_HEAD }} | The Shale Life ">{% endblock %}
+{% block og_url %}<meta property="og:url" content="{{ CROP_DUSTER.SHARE_URL }}">{% endblock %}
+{% block og_img %}<meta property="og:image" content="{{ CROP_DUSTER.FACEBOOK_IMG }}">{% endblock %}
+{% block tw_title %}<meta name="twitter:title" content="{{ CROP_DUSTER.SHORT_HEAD }} | The Shale Life ">{% endblock %}
+{% block tw_description %}<meta name="twitter:description" content="{{ CROP_DUSTER.SHARE_TWEET }}">{% endblock %}
+{% block tw_url %}<meta name="twitter:url" content="{{ CROP_DUSTER.SHARE_URL }}">{% endblock %}
+{% block tw_img %}<meta name="twitter:image" content="{{ CROP_DUSTER.FACEBOOK_IMG }}">{% endblock %}
+
+
+<!-- Main Content -->
 {% block content %}
 
 
