@@ -134,22 +134,32 @@ function onYouTubePlayerAPIReady() {
       .attr('rel', 'gallery')
       .fancybox({
           openEffect  : 'none',
-          closeEffect : 'none',
+          closeEffect : 'fade',
           nextEffect  : 'none',
           prevEffect  : 'none',
           padding     : 0,
           margin      : 50,
+          type        : "iframe",
+          closeBtn    : true,
+          iframe      : {
+            preload: false
+          },
+          helpers     : {
+            overlay: {
+              css: {'background-color': 'rgba(26, 26, 26, .9)'}
+            }
+          },
           beforeShow  : function() {
-              // Find the iframe ID
-              var id = $.fancybox.inner.find('iframe').attr('id');
+            // Find the iframe ID
+            var id = $.fancybox.inner.find('iframe').attr('id');
 
-              // Create video player object and add event listeners
-              var player = new YT.Player(id, {
-                  events: {
-                      'onReady': onPlayerReady,
-                      'onStateChange': onPlayerStateChange
-                  }
-              });
+            // Create video player object and add event listeners
+            var player = new YT.Player(id, {
+                events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
+                }
+            });
           }
       });
 
