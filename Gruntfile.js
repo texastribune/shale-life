@@ -161,6 +161,12 @@ module.exports = function (grunt) {
           src: ['{,*/}*.html', '!templates/*'],
           dest: '.tmp',
           ext: '.html'
+        },{
+          expand: true,
+          cwd: '<%= config.app %>',
+          src: ['**/*.scss'],
+          dest: '.tmp',
+          ext: '.scss'
         }]
       }
     },
@@ -174,7 +180,7 @@ module.exports = function (grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: '<%= config.app %>/styles',
+          cwd: '.tmp/styles',
           src: ['*.scss'],
           dest: '.tmp/styles',
           ext: '.css'
@@ -183,7 +189,7 @@ module.exports = function (grunt) {
       server: {
         files: [{
           expand: true,
-          cwd: '<%= config.app %>/styles',
+          cwd: '.tmp/styles',
           src: ['*.scss'],
           dest: '.tmp/styles',
           ext: '.css'
