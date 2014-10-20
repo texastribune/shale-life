@@ -17,8 +17,8 @@
           <ul class="slides">
             <li>
               <div class="nav-ref">
-                <h1>{{LOVING_COUNTY.SHORT_HEAD}}</h1>
-<!--                 <h3>{{LOVING_COUNTY.LONG_HEAD}}</h3>
+                <h1>{{CROP_DUSTER.SHORT_HEAD}}</h1>
+<!--                 <h3>{{CROP_DUSTER.LONG_HEAD}}</h3>
  -->              <hr class="shale-yellow">
               </div>
 
@@ -45,12 +45,12 @@
                   </p>
                 </div>
 
-                <img src="{{ LOVING_COUNTY.PHOTO_1_URL }}">
+                <img src="{{ CROP_DUSTER.PHOTO_1_URL }}">
 
               </div>
 
               <div class="slideshow-caption lead-text">
-                <p>{{ LOVING_COUNTY.PHOTO_1_CAPTION }}</p>
+                <p>{{ CROP_DUSTER.PHOTO_1_CAPTION }}</p>
               </div>
 
               <div class="share-story">
@@ -144,16 +144,16 @@
         <div class="story">
 
           <div class="story-prose">
-            <h2>{{ LOVING_COUNTY.LONG_HEAD }}</h2>
+            <h2>{{ CROP_DUSTER.LONG_HEAD }}</h2>
 
-            {{ LOVING_COUNTY.INTRO_TEXT }}
+            {{ CROP_DUSTER.INTRO_TEXT }}
 
-            <p class="byline">{{ LOVING_COUNTY.BYLINE }}</p>
+            <p class="byline">{{ CROP_DUSTER.BYLINE }}</p>
           </div>
 
           <div class="map">
             <img src="/images/ShaleLife-TxMap-placeholder.gif">
-            <h4>{{ LOVING_COUNTY.MAP }}</h4>
+            <h4>{{ CROP_DUSTER.MAP }}</h4>
           </div>
 
         </div>
@@ -171,32 +171,46 @@
             <thead>
               <tr>
                 <th></th>
-                <th>{{ LOVING_COUNTY.Data_Col1 }}</th>
-                <th>{{ LOVING_COUNTY.Data_Col2 }}</th>
-                <th>{{ LOVING_COUNTY.Data_Col3 }}</th>
+                <th>2000</th>
+                <th>2010</th>
+                <th>2013</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td data-title="Census Population">Census Population</td>
-                <td data-title="{{ LOVING_COUNTY.Data_Col1 }}">{{ LOVING_COUNTY.Pop2000 }}</td>
-                <td data-title="{{ LOVING_COUNTY.Data_Col2 }}">{{ LOVING_COUNTY.Pop2010 }}</td>
-                <td data-title="{{ LOVING_COUNTY.Data_Col2 }}">{{ LOVING_COUNTY.Pop2013 }}</td>
+                <td data-title="{{ CROP_DUSTER.Data_Col1 }}">{{ CROP_DUSTER.Pop2000 }}</td>
+                <td data-title="{{ CROP_DUSTER.Data_Col2 }}">{{ CROP_DUSTER.Pop2010 }}</td>
+                <td data-title="{{ CROP_DUSTER.Data_Col2 }}">{{ CROP_DUSTER.Pop2013 }}</td>
+              </tr>
+            </tbody>
+          </table>
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th>{{ CROP_DUSTER.Data_Col1 }}</th>
+                <th>{{ CROP_DUSTER.Data_Col2 }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-title="{{ CROP_DUSTER.Data_Title_A }}">{{ CROP_DUSTER.Data_Title_A }}</td>
+                <td data-title="{{ CROP_DUSTER.Data_Col1 }}">{{ CROP_DUSTER.Data_A_1 }}</td>
+                <td data-title="{{ CROP_DUSTER.Data_Col2 }}">{{ CROP_DUSTER.Data_A_2 }}</td>
               </tr>
               <tr>
-                <td data-title="{{ LOVING_COUNTY.Data_Title_A }}">{{ LOVING_COUNTY.Data_Title_A }}</td>
-                <td data-title="{{ LOVING_COUNTY.Data_Col1 }}">{{ LOVING_COUNTY.Data_A_1 }}</td>
-                <td data-title="{{ LOVING_COUNTY.Data_Col2 }}">{{ LOVING_COUNTY.Data_A_2 }}</td>
-                <td data-title="{{ LOVING_COUNTY.Data_Col2 }}">{{ LOVING_COUNTY.Data_A_3 }}</td>
+                <td data-title="{{ CROP_DUSTER.Data_Title_B }}">{{ CROP_DUSTER.Data_Title_B }}</td>
+                <td data-title="{{ CROP_DUSTER.Data_Col1 }}">{{ CROP_DUSTER.Data_B_1 }}</td>
+                <td data-title="{{ CROP_DUSTER.Data_Col2 }}">{{ CROP_DUSTER.Data_B_2 }}</td>
               </tr>
               <tr>
-                <td data-title="{{ LOVING_COUNTY.Data_Title_B }}">{{ LOVING_COUNTY.Data_Title_B }}</td>
-                <td data-title="{{ LOVING_COUNTY.Data_Col1 }}">{{ LOVING_COUNTY.Data_B_1 }}</td>
-                <td data-title="{{ LOVING_COUNTY.Data_Col2 }}">{{ LOVING_COUNTY.Data_B_2 }}</td>
-                <td data-title="{{ LOVING_COUNTY.Data_Col2 }}">{{ LOVING_COUNTY.Data_B_3 }}</td>
+                <td data-title="{{ CROP_DUSTER.Data_Title_C }}">{{ CROP_DUSTER.Data_Title_C }}</td>
+                <td data-title="{{ CROP_DUSTER.Data_Col1 }}">{{ CROP_DUSTER.Data_C_1 }}</td>
+                <td data-title="{{ CROP_DUSTER.Data_Col2 }}">{{ CROP_DUSTER.Data_C_2 }}</td>
               </tr>
               <tr>
-                <td colspan=4><em>Source: {{ LOVING_COUNTY.Source }}</em></td>
+                <td colspan=4><em>Source: {{ CROP_DUSTER.Source }}</em></td>
               </tr>
             </tbody>
           </table>

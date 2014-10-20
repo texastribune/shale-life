@@ -17,8 +17,8 @@
           <ul class="slides">
             <li>
               <div class="nav-ref">
-                <h1>{{LOVING_COUNTY.SHORT_HEAD}}</h1>
-<!--                 <h3>{{LOVING_COUNTY.LONG_HEAD}}</h3>
+                <h1>{{OPPORTUNITY.SHORT_HEAD}}</h1>
+<!--                 <h3>{{OPPORTUNITY.LONG_HEAD}}</h3>
  -->              <hr class="shale-yellow">
               </div>
 
@@ -45,12 +45,12 @@
                   </p>
                 </div>
 
-                <img src="{{ LOVING_COUNTY.PHOTO_1_URL }}">
+                <img src="{{ OPPORTUNITY.PHOTO_1_URL }}">
 
               </div>
 
               <div class="slideshow-caption lead-text">
-                <p>{{ LOVING_COUNTY.PHOTO_1_CAPTION }}</p>
+                <p>{{ OPPORTUNITY.PHOTO_1_CAPTION }}</p>
               </div>
 
               <div class="share-story">
@@ -144,16 +144,16 @@
         <div class="story">
 
           <div class="story-prose">
-            <h2>{{ LOVING_COUNTY.LONG_HEAD }}</h2>
+            <h2>{{ OPPORTUNITY.LONG_HEAD }}</h2>
 
-            {{ LOVING_COUNTY.INTRO_TEXT }}
+            {{ OPPORTUNITY.INTRO_TEXT }}
 
-            <p class="byline">{{ LOVING_COUNTY.BYLINE }}</p>
+            <p class="byline">{{ OPPORTUNITY.BYLINE }}</p>
           </div>
 
           <div class="map">
             <img src="/images/ShaleLife-TxMap-placeholder.gif">
-            <h4>{{ LOVING_COUNTY.MAP }}</h4>
+            <h4>{{ OPPORTUNITY.MAP }}</h4>
           </div>
 
         </div>
@@ -171,32 +171,68 @@
             <thead>
               <tr>
                 <th></th>
-                <th>{{ LOVING_COUNTY.Data_Col1 }}</th>
-                <th>{{ LOVING_COUNTY.Data_Col2 }}</th>
-                <th>{{ LOVING_COUNTY.Data_Col3 }}</th>
+                <th>2000</th>
+                <th>2010</th>
+                <th>2013</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td data-title="Census Population">Census Population</td>
-                <td data-title="{{ LOVING_COUNTY.Data_Col1 }}">{{ LOVING_COUNTY.Pop2000 }}</td>
-                <td data-title="{{ LOVING_COUNTY.Data_Col2 }}">{{ LOVING_COUNTY.Pop2010 }}</td>
-                <td data-title="{{ LOVING_COUNTY.Data_Col2 }}">{{ LOVING_COUNTY.Pop2013 }}</td>
+                <td data-title="{{ OPPORTUNITY.Data_Col1 }}">{{ OPPORTUNITY.Pop2000 }}</td>
+                <td data-title="{{ OPPORTUNITY.Data_Col2 }}">{{ OPPORTUNITY.Pop2010 }}</td>
+                <td data-title="{{ OPPORTUNITY.Data_Col2 }}">{{ OPPORTUNITY.Pop2013 }}</td>
+              </tr>
+            </tbody>
+          </table>
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th>{{ OPPORTUNITY.Data_Col1 }}</th>
+                <th>{{ OPPORTUNITY.Data_Col2 }}</th>
+                <th>{{ OPPORTUNITY.Data_Col3 }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-title="{{ OPPORTUNITY.Data_Title_A }}">{{ OPPORTUNITY.Data_Title_A }}</td>
+                <td data-title="{{ OPPORTUNITY.Data_Col1 }}">{{ OPPORTUNITY.Data_A_1 }}</td>
+                <td data-title="{{ OPPORTUNITY.Data_Col2 }}">{{ OPPORTUNITY.Data_A_2 }}</td>
+                <td data-title="{{ OPPORTUNITY.Data_Col3 }}">{{ OPPORTUNITY.Data_A_3 }}</td>
               </tr>
               <tr>
-                <td data-title="{{ LOVING_COUNTY.Data_Title_A }}">{{ LOVING_COUNTY.Data_Title_A }}</td>
-                <td data-title="{{ LOVING_COUNTY.Data_Col1 }}">{{ LOVING_COUNTY.Data_A_1 }}</td>
-                <td data-title="{{ LOVING_COUNTY.Data_Col2 }}">{{ LOVING_COUNTY.Data_A_2 }}</td>
-                <td data-title="{{ LOVING_COUNTY.Data_Col2 }}">{{ LOVING_COUNTY.Data_A_3 }}</td>
+                <td data-title="{{ OPPORTUNITY.Data_Title_B }}">{{ OPPORTUNITY.Data_Title_B }}</td>
+                <td data-title="{{ OPPORTUNITY.Data_Col1 }}">{{ OPPORTUNITY.Data_B_1 }}</td>
+                <td data-title="{{ OPPORTUNITY.Data_Col2 }}">{{ OPPORTUNITY.Data_B_2 }}</td>
+                <td data-title="{{ OPPORTUNITY.Data_Col3 }}">{{ OPPORTUNITY.Data_B_3 }}</td>
+              </tr>
+            </tbody>
+          </table>
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th>{{ OPPORTUNITY.Data_Col4 }}</th>
+                <th>{{ OPPORTUNITY.Data_Col5 }}</th>
+                <th>{{ OPPORTUNITY.Data_Col6 }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-title="{{ OPPORTUNITY.Data_Title_C }}">{{ OPPORTUNITY.Data_Title_C }}</td>
+                <td data-title="{{ OPPORTUNITY.Data_Col4 }}">{{ OPPORTUNITY.Data_C_1 }}</td>
+                <td data-title="{{ OPPORTUNITY.Data_Col5 }}">{{ OPPORTUNITY.Data_C_2 }}</td>
+                <td data-title="{{ OPPORTUNITY.Data_Col6 }}">{{ OPPORTUNITY.Data_C_3 }}</td>
               </tr>
               <tr>
-                <td data-title="{{ LOVING_COUNTY.Data_Title_B }}">{{ LOVING_COUNTY.Data_Title_B }}</td>
-                <td data-title="{{ LOVING_COUNTY.Data_Col1 }}">{{ LOVING_COUNTY.Data_B_1 }}</td>
-                <td data-title="{{ LOVING_COUNTY.Data_Col2 }}">{{ LOVING_COUNTY.Data_B_2 }}</td>
-                <td data-title="{{ LOVING_COUNTY.Data_Col2 }}">{{ LOVING_COUNTY.Data_B_3 }}</td>
+                <td data-title="{{ OPPORTUNITY.Data_Title_D }}">{{ OPPORTUNITY.Data_Title_D }}</td>
+                <td data-title="{{ OPPORTUNITY.Data_Col4 }}">{{ OPPORTUNITY.Data_D_1 }}</td>
+                <td data-title="{{ OPPORTUNITY.Data_Col5 }}">{{ OPPORTUNITY.Data_D_2 }}</td>
+                <td data-title="{{ OPPORTUNITY.Data_Col6 }}">{{ OPPORTUNITY.Data_D_3 }}</td>
               </tr>
               <tr>
-                <td colspan=4><em>Source: {{ LOVING_COUNTY.Source }}</em></td>
+                <td colspan=4><em>Source: {{ OPPORTUNITY.Source }}</em></td>
               </tr>
             </tbody>
           </table>
