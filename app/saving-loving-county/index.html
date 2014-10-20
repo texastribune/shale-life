@@ -13,23 +13,27 @@
     <div class="lead-image"></div>
     <div class="container">
       <header class="lead-header">
-        <div class="nav-ref">
-          <h1>{{LOVING_COUNTY.SHORT_HEAD}}</h1>
-          <hr class="shale-yellow">
-        </div>
-        <div class="slideshow-start lead-text">
+        <div id="video-lead">
+          <div class="nav-ref">
+            <h1>{{LOVING_COUNTY.SHORT_HEAD}}</h1>
+            <hr class="shale-yellow">
+          </div>
+          <div class="slideshow-start lead-text">
+            <button id="js-play-button" class="play-button"></button>Play me!
+          </div>
+
+          <div class="share-story">
+            <a href="http://www.facebook.com/sharer.php?u=" title="share on Facebook" class="social-share" target="_blank"><span class="facebook"></span></a>
+            <a hregf="https://twitter.com/home?status=" title="share on Twitter" class="social-share" target="_blank"><span class="twitter"></span></a>
+          </div>
         </div>
 
-        <div class="share-story">
-          <a href="http://www.facebook.com/sharer.php?u=" title="share on Facebook" class="social-share" target="_blank"><span class="facebook"></span></a>
-          <a hregf="https://twitter.com/home?status=" title="share on Twitter" class="social-share" target="_blank"><span class="twitter"></span></a>
-        </div>
 
-        <div class="video-wrapper">
+        <div id="main-video" class="video-wrapper display-none">
           <iframe id="ytplayer" type="text/html" width="960" height="540" src="https://www.youtube.com/embed/qS4r33x3bL4?controls=0&enablejsapi=1&modestbranding=1&rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
         </div>
 
-        <button id="js-play-button">Play me!</button>
+
       </header>
 
       <div class="story-box">

@@ -97,10 +97,16 @@ var player;
 
 var playButton = document.getElementById('js-play-button');
 
+var videoLead = document.getElementById('video-lead');
+
+var mainVideo = document.getElementById('main-video');
+
 function onPlayerReady(event) {
   playButton.addEventListener('click', function() {
     console.log(event);
     event.target.playVideo();
+    // videoLead.toggleClass('display-none');
+    // mainVideo.toggleClass('display-none');
   });
 }
 
