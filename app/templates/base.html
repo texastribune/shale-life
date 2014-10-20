@@ -34,6 +34,7 @@
   <script src="//use.typekit.net/tsw6wfe.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <!-- build:css /styles/vendor.css -->
   <!-- bower:css -->
@@ -213,6 +214,18 @@
 <!-- endbower -->
 <!-- endbuild -->
 
+<!-- Popup Player -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/scripts/popup-player.js"></script>
+<script type="text/javascript">
+  $(function () {
+    $.fn.YouTubePopup.defaults.draggable = true;
+    $("button.youtube").YouTubePopup({ idAttribute: 'id' });
+  });
+</script>
+
+<!-- Google Analytics -->
 <script>
   (function(c,o,r,g,i,s){c.GoogleAnalyticsObject=g;c[g]||(c[g]=
   function(){(c[g].q=c[g].q||[]).push(arguments)});c[g].g=+new Date;
