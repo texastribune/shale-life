@@ -36,11 +36,11 @@
       background: url(/images/icons/btn-arrow-right.png) no-repeat;
       background-position: center center;
       background-size: cover;
-      height: 2em;
+      height: 2.25em;
       left: 3em !important;
       opacity: .9 !important;
       width: 100%;
-      max-width: 2em;
+      max-width: 2.25em;
 
       &:hover {
         opacity: 1 !important;
@@ -59,11 +59,11 @@
       background: url(/images/icons/btn-arrow-left.png) no-repeat;
       background-position: center center;
       background-size: cover;
-      height: 2em;
+      height: 2.25em;
       left: 0 !important;
       opacity: 1 !important;
       width: 100%;
-      max-width: 2em;
+      max-width: 2.25em;
 
       &.flex-disabled {
         cursor: default;

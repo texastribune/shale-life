@@ -186,6 +186,19 @@
     margin: 0;
     padding-top: 0;
   }
+
+  .fa-stack {
+    color: $off-white;
+
+    &:hover {
+      color: $light-denim;
+    }
+  }
+
+  .fa-facebook,
+  .fa-twitter {
+    color: $dark-denim;
+  }
 }
 
 .story-box {
