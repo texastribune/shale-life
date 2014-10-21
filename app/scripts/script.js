@@ -56,10 +56,11 @@ $(document).ready(function() {
   //Create flexsliders
   // Top slideshow
   $('#slideshow').flexslider({
-    animation: 'fade',
+    animation: 'slide',
     animationLoop: false,
     slideshow: false,
     controlNav: false,
+    touch: true,
     //Position direction buttons on start
     start: function(slider) {
       setHeight('#slideshow > .flex-viewport', '.flex-active-slide');
