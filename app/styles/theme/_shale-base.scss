@@ -114,37 +114,12 @@ tr {
   }
 }
 
-
-.facebook,
-.twitter,
 .down-arrow,
 .play-button {
   display: inline-block;
-  height: 2em;
+  height: 2.25em;
   margin-right: 1em;
-  width: 2em;
-}
-
-.facebook {
-  background: url(/images/icons/ShaleLife-img-facebook-white002.png) no-repeat;
-  background-position: center center;
-  background-size: cover;
-  &:hover {
-    background: url(/images/icons/ShaleLife-img-facebook-onhover002.png) no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
-}
-
-.twitter {
-  background: url(/images/icons/ShaleLife-img-twitter-white.png) no-repeat;
-  background-position: center center;
-  background-size: cover;
-  &:hover {
-    background: url(/images/icons/ShaleLife-img-twitter-onhover.png) no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
+  width: 2.25em;
 }
 
 .down-arrow {
