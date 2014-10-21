@@ -56,7 +56,7 @@ $(document).ready(function() {
   //Create flexsliders
   // Top slideshow
   $('#slideshow').flexslider({
-    animation: 'slide',
+    animation: 'fade',
     animationLoop: false,
     slideshow: false,
     controlNav: false,
