@@ -127,8 +127,9 @@
   margin: 0 0 .5em 6em;
 
   p {
-    color: $red;
-    font-size: 1.5em;
+    color: $off-white;
+    font-size: 1.3em;
+    font-weight: 600;
     display: inline-block;
   }
 }
@@ -243,16 +244,17 @@
   p {
     color: $off-black;
     font-weight: 500;
-    margin: .5em 0 2em;
+    margin: .5em 0 1em;
+
+    &.byline {
+      color: $dark-denim;
+      font-size: .95em;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 1.3em;
+    }
   }
 
-  .byline {
-    color: $dark-denim;
-    font-size: .95em;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 1.3em;
-  }
 
 }
 
