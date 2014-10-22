@@ -124,7 +124,7 @@
 
 .slideshow-start {
   @include span-columns(10);
-  margin: 0 0 .5em 6em;
+  margin: 0 0 .5em 3em;
 }
 
 .slideshow-caption {
@@ -214,7 +214,6 @@
 }
 
 .story {
-  // position: absolute;
   text-align: center;
   vertical-align: middle;
 }

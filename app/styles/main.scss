@@ -21,3 +21,8 @@
 @import 'layout/story/story-slideshow';
 @import 'layout/story/data-context';
 @import 'theme/fancybox';
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
