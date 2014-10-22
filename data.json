@@ -54,13 +54,13 @@
     "Data_Col2": "2010",
     "Data_Col3": "2013",
     "Data_Title_A": "Oil production (barrels)",
-    "Data_Title_B": "Natural gas production (1k cubic feet)",
+    "Data_Title_B": "Natural gas production (cubic feet)",
     "Data_A_1": "124,000",
     "Data_A_2": "112,000",
     "Data_A_3": "506,000",
-    "Data_B_1": "124,000",
-    "Data_B_2": "112,000",
-    "Data_B_3": "506,000",
+    "Data_B_1": "1.7 B",
+    "Data_B_2": "7.8 B",
+    "Data_B_3": "3.4 B",
     "Source": "U.S. Census Bureau, Texas Railroad Commission"
   },
   "COTTON_FARMERS": {
@@ -215,9 +215,9 @@
     "Data_D_3TX": "50%"
   },
   "KARNES": {
-    "SHORT_HEAD": "Looking Past Oil",
+    "SHORT_HEAD": "Beyond Oil",
     "LONG_HEAD": "In Karnes City, Preparing for Post-Boom Life",
-    "SLUG": "looking-past-oil",
+    "SLUG": "beyond-oil",
     "INTRO_TEXT": "<p>Nestled in Texas’ top oil-producing county, Karnes City bills itself as “The Real Texas.” That branding campaign — an effort to lure tourists to local features unrelated to the energy industry — is part of the city’s broader plan to thrive long after the drillers are gone.</p>\n<p>Neighboring towns are allowing almost any hotel, “man camp” or liquor store to set up shop — no matter how long the business might stay. But officials in Karnes City say they’ve learned from past booms and busts, and are embracing a slower pace of development. They’re using a sudden influx of oil money to invest in parks and a convention center, and they’re welcoming businesses that plan to stay for the long haul.</p>\n<p>“They’re trying to take an organized approached to development,” said Thomas Tunstall, research director for the Institute for Economic Development at the University of Texas at San Antonio. The institute has identified Karnes City as one of just a handful of Eagle Ford communities that are eyeing a post-boom future.  </p>\n",
     "BYLINE": "<p>Story by Jim Malewitz, photos by Callie Richmond </p>\n",
     "LANDING_LG_IMG_URL": "TT-Shale-Karnes-1x1-002.jpg",
