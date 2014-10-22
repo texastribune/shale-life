@@ -123,8 +123,14 @@
 }
 
 .slideshow-start {
-  @include span-columns(10);
-  margin: 0 0 .5em 3em;
+  @include span-columns(8);
+  margin: 0 0 .5em 6em;
+
+  p {
+    color: $red;
+    font-size: 1.5em;
+    display: inline-block;
+  }
 }
 
 .slideshow-caption {
