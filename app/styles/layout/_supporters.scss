@@ -1,3 +1,31 @@
+.supporters-header {
+  min-height: 0;
+  padding-top: 5%;
+  padding-bottom: 3%;
+
+  h1 {
+    padding-top: 0;
+  }
+
+  @include media($bp-landing-large) {
+    h1 {
+      font-size: 7em;
+    }
+  }
+
+  @include media($bp-landing-medium) {
+    h1 {
+      font-size: 5em;
+    }
+  }
+
+  @include media($bp-landing-small) {
+    h1 {
+      font-size: 3em;
+    }
+  }
+}
+
 .supporters-prompt {
   @include span-columns(12);
   border-top: 2px solid $yellow;
@@ -6,7 +34,7 @@
   padding-top: 1.5em;
 
   h3 {
-    font-size: 1.3em;
+    font-size: 1em;
   }
 
   a {
@@ -18,31 +46,13 @@
     }
   }
   @include media($bp-shale-lg) {
-    // @include span-columns(8 of 10);
-    // border-right: 2px solid $yellow;
-    // border-bottom: 0;
-    // text-align: left;
-
     h3 {
-      font-size: 1.5em;
+      font-size: 1.25em;
       margin-bottom: 0;
     }
   }
 
 }
-
-// .share-supporters {
-//   @include span-columns(12);
-//   margin-bottom: 1em;
-
-//   @include media($bp-shale-lg) {
-//     @include span-columns(2);
-//     @include omega();
-//     border-top: 0;
-//     margin: 1em 0 0;
-//     padding-top: 0;
-//   }
-// }
 
 .supporters {
   @extend %content-block;
@@ -51,7 +61,7 @@
 
   p {
     color: $white;
-    font-size: 1.3em;
+    font-size: 1em;
     margin: 0 1em .5em 0;
   }
 
@@ -61,7 +71,6 @@
 
     p {
       display: inline-block;
-
       width: 30%;
     }
   }
