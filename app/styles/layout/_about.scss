@@ -1,0 +1,149 @@
+$bar-chart-break: new-breakpoint(min-width em(800));
+$map-break: new-breakpoint(min-width em(768));
+
+$bar-color: rgb(50, 88, 124);
+$white: rgb(255, 255, 255);
+
+.about-container {
+  header {
+    margin-bottom: em(20);
+
+    h3 {
+      color: rgb(105, 138, 173);
+      font-family: 'PT Sans Narrow', $helvetica;
+      font-size: em(30);
+      font-weight: 700;
+      letter-spacing: .05em;
+      line-height: 1;
+      margin-bottom: em(2);
+    }
+
+    p {
+      color: darken($white, 20%);
+      font-size: em(16);
+      font-style: italic;
+      margin-bottom: 2em;
+    }
+  }
+}
+
+.about-prose {
+  padding: 0 em(20);
+
+  @include media($bar-chart-break) {
+    @include span-columns(6);
+  }
+
+  p {
+    color: $white;
+    line-height: 1.45;
+    margin: 0 0 em(15);
+  }
+
+  .byline {
+    color: darken($white, 20%);
+    font-style: italic;
+  }
+}
+
+.about-chart {
+  color: $white;
+  font-family: 'PT Sans Narrow', $helvetica;
+  font-size: em(13);
+  margin-bottom: em(20);
+  padding: 0 em(20);
+
+  @include media($bar-chart-break) {
+    @include span-columns(6);
+  }
+
+  .label {
+    float: left;
+    font-weight: 700;
+    padding: em(5) 0;
+    width: 10%;
+  }
+
+  .bar {
+    float: left;
+    margin-bottom: em(10);
+    width: 90%;
+  }
+
+  .color {
+    background-color: $bar-color;
+    display: block;
+    height: 100%;
+    padding: em(5) em(5) em(5) 0;
+    text-align: right;
+  }
+
+  .output {
+    text-align: center;
+    text-shadow: 0 0 em(2) rgba(0, 0, 0, .4);
+  }
+}
+
+.about-map-container {
+  margin-bottom: em(20);
+
+  .map-header {
+    p {
+      margin-bottom: 1em;
+    }
+  }
+}
+
+.about-map {
+  height: 290px;
+  width: 100%;
+
+  @include media($map-break) {
+    height: 580px;
+  }
+}
+
+.map-legend-container {
+  @include media($map-break) {
+    display: none;
+  }
+}
+
+.legend-labels {
+  color: $white;
+  font-family: 'PT Sans Narrow', $helvetica;
+  font-size: em(18);
+
+  @include media($map-break) {
+    color: rgb(64, 64, 64);
+  }
+
+  li {
+    margin-left: 0;
+    line-height: 18px;
+    margin-bottom: 5px;
+  }
+
+  span {
+    display: block;
+    float: left;
+    height: 16px;
+    width: 30px;
+    margin: 0 5px;
+  }
+}
+
+.legend-block-orange {
+  background-color: rgb(243, 119, 71);
+  color: rgb(243, 119, 71);
+}
+
+.legend-block-lightblue {
+  background-color: rgb(155, 197, 233);
+  color: rgb(155, 197, 233);
+}
+
+.legend-block-darkblue {
+  background-color: rgb(50, 87, 123);
+  color: rgb(50, 87, 123);
+}
