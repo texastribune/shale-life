@@ -43,7 +43,6 @@
 }
 
 .lead-header {
-  min-height: 450px;
   margin-bottom: 1em;
 
   h1 {
@@ -143,9 +142,9 @@
 .slideshow-start,
 .slideshow-caption {
   @include media($bp-shale-med) {
-    @include span-columns(7);
+    @include span-columns(6);
     @include shift(0);
-    margin-left: 5em;
+    margin-left: 6em;
     text-align: left;
   }
 
