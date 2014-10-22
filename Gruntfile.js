@@ -164,7 +164,7 @@ module.exports = function (grunt) {
         },{
           expand: true,
           cwd: '<%= config.app %>',
-          src: ['**/*.scss'],
+          src: ['styles/**/*.scss'],
           dest: '.tmp',
           ext: '.scss'
         }]
@@ -259,7 +259,7 @@ module.exports = function (grunt) {
       },
       sass: {
         files: ['<%= config.app %>/styles/**/*.{scss,sass}'],
-        tasks: ['sass:server', 'autoprefixer']
+        tasks: ['nunjucks', 'wiredep', 'sass:server', 'autoprefixer']
       },
     },
 
@@ -297,7 +297,7 @@ module.exports = function (grunt) {
     'rev',
     'usemin',
     'htmlmin'
-    ]);
+  ]);
 
   grunt.registerTask('default', ['serve']);
 };
