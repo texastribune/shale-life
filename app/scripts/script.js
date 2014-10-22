@@ -8,6 +8,7 @@ function setHeight(target, reference) {
   $(target).css('height', refHeight);
 }
 
+
 // Set position of Slideshow direction buttons
 function setPosition(targetA, targetB, reference, x) {
   var refTop = $(reference).height();
@@ -49,9 +50,6 @@ $(function() {
 });
 
 $(document).ready(function() {
-
-  // Make videos responsive
-  // $('.video-wrapper').fitVids();
 
   //Create flexsliders
   // Top slideshow

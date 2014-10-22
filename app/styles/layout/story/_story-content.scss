@@ -43,21 +43,27 @@
 }
 
 .lead-header {
-  padding-top: 3em;
-
+  min-height: 450px;
   h1 {
-    @include media($bp-landing-large) {
+    padding-top: 10%;
+  }
+
+  @include media($bp-landing-large) {
+    h1 {
       font-size: 12em;
     }
+  }
 
-    @include media($bp-landing-medium) {
+  @include media($bp-landing-medium) {
+    h1 {
       font-size: 9em;
     }
+  }
 
-    @include media($bp-landing-small) {
+  @include media($bp-landing-small) {
+    h1 {
       font-size: 5em;
     }
-
   }
 
 }
