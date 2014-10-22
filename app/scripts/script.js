@@ -2106,9 +2106,6 @@ $(document).ready(function() {
     itemMargin: 5
   });
 
-  // Set height of tan box based on size of content inside
-  setHeight('.story-box', '.story');
-
 });
 
 var tag = document.createElement('script');
@@ -2116,26 +2113,6 @@ var tag = document.createElement('script');
 tag.src = 'https://www.youtube.com/iframe_api';
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-// var player;
-
-// var playButton = document.getElementById('js-play-button');
-
-// function onPlayerReady(event) {
-//   playButton.addEventListener('click', function() {
-//     console.log(event);
-//     event.target.playVideo();
-
-//   });
-// }
-
-// function onYouTubeIframeAPIReady() {
-//   player = new YT.Player('ytplayer', {
-//     events: {
-//       'onReady': onPlayerReady
-//     }
-//   });
-// }
 
 // Fires whenever a player has finished loading
 function onPlayerReady(event) {
@@ -2192,13 +2169,11 @@ function onYouTubePlayerAPIReady() {
 $(window).resize(function() {
   $('.lead-header').css('max-width', $(window).outerWidth());
   positionNav('nav-ref');
-  setHeight('.story-box', '.story');
   setHeight('#slideshow > .flex-viewport', '.flex-active-slide');
 });
 
 $(window).on( 'orientationchange', function() {
   $('.lead-header').css('max-width', $(window).outerWidth());
   positionNav('nav-ref');
-  setHeight('.story-box', '.story');
   setHeight('#slideshow > .flex-viewport', '.flex-active-slide');
 });
