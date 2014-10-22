@@ -165,7 +165,7 @@
     "PHOTO_5_CAPTION": "<p>The increase in fatal traffic accidents involving commercial vehicles in the Eagle Ford and Permian Basin regions is particularly pronounced. From 2009 to 2013, those types of accidents grew by 250 percent in the shale regions. The statewide increase was 50 percent. </p>\n",
     "MAP_list": "Eagle Ford Shale: (Atascosa, Bastrop, Bee, Brazos, Burleson, Dewitt, Dimmit, Fayette, Frio, Gonzales, Grimes, Karnes, Lasalle, Lavaca, Lee, Leon, Live Oak, Madison, Maverick, McMullen, Milam, Robertson, Walker, Webb, Wilson, Zavala) \n\nPermian Basin: (Andrews, Borden, Cochran, Coke, Crane, Crosby, Dawson, Dickens, Ector, Gaines, Garza, Glasscock, Hale, Hockley, Howard, Irion, Jeff Davis, Kent, Kimble, Lamb, Loving, Lubbock, Lynn, Martin, Midland, Mitchell, Nolan, Pecos, Reagan, Reeves, Scurry, Sterling, Terry, Tom Green, Upton, Ward, Winkler, Yoakum)",
     "MAP_URL": "TT-Shale-Map-EagleFord-PermianBasin-001.png",
-    "MAP": "Counties in Permian Basin (West), Eagle Ford Shale (South)",
+    "MAP": "Permian Basin (West), Eagle Ford Shale (South)",
     "SOURCE": "Texas Department of Transportation",
     "Data_Col1": 2009,
     "Data_Col2": 2013,
@@ -524,7 +524,7 @@
     "Source": "U.S. Census Bureau, U.S. Department of Agriculture, Texas Railroad Commission"
   },
   "COUNTING_HEADS": {
-    "   ": "How Big is the Boom?",
+    "SHORT_HEAD": "How Big is the Boom?",
     "LONG_HEAD": "Counting Heads in the Eagle Ford Shale is No Easy Task ",
     "SLUG": "how-big-is-the-boom",
     "INTRO_TEXT": "<p>How many people have moved to the Eagle Ford Shale as a result of its energy boom? That’s a tough question to answer. </p>\n<p>While thousands of people have flocked to the region for new jobs, the transient nature of the work presents a big challenge for local leaders, who struggle to plan for housing, schools, pipelines and roads.\nDemographics experts and those who already called the region home believe population numbers have been far underreported, because U.S. Census Bureau estimates don’t account for workers living in man camps or motels. Some communities have found alternative ways to guess their growth, like counting new hotel beds and water hook-ups. </p>\n",
@@ -543,7 +543,7 @@
     "PHOTO_1_URL": "",
     "PHOTO_1_CAPTION": "",
     "MAP_URL": "TT-Shale-Map-ActiveDrilling-001.png",
-    "MAP": "14-counties with active drilling in 2011: Atascosa, Bee, DeWitt, Dimmit, Frio, Gonzales, Karnes, LaSalle, Live Oak, Maverick, McMullen, Webb, Wilson, Zavala",
+    "MAP": "14-counties in Eagle Ford Shale with active drilling in 2011",
     "Pop2000": "455,022",
     "Pop2010": "538,628",
     "Pop2013": "560,751",
