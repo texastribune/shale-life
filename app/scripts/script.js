@@ -25,10 +25,10 @@ function setPosition(targetA, targetB, reference, x) {
 function positionNav(klass) {
     var $e = $('.flex-active-slide > .' + klass);
     if ($e.hasClass('slide-box')) {
-      setPosition('.flex-next', '.flex-prev', '.flex-active-slide > .nav-ref', 20);
+      setPosition('.flex-next', '.flex-prev', '.flex-active-slide > .nav-ref', 25);
       $('.lead-header').css('background-color', 'rgba(26, 26, 26, .7)');
     } else {
-      setPosition('.flex-next', '.flex-prev', '.flex-active-slide > .nav-ref', 30);
+      setPosition('.flex-next', '.flex-prev', '.flex-active-slide > .nav-ref', 40);
       $('.lead-header').css('background-color', 'rgba(26, 26, 26, 0)');
     }
 }
