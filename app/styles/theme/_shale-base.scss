@@ -114,36 +114,12 @@ tr {
   }
 }
 
-
-.facebook,
-.twitter,
-.down-arrow {
+.down-arrow,
+.play-button {
   display: inline-block;
-  height: 2em;
+  height: 2.25em;
   margin-right: 1em;
-  width: 2em;
-}
-
-.facebook {
-  background: url(/images/icons/ShaleLife-img-facebook-white002.png) no-repeat;
-  background-position: center center;
-  background-size: cover;
-  &:hover {
-    background: url(/images/icons/ShaleLife-img-facebook-onhover002.png) no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
-}
-
-.twitter {
-  background: url(/images/icons/ShaleLife-img-twitter-white.png) no-repeat;
-  background-position: center center;
-  background-size: cover;
-  &:hover {
-    background: url(/images/icons/ShaleLife-img-twitter-onhover.png) no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
+  width: 2.25em;
 }
 
 .down-arrow {
@@ -151,6 +127,27 @@ tr {
   background-position: center center;
   background-size: cover;
 }
+
+.play-button {
+  background: url(/images/icons/ShaleLife-btn-play.png) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0);
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+//Override button yellow
+.play-button:hover:not(:disabled),
+.play-button:hover:not(:disabled) ,
+.play-button:active:not(:disabled),
+.play-button:focus:not(:disabled) {
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
 
 .ad-container {
   margin: 0 auto;
