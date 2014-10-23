@@ -51,7 +51,7 @@
       }
 
       @include media($bp-shale-lg) {
-        left: 9em !important;
+        left: 4em !important;
       }
     }
 
@@ -71,9 +71,9 @@
         opacity: 0 !important;
       }
 
-      @include media($bp-shale-lg) {
-        left: 5em !important;
-      }
+      // @include media($bp-shale-lg) {
+      //   left: 4.5em !important;
+      // }
     }
 
 
