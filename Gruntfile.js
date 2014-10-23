@@ -212,10 +212,14 @@ module.exports = function (grunt) {
     },
 
     useminPrepare: {
-    options: {
-      dest: '<%= config.dist %>'
-    },
-      html: '.tmp/index.html'
+      landing: {
+        dest: '<%= config.dist %>',
+        src: ['<%= config.app %>/templates/base-landing.html']
+      },
+      pages: {
+        dest: '<%= config.dist %>',
+        src: ['<%= config.app %>/templates/base.html']
+      }
     },
 
     usemin: {
