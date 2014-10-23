@@ -81,7 +81,13 @@ hr.shale-yellow {
   color: $yellow;
 }
 
-// story-content
+a {
+  color: $off-white;
+
+  &:hover {
+    color: $light-denim;
+  }
+}
 
 table {
   color: $off-white;

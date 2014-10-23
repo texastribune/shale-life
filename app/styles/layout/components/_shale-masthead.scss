@@ -14,8 +14,11 @@ $bp-masthead: new-breakpoint(min-width 800px);
 
   i,
   h3 {
-    color: $white;
     float: right;
+
+    &:hover {
+      color: $light-denim;
+    }
   }
 
   i {
@@ -31,9 +34,6 @@ $bp-masthead: new-breakpoint(min-width 800px);
     text-transform: uppercase;
   }
 
-  a {
-    color: $white;
-  }
 }
 
 .more-stories {
