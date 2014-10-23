@@ -282,8 +282,8 @@ module.exports = function (grunt) {
 
    grunt.registerTask('build', [
     'clean:dist',
-    'nunjucks',
     'wiredep',
+    'nunjucks',
     'useminPrepare',
     'sass:dist',
     'copy:styles',
