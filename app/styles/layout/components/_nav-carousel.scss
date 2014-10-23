@@ -9,6 +9,12 @@
   .slides {
     li {
       width: 200px;
+
+      &:hover {
+        h3 {
+          background-color: transparentize($red, .1);
+        }
+      }
     }
 
     img {
@@ -19,16 +25,12 @@
 
     h3 {
       background-color: transparentize($red, .5);
-      color: $white;
       bottom: 10%;
+      color: $white;
       padding: .5em;
       position: absolute;
       text-align: left;
       width: 200px;
-
-      &:hover {
-        background-color: transparentize($red, .1);
-      }
     }
 
     p {

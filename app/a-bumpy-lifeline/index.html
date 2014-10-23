@@ -20,7 +20,7 @@
 
 
   <section class="lead-content">
-    <div class="lead-image"></div>
+    <div class="BUSES lead-image"></div>
     <div class="container">
 
       <header class="lead-header">
@@ -30,7 +30,7 @@
             <hr class="shale-yellow">
           </div>
           <div class="slideshow-start lead-text">
-            <a class="fancybox fancybox.iframe" href="https://www.youtube.com/embed/{{ BUSES.VIDEO_URL }}?controls=0&enablejsapi=1&modestbranding=1&rel=0&showinfo=0"><button class="fancybox-media play-button"></button></a>
+            <a class="fancybox fancybox.iframe" href="https://www.youtube.com/embed/{{ BUSES.VIDEO_URL }}?controls=2&enablejsapi=1&modestbranding=1&rel=0&showinfo=0"><button class="fancybox-media play-button"></button></a>
 
             <p>Watch Video</p>
           </div>
@@ -78,32 +78,72 @@
     <div class="container">
       <div class="data-box">
         <div class="data">
-          <h4>Additional Information</h4>
+          <h4>Dimmit and Zavala by the Numbers</h4>
           <hr class="shale-yellow">
           <table>
             <thead>
               <tr>
-                <th></th>
-                <th>2000</th>
-                <th>2010</th>
-                <th>2013</th>
+                <th>Dimmit County</th>
+                <th>{{ BUSES.Data_Col1 }}</th>
+                <th>{{ BUSES.Data_Col2 }}</th>
+                <th>{{ BUSES.Data_Col3 }}</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td data-title="{{ BUSES.Data_Title_A }}">{{ BUSES.Data_Title_A }}</td>
-                <td data-title="{{ BUSES.Data_Col1 }}">{{ BUSES.Data_A_1 }}</td>
-                <td data-title="{{ BUSES.Data_Col2 }}">{{ BUSES.Data_A_2 }}</td>
-                <td data-title="{{ BUSES.Data_Col3 }}">{{ BUSES.Data_A_3 }}</td>
+                <td data-title="{{ BUSES.Data_Col1 }}">{{ BUSES.Data_A_1D }}</td>
+                <td data-title="{{ BUSES.Data_Col2 }}">{{ BUSES.Data_A_2D }}</td>
+                <td data-title="{{ BUSES.Data_Col2 }}">{{ BUSES.Data_A_3D }}</td>
               </tr>
               <tr>
                 <td data-title="{{ BUSES.Data_Title_B }}">{{ BUSES.Data_Title_B }}</td>
-                <td data-title="{{ BUSES.Data_Col1 }}">{{ BUSES.Data_B_1 }}</td>
-                <td data-title="{{ BUSES.Data_Col2 }}">{{ BUSES.Data_B_2 }}</td>
-                <td data-title="{{ BUSES.Data_Col3 }}">{{ BUSES.Data_B_3 }}</td>
+                <td data-title="{{ BUSES.Data_Col1 }}">{{ BUSES.Data_B_1D }}</td>
+                <td data-title="{{ BUSES.Data_Col2 }}">{{ BUSES.Data_B_2D }}</td>
+                <td data-title="{{ BUSES.Data_Col2 }}">{{ BUSES.Data_B_3D }}</td>
               </tr>
               <tr>
-                <td colspan=4><em>Source: {{ BUSES.Source }}</em></td>
+                <td data-title="{{ BUSES.Data_Title_C }}">{{ BUSES.Data_Title_C }}</td>
+                <td data-title="{{ BUSES.Data_Col1 }}">{{ BUSES.Data_C_1D }}</td>
+                <td data-title="{{ BUSES.Data_Col2 }}">{{ BUSES.Data_C_2D }}</td>
+                <td data-title="{{ BUSES.Data_Col2 }}">{{ BUSES.Data_C_3D }}</td>
+              </tr>
+              <tr>
+                <td colspan=4><em>Source: {{ BUSES.SOURCE }}</em></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Zavala County</th>
+                <th>{{ BUSES.Data_Col1 }}</th>
+                <th>{{ BUSES.Data_Col2 }}</th>
+                <th>{{ BUSES.Data_Col3 }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-title="{{ BUSES.Data_Title_A }}">{{ BUSES.Data_Title_A }}</td>
+                <td data-title="{{ BUSES.Data_Col1 }}">{{ BUSES.Data_A_1Z }}</td>
+                <td data-title="{{ BUSES.Data_Col2 }}">{{ BUSES.Data_A_2Z }}</td>
+                <td data-title="{{ BUSES.Data_Col2 }}">{{ BUSES.Data_A_3Z }}</td>
+              </tr>
+              <tr>
+                <td data-title="{{ BUSES.Data_Title_B }}">{{ BUSES.Data_Title_B }}</td>
+                <td data-title="{{ BUSES.Data_Col1 }}">{{ BUSES.Data_B_1Z }}</td>
+                <td data-title="{{ BUSES.Data_Col2 }}">{{ BUSES.Data_B_2Z }}</td>
+                <td data-title="{{ BUSES.Data_Col2 }}">{{ BUSES.Data_B_3Z }}</td>
+              </tr>
+              <tr>
+                <td data-title="{{ BUSES.Data_Title_C }}">{{ BUSES.Data_Title_C }}</td>
+                <td data-title="{{ BUSES.Data_Col1 }}">{{ BUSES.Data_C_1Z }}</td>
+                <td data-title="{{ BUSES.Data_Col2 }}">{{ BUSES.Data_C_2Z }}</td>
+                <td data-title="{{ BUSES.Data_Col2 }}">{{ BUSES.Data_C_3Z }}</td>
+              </tr>
+              <tr>
+                <td colspan=4><em>Source: {{ BUSES.SOURCE }}</em></td>
               </tr>
             </tbody>
           </table>

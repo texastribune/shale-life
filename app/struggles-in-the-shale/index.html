@@ -16,13 +16,8 @@
 
 <!-- Main Content -->
 {% block content %}
-
-
-
-
-
   <section class="lead-content">
-    <div class="lead-image"></div>
+    <div class="CHALLENGE lead-image"></div>
     <div class="container">
       <header class="lead-header">
         <div id="video-lead">
@@ -31,7 +26,7 @@
             <hr class="shale-yellow">
           </div>
           <div class="slideshow-start lead-text">
-            <a class="fancybox fancybox.iframe" href="https://www.youtube.com/embed/{{ CHALLENGE.VIDEO_URL }}?controls=0&enablejsapi=1&modestbranding=1&rel=0&showinfo=0"><button class="fancybox-media play-button"></button></a>
+            <a class="fancybox fancybox.iframe" href="https://www.youtube.com/embed/{{ CHALLENGE.VIDEO_URL }}?controls=2&enablejsapi=1&modestbranding=1&rel=0&showinfo=0"><button class="fancybox-media play-button"></button></a>
 
             <p>Watch Video</p>
           </div>
@@ -78,7 +73,7 @@
     <div class="container">
       <div class="data-box">
         <div class="data">
-          <h4>Additional Information</h4>
+          <h4>Midland County by the Numbers</h4>
           <hr class="shale-yellow">
           <table>
             <thead>
@@ -96,39 +91,39 @@
                 <td data-title="{{ CHALLENGE.Data_Col2 }}">{{ CHALLENGE.Pop2010 }}</td>
                 <td data-title="{{ CHALLENGE.Data_Col2 }}">{{ CHALLENGE.Pop2013 }}</td>
               </tr>
-            </tbody>
-          </table>
-          <table>
-            <thead>
-              <tr>
+              <tr class="extra-header">
+                <th></th>
                 <th></th>
                 <th>{{ CHALLENGE.Data_Col1 }}</th>
                 <th>{{ CHALLENGE.Data_Col2 }}</th>
               </tr>
-            </thead>
-            <tbody>
               <tr>
                 <td data-title="{{ CHALLENGE.Data_Title_A }}">{{ CHALLENGE.Data_Title_A }}</td>
+                <td></td>
                 <td data-title="{{ CHALLENGE.Data_Col1 }}">{{ CHALLENGE.Data_A_1 }}</td>
                 <td data-title="{{ CHALLENGE.Data_Col2 }}">{{ CHALLENGE.Data_A_2 }}</td>
               </tr>
               <tr>
                 <td data-title="{{ CHALLENGE.Data_Title_B }}">{{ CHALLENGE.Data_Title_B }}</td>
+                <td></td>
                 <td data-title="{{ CHALLENGE.Data_Col1 }}">{{ CHALLENGE.Data_B_1 }}</td>
                 <td data-title="{{ CHALLENGE.Data_Col2 }}">{{ CHALLENGE.Data_B_2 }}</td>
               </tr>
               <tr>
                 <td data-title="{{ CHALLENGE.Data_Title_C }}">{{ CHALLENGE.Data_Title_C }}</td>
+                <td></td>
                 <td data-title="{{ CHALLENGE.Data_Col1 }}">{{ CHALLENGE.Data_C_1 }}</td>
                 <td data-title="{{ CHALLENGE.Data_Col2 }}">{{ CHALLENGE.Data_C_2 }}</td>
               </tr>
               <tr>
                 <td data-title="{{ CHALLENGE.Data2_Title_A }}">{{ CHALLENGE.Data2_Title_A }}</td>
+                <td></td>
                 <td data-title="{{ CHALLENGE.Data2_Col1 }}">{{ CHALLENGE.Data2_A_1 }}</td>
                 <td data-title="{{ CHALLENGE.Data2_Col2 }}">{{ CHALLENGE.Data2_A_2 }}</td>
               </tr>
               <tr>
                 <td data-title="{{ CHALLENGE.Data2_Title_B }}">{{ CHALLENGE.Data2_Title_B }}</td>
+                <td></td>
                 <td data-title="{{ CHALLENGE.Data2_Col1 }}">{{ CHALLENGE.Data2_B_1 }}</td>
                 <td data-title="{{ CHALLENGE.Data2_Col2 }}">{{ CHALLENGE.Data2_B_2 }}</td>
               </tr>

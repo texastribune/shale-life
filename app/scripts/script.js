@@ -2089,8 +2089,14 @@ $(document).ready(function() {
       positionNav('nav-ref');
       $('.total-slides').text(slider.count-1);
     },
+    before: function(slider) {
+      $('.slideshow-caption').css('visibility', 'hidden');
+      $('.share-story').css('visibility', 'hidden');
+    },
     // Re-position direction buttons after slide switches
     after: function(slider) {
+      $('.slideshow-caption').css('visibility', 'visible');
+      $('.share-story').css('visibility', 'visible');
       setHeight('#slideshow > .flex-viewport', '.flex-active-slide');
       $('.current-slide').text(slider.currentSlide);
       positionNav('nav-ref');

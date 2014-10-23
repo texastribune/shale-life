@@ -1,6 +1,5 @@
 $bp-thumbnails: new-breakpoint(min-width 500px);
 
-//WIDE
 .COTTON_FARMERS {
   &.lead-image {
     background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ COTTON_FARMERS.LEAD_SM_IMG_URL }}');
@@ -20,6 +19,13 @@ $bp-thumbnails: new-breakpoint(min-width 500px);
 }
 
 .LOVING_COUNTY {
+  &.lead-image {
+    background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ LOVING_COUNTY.LEAD_SM_IMG_URL }}');
+
+    @include media($bp-landing-large) {
+      background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ LOVING_COUNTY.LEAD_LG_IMG_URL }}');
+    }
+  }
 
   &.thumbnail {
     background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ LOVING_COUNTY.LANDING_SM_IMG_URL }}');
@@ -31,6 +37,13 @@ $bp-thumbnails: new-breakpoint(min-width 500px);
 }
 
 .RESPONDERS {
+  &.lead-image {
+    background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ RESPONDERS.LEAD_SM_IMG_URL }}');
+
+    @include media($bp-landing-large) {
+      background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ RESPONDERS.LEAD_LG_IMG_URL }}');
+    }
+  }
 
   &.thumbnail {
     background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ RESPONDERS.LANDING_SM_IMG_URL }}');
@@ -43,6 +56,13 @@ $bp-thumbnails: new-breakpoint(min-width 500px);
 
 //Big square
 .EAGLE_FORD_ACCIDENTS {
+  &.lead-image {
+    background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ EAGLE_FORD_ACCIDENTS.LEAD_SM_IMG_URL }}');
+
+    @include media($bp-landing-large) {
+      background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ EAGLE_FORD_ACCIDENTS.LEAD_LG_IMG_URL }}');
+    }
+  }
 
   &.thumbnail {
     background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ EAGLE_FORD_ACCIDENTS.LANDING_SM_IMG_URL }}');
@@ -54,6 +74,13 @@ $bp-thumbnails: new-breakpoint(min-width 500px);
 }
 
 .KARNES {
+  &.lead-image {
+    background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ KARNES.LEAD_SM_IMG_URL }}');
+
+    @include media($bp-landing-large) {
+      background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ KARNES.LEAD_LG_IMG_URL }}');
+    }
+  }
 
   &.thumbnail {
     background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ KARNES.LANDING_SM_IMG_URL }}');
@@ -65,6 +92,13 @@ $bp-thumbnails: new-breakpoint(min-width 500px);
 }
 
 .FOOTBALL {
+  &.lead-image {
+    background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ FOOTBALL.LEAD_SM_IMG_URL }}');
+
+    @include media($bp-landing-large) {
+      background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ FOOTBALL.LEAD_LG_IMG_URL }}');
+    }
+  }
 
   &.thumbnail {
     background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ FOOTBALL.LANDING_SM_IMG_URL }}');
@@ -76,6 +110,13 @@ $bp-thumbnails: new-breakpoint(min-width 500px);
 }
 
 .BUSES {
+  &.lead-image {
+    background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ BUSES.LEAD_SM_IMG_URL }}');
+
+    @include media($bp-landing-large) {
+      background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ BUSES.LEAD_LG_IMG_URL }}');
+    }
+  }
 
   &.thumbnail {
     background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ BUSES.LANDING_SM_IMG_URL }}');
@@ -87,6 +128,13 @@ $bp-thumbnails: new-breakpoint(min-width 500px);
 }
 
 .CHALLENGE {
+  &.lead-image {
+    background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ CHALLENGE.LEAD_SM_IMG_URL }}');
+
+    @include media($bp-landing-large) {
+      background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ CHALLENGE.LEAD_LG_IMG_URL }}');
+    }
+  }
 
   &.thumbnail {
     background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ CHALLENGE.LANDING_SM_IMG_URL }}');
@@ -98,6 +146,13 @@ $bp-thumbnails: new-breakpoint(min-width 500px);
 }
 
 .OPPORTUNITY {
+  &.lead-image {
+    background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ OPPORTUNITY.LEAD_SM_IMG_URL }}');
+
+    @include media($bp-landing-large) {
+      background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ OPPORTUNITY.LEAD_LG_IMG_URL }}');
+    }
+  }
 
   &.thumbnail {
     background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ OPPORTUNITY.LANDING_SM_IMG_URL }}');
@@ -109,6 +164,13 @@ $bp-thumbnails: new-breakpoint(min-width 500px);
 }
 
 .AIR_QUALITY {
+  &.lead-image {
+    background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ AIR_QUALITY.LEAD_SM_IMG_URL }}');
+
+    @include media($bp-landing-large) {
+      background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ AIR_QUALITY.LEAD_LG_IMG_URL }}');
+    }
+  }
 
   &.thumbnail {
     background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ AIR_QUALITY.LANDING_SM_IMG_URL }}');
@@ -120,6 +182,13 @@ $bp-thumbnails: new-breakpoint(min-width 500px);
 }
 
 .COUNTING_HEADS {
+  &.lead-image {
+    background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ COUNTING_HEADS.LEAD_SM_IMG_URL }}');
+
+    @include media($bp-landing-large) {
+      background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ COUNTING_HEADS.LEAD_LG_IMG_URL }}');
+    }
+  }
 
   &.thumbnail {
     background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ COUNTING_HEADS.LANDING_SM_IMG_URL }}');
@@ -131,6 +200,13 @@ $bp-thumbnails: new-breakpoint(min-width 500px);
 }
 
 .PRISONS {
+  &.lead-image {
+    background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ PRISONS.LEAD_SM_IMG_URL }}');
+
+    @include media($bp-landing-large) {
+      background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ PRISONS.LEAD_LG_IMG_URL }}');
+    }
+  }
 
   &.thumbnail {
     background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ PRISONS.LANDING_SM_IMG_URL }}');
@@ -142,6 +218,13 @@ $bp-thumbnails: new-breakpoint(min-width 500px);
 }
 
 .MAN_CAMPS {
+  &.lead-image {
+    background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ MAN_CAMPS.LEAD_SM_IMG_URL }}');
+
+    @include media($bp-landing-large) {
+      background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ MAN_CAMPS.LEAD_LG_IMG_URL }}');
+    }
+  }
 
   &.thumbnail {
     background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ MAN_CAMPS.LANDING_SM_IMG_URL }}');
@@ -153,6 +236,13 @@ $bp-thumbnails: new-breakpoint(min-width 500px);
 }
 
 .CROP_DUSTER {
+  &.lead-image {
+    background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ CROP_DUSTER.LEAD_SM_IMG_URL }}');
+
+    @include media($bp-landing-large) {
+      background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ CROP_DUSTER.LEAD_LG_IMG_URL }}');
+    }
+  }
 
   &.thumbnail {
     background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ CROP_DUSTER.LANDING_SM_IMG_URL }}');
@@ -164,6 +254,13 @@ $bp-thumbnails: new-breakpoint(min-width 500px);
 }
 
 .BIG_LAKE {
+  &.lead-image {
+    background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ BIG_LAKE.LEAD_SM_IMG_URL }}');
+
+    @include media($bp-landing-large) {
+      background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ BIG_LAKE.LEAD_LG_IMG_URL }}');
+    }
+  }
 
   &.thumbnail {
     background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ BIG_LAKE.LANDING_SM_IMG_URL }}');

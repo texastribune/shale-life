@@ -16,13 +16,8 @@
 
 <!-- Main Content -->
 {% block content %}
-
-
-
-
-
   <section class="lead-content">
-    <div class="lead-image"></div>
+    <div class="COUNTING_HEADS lead-image"></div>
     <div class="container">
       <header class="lead-header">
         <div id="video-lead">
@@ -31,7 +26,7 @@
             <hr class="shale-yellow">
           </div>
           <div class="slideshow-start lead-text">
-            <a class="fancybox fancybox.iframe" href="https://www.youtube.com/embed/{{ COUNTING_HEADS.VIDEO_URL }}?controls=0&enablejsapi=1&modestbranding=1&rel=0&showinfo=0"><button class="fancybox-media play-button"></button></a>
+            <a class="fancybox fancybox.iframe" href="https://www.youtube.com/embed/{{ COUNTING_HEADS.VIDEO_URL }}?controls=2&enablejsapi=1&modestbranding=1&rel=0&showinfo=0"><button class="fancybox-media play-button"></button></a>
 
             <p>Watch Video</p>
           </div>
@@ -79,7 +74,7 @@
     <div class="container">
       <div class="data-box">
         <div class="data">
-          <h4>Additional Information</h4>
+          <h4>Eagle Ford Shale by the Numbers</h4>
           <hr class="shale-yellow">
           <table>
             <thead>
@@ -97,18 +92,6 @@
                 <td data-title="{{ COUNTING_HEADS.Data_Col2 }}">{{ COUNTING_HEADS.Pop2010 }}</td>
                 <td data-title="{{ COUNTING_HEADS.Data_Col2 }}">{{ COUNTING_HEADS.Pop2013 }}</td>
               </tr>
-            </tbody>
-          </table>
-          <table>
-            <thead>
-              <tr>
-                <th></th>
-                <th>{{ COUNTING_HEADS.Data_Col1 }}</th>
-                <th>{{ COUNTING_HEADS.Data_Col2 }}</th>
-                <th>{{ COUNTING_HEADS.Data_Col3 }}</th>
-              </tr>
-            </thead>
-            <tbody>
               <tr>
                 <td data-title="{{ COUNTING_HEADS.Data_Title_A }}">{{ COUNTING_HEADS.Data_Title_A }}</td>
                 <td data-title="{{ COUNTING_HEADS.Data_Col1 }}">{{ COUNTING_HEADS.Data_A_1 }}</td>

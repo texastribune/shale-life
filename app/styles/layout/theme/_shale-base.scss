@@ -1,13 +1,3 @@
-//Breakpoints
-$bp-shale-lg: new-breakpoint(min-width 1081px);
-$bp-shale-med: new-breakpoint(min-width 765px max-width 1080px);
-$bp-shale-small: new-breakpoint(min-width 500px max-width 764px);
-$bp-shale-ad: new-breakpoint(min-width 688px);
-
-$bp-landing-large: new-breakpoint(min-width 1000px);
-$bp-landing-medium: new-breakpoint(min-width 600px max-width 999px);
-$bp-landing-small: new-breakpoint(min-width 400px max-width 599px);
-$bp-landing-tiny: new-breakpoint(min-width 399px);
 // Short-Hed
 html,
 body {
@@ -116,6 +106,12 @@ th {
 tr {
   &:nth-child(odd) td {
     background-color: $grey;
+  }
+
+  &.extra-header {
+    th {
+      padding: 1em;
+    }
   }
 }
 
