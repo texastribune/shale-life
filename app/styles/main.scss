@@ -11,15 +11,18 @@
 @import 'helpers/story-specifics';
 @import 'helpers/icons';
 
+// vendor scripts
 @import 'vendors/flexslider';
 @import 'vendors/fancybox';
 
+// shale themes for various page types
 @import 'layout/theme/shale-base';
 @import 'layout/theme/shale-landing';
 @import 'layout/theme/story-content';
 @import 'layout/theme/about';
 @import 'layout/theme/supporters';
 
+// page components
 @import 'layout/components/shale-masthead';
 @import 'layout/components/shale-footer';
 @import 'layout/components/story-slideshow';
@@ -27,6 +30,7 @@
 @import 'layout/components/nav-carousel';
 @import 'layout/components/shale-ads';
 
+// override to fix horizontal scroll issue on mobile
 body {
   overflow-x: hidden;
   width: 100%;
