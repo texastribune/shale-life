@@ -37,7 +37,6 @@
       background-position: center center;
       background-size: cover;
       height: 2.25em;
-      left: 3em !important;
       opacity: .9 !important;
       width: 100%;
       max-width: 2.25em;
@@ -47,11 +46,9 @@
       }
 
       @include media($bp-shale-med) {
-        left: 3em !important;
       }
 
       @include media($bp-shale-lg) {
-        left: 4em !important;
       }
     }
 
