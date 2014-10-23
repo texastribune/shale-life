@@ -3,8 +3,6 @@ $bp-landing-medium: new-breakpoint(min-width 600px max-width 999px);
 $bp-landing-small: new-breakpoint(min-width 400px max-width 599px);
 $bp-landing-tiny: new-breakpoint(min-width 399px);
 
-$lead-image-url: 'http://placekitten.com/1000/800';
-
 .landing-banner {
   background-color: lighten($masthead-black, 15%);
   display: table;
@@ -46,7 +44,7 @@ $lead-image-url: 'http://placekitten.com/1000/800';
 }
 
 .landing-header-image {
-  background-image: url($lead-image-url);
+  background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ LANDING.LEAD_SM_IMG_URL }}');
   background-position: center center;
   background-size: cover;
   bottom: 0;
@@ -54,6 +52,10 @@ $lead-image-url: 'http://placekitten.com/1000/800';
   position: absolute;
   right: 0;
   top: 0;
+
+  @include media($bp-landing-large) {
+    background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ LANDING.LEAD_LG_IMG_URL }}');
+  }
 
 }
 

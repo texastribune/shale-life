@@ -1,6 +1,5 @@
 $bp-thumbnails: new-breakpoint(min-width 500px);
 
-//WIDE
 .COTTON_FARMERS {
   &.lead-image {
     background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ COTTON_FARMERS.LEAD_SM_IMG_URL }}');
