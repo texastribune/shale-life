@@ -5,3 +5,6 @@ dist
 bower_components
 data.json
 data.xlsx
+
+scripts
+styles

@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="shortcut icon" type="image/x-icon" href="https://s3.amazonaws.com/static.texastribune.org/common/images/favicon.ico">
   <meta charset="UTF-8">
   <meta name="keywords" content="texas, oil, gas, drilling, eagle ford, permian basin">
   <meta name="news_keywords" content="texas, oil, gas, drilling, eagle ford, permian basin">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   {% block title_row %}<title> {{ META.project_title }} | The Shale Life </title>{% endblock %}
-
+  <link rel="shortcut icon" type="image/x-icon" href="//s3.amazonaws.com/static.texastribune.org/common/images/favicon.ico">
   {% block description %}<meta name="description" content="">{% endblock %}
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -41,11 +40,11 @@
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-  <!-- build:css /styles/vendor.css -->
+  <!-- build:css ../styles/vendor.css -->
   <!-- bower:css -->
   <!-- endbower -->
   <!-- endbuild -->
-  <!-- build:css(.tmp) /styles/main.css -->
+  <!-- build:css(.tmp) ../styles/main.css -->
   <link rel="stylesheet" href="/styles/main.css">
   <!-- endbuild -->
   {% block extra_style %}{% endblock %}
@@ -211,7 +210,7 @@
 <footer>
   <div class="footer-wrapper container">
     <div class="footer-logo">
-      <img src="http://s3.amazonaws.com/apps.texastribune.org/branding/TT-logo-white.dd56ad79c0da.png">
+      <img src="//s3.amazonaws.com/apps.texastribune.org/branding/TT-logo-white.dd56ad79c0da.png">
       <p>© 2014 <a href="http://www.texastribune.org/">The Texas Tribune</a></p>
     </div>
     <div class="member-push">
@@ -246,8 +245,11 @@
 </footer>
 
 
-<!-- build:js /scripts/vendor.js -->
+<!-- build:js ../scripts/vendor.js -->
 <!-- bower:js -->
+<script src="../../bower_components/jquery/dist/jquery.js"></script>
+<script src="../../bower_components/fitvids/jquery.fitvids.js"></script>
+<script src="../../bower_components/imager.js/Imager.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 
@@ -267,7 +269,7 @@
 </script>
 <script type='text/javascript' src='//cdn.knightlab.com/libs/soundcite/latest/js/soundcite.min.js'></script>
 
-<!-- build:js({app,.tmp}) /scripts/main.js -->
+<!-- build:js({app,.tmp}) ../scripts/main.js -->
 <script src="/scripts/jquery.flexslider.js"></script>
 <script src="/scripts/script.js"></script>
 <!-- endbuild -->
