@@ -158,7 +158,7 @@
                 <img src="//s3.amazonaws.com/static.texastribune.org/media/shale/{{ PRISONS.PHOTO_4_URL }}">
               </div>
               <div class="slideshow-caption lead-text">
-                <p>{{ PRISONS.PHOTO_4_CAPTION }}</p>
+                <p>{{ PRISONS.PHOTO_4_CAPTION }} <span class="soundcite" data-url="http://s3.amazonaws.com/static.texastribune.org/media/shale/{{ PRISONS.PHOTO_4_AUDIO }}" data-start="0" data-end="0">Listen.</span></p>
               </div>
               <div class="share-story">
                 <a href="https://www.facebook.com/dialog/feed?app_id=154122474650943&display=popup&name={{PRISONS.SHORT_HEAD}}%20%7C%20The%20Shale%20Life&caption={{ PRISONS.ENCRYPTED_FACEBOOK }}&description={{ PRISONS.LONG_HEAD}}&link=http%3A%2F%2Fapps.texastribune.org%2Fshale-life%2F{{ PRISONS.SLUG }}%2F&redirect_uri=http://apps.texastribune.org/shale-life/{{ PRISONS.SLUG }}" title="share on Facebook" class="social-share" target="_blank">
@@ -504,30 +504,12 @@
     <div class="container">
       <div class="data-box">
         <div class="data">
-          <h4>Additional Information</h4>
+          <h4>Prison Guard Turnover Rate</h4>
           <hr class="shale-yellow">
           <table>
             <thead>
               <tr>
-                <th></th>
-                <th>2000</th>
-                <th>2010</th>
-                <th>2013</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td data-title="Population">Population</td>
-                <td data-title="{{ PRISONS.Data_Col1 }}">{{ PRISONS.Pop2000 }}</td>
-                <td data-title="{{ PRISONS.Data_Col2 }}">{{ PRISONS.Pop2010 }}</td>
-                <td data-title="{{ PRISONS.Data_Col2 }}">{{ PRISONS.Pop2013 }}</td>
-              </tr>
-            </tbody>
-          </table>
-          <table>
-            <thead>
-              <tr>
-                <th>Staff Turnover</th>
+                <th>Year</th>
                 <th>{{ PRISONS.Data_Col1 }}</th>
                 <th>{{ PRISONS.Data_Col2 }}</th>
               </tr>

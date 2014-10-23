@@ -16,11 +16,6 @@
 
 <!-- Main Content -->
 {% block content %}
-
-
-
-
-
   <section class="lead-content">
     <div class="lead-image"></div>
     <div class="container">
@@ -79,7 +74,7 @@
     <div class="container">
       <div class="data-box">
         <div class="data">
-          <h4>Additional Information</h4>
+          <h4>Glasscock County by the Numbers</h4>
           <hr class="shale-yellow">
           <table>
             <thead>
@@ -97,11 +92,8 @@
                 <td data-title="{{ CROP_DUSTER.Data_Col2 }}">{{ CROP_DUSTER.Pop2010 }}</td>
                 <td data-title="{{ CROP_DUSTER.Data_Col2 }}">{{ CROP_DUSTER.Pop2013 }}</td>
               </tr>
-            </tbody>
-          </table>
-          <table>
-            <thead>
-              <tr>
+              <tr class="extra-header">
+                <th></th>
                 <th></th>
                 <th>{{ CROP_DUSTER.Data_Col1 }}</th>
                 <th>{{ CROP_DUSTER.Data_Col2 }}</th>
@@ -110,16 +102,19 @@
             <tbody>
               <tr>
                 <td data-title="{{ CROP_DUSTER.Data_Title_A }}">{{ CROP_DUSTER.Data_Title_A }}</td>
+                <td></td>
                 <td data-title="{{ CROP_DUSTER.Data_Col1 }}">{{ CROP_DUSTER.Data_A_1 }}</td>
                 <td data-title="{{ CROP_DUSTER.Data_Col2 }}">{{ CROP_DUSTER.Data_A_2 }}</td>
               </tr>
               <tr>
                 <td data-title="{{ CROP_DUSTER.Data_Title_B }}">{{ CROP_DUSTER.Data_Title_B }}</td>
+                <td></td>
                 <td data-title="{{ CROP_DUSTER.Data_Col1 }}">{{ CROP_DUSTER.Data_B_1 }}</td>
                 <td data-title="{{ CROP_DUSTER.Data_Col2 }}">{{ CROP_DUSTER.Data_B_2 }}</td>
               </tr>
               <tr>
                 <td data-title="{{ CROP_DUSTER.Data_Title_C }}">{{ CROP_DUSTER.Data_Title_C }}</td>
+                <td></td>
                 <td data-title="{{ CROP_DUSTER.Data_Col1 }}">{{ CROP_DUSTER.Data_C_1 }}</td>
                 <td data-title="{{ CROP_DUSTER.Data_Col2 }}">{{ CROP_DUSTER.Data_C_2 }}</td>
               </tr>
