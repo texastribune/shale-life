@@ -117,6 +117,12 @@ tr {
   &:nth-child(odd) td {
     background-color: $grey;
   }
+
+  &.extra-header {
+    th {
+      padding: 1em;
+    }
+  }
 }
 
 .down-arrow,
