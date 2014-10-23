@@ -7,17 +7,16 @@
 }
 
 .down-arrow {
-  background: url(/images/icons/ShaleLife-btn-arrow-down.png) no-repeat;
+  background: url('../images/icons/ShaleLife-btn-arrow-down.png') no-repeat;
   background-position: center center;
   background-size: cover;
-
 }
 
 .play-button {
-  background: url(/images/icons/ShaleLife-btn-play.png) no-repeat;
+  background: url('../images/icons/ShaleLife-btn-play.png') no-repeat;
+  background-color: rgba(0, 0, 0, 0);
   background-position: center center;
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0);
 
   &:hover {
     background-color: rgba(0, 0, 0, 0);

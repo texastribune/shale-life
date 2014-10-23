@@ -5,7 +5,8 @@
   <meta name="keywords" content="texas, oil, gas, drilling, eagle ford, permian basin">
   <meta name="news_keywords" content="texas, oil, gas, drilling, eagle ford, permian basin">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>{{ META.project_title }} | The Texas Tribune</title>
+  <link rel="shortcut icon" type="image/x-icon" href="//s3.amazonaws.com/static.texastribune.org/common/images/favicon.ico">
+  <title>{{ LANDING.SHORT_HEAD }} | The Texas Tribune</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -34,12 +35,11 @@
   <script src="//use.typekit.net/tsw6wfe.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-  <!-- build:css /styles/vendor.css -->
+  <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
   <!-- endbower -->
   <!-- endbuild -->
-  <!-- build:css(.tmp) /styles/main.css -->
+  <!-- build:css(.tmp) styles/main.css -->
   <link rel="stylesheet" href="/styles/main.css">
   <!-- endbuild -->
 
@@ -131,8 +131,11 @@
 </footer>
 
 
-<!-- build:js /scripts/vendor.js -->
+<!-- build:js scripts/vendor.js -->
 <!-- bower:js -->
+<script src="../../bower_components/jquery/dist/jquery.js"></script>
+<script src="../../bower_components/fitvids/jquery.fitvids.js"></script>
+<script src="../../bower_components/imager.js/Imager.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 
@@ -145,7 +148,7 @@
   ga('create','UA-9827490-1');ga('send','pageview');
 </script>
 
-<!-- build:js({app,.tmp}) /scripts/main.js -->
+<!-- build:js({app,.tmp}) scripts/main.js -->
 
 <script src="scripts/landing-load.js"></script>
 <script src="/scripts/jquery.flexslider.js"></script>

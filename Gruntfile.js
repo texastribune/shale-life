@@ -212,10 +212,14 @@ module.exports = function (grunt) {
     },
 
     useminPrepare: {
-    options: {
-      dest: '<%= config.dist %>'
-    },
-      html: '.tmp/index.html'
+      landing: {
+        dest: '<%= config.dist %>',
+        src: ['<%= config.app %>/templates/base-landing.html']
+      },
+      pages: {
+        dest: '<%= config.dist %>',
+        src: ['<%= config.app %>/templates/base.html']
+      }
     },
 
     usemin: {
@@ -265,15 +269,15 @@ module.exports = function (grunt) {
 
     wiredep: {
       app: {
-        src: ['.tmp/{,*/}*.html']
+        src: ['<%= config.app %>/templates/{,*/}*.html']
       }
     }
   });
 
   grunt.registerTask('serve', [
     'clean:server',
-    'nunjucks',
     'wiredep',
+    'nunjucks',
     'sass:server',
     'autoprefixer',
     'connect:livereload',
@@ -282,8 +286,8 @@ module.exports = function (grunt) {
 
    grunt.registerTask('build', [
     'clean:dist',
-    'nunjucks',
     'wiredep',
+    'nunjucks',
     'useminPrepare',
     'sass:dist',
     'copy:styles',
