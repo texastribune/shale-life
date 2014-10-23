@@ -265,15 +265,15 @@ module.exports = function (grunt) {
 
     wiredep: {
       app: {
-        src: ['.tmp/{,*/}*.html']
+        src: ['<%= config.app %>/templates/{,*/}*.html']
       }
     }
   });
 
   grunt.registerTask('serve', [
     'clean:server',
-    'nunjucks',
     'wiredep',
+    'nunjucks',
     'sass:server',
     'autoprefixer',
     'connect:livereload',
