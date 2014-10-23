@@ -64,7 +64,7 @@ h4 {
 
 p {
   font-family: pt-sans;
-  font-size: 1em;
+  font-size: 1.1em;
   line-height: 1.2em;
   text-align: left;
 }
@@ -104,7 +104,7 @@ table {
 th {
   border-bottom: 0;
   color: $white;
-  font-size: 1em;
+  font-size: 1.1em;
   font-weight: 800;
   line-height: 1.2em;
 }
@@ -121,35 +121,8 @@ tr {
   }
 }
 
+td {
+  font-size: 1em;
+}
 
-
-
-
-
-/*START ABOUT*/
-
-// h2 .about-header {
-//   color: rgb(105, 138, 173);
-//   font: 600 1.5em pt-sans;
-//   letter-spacing: 0.05em;
-//   line-height: 1.2em;
-//   text-align: left;
-//   text-transform: uppercase;
-// }
-
-// .about-name {
-//   color: rgb(240, 240, 240);
-//   font: 800 1.1em pt-sans;
-//   letter-spacing: 1px;
-//   text-align: left;
-// }
-
-// .about-body-text {
-//   color: rgb(240, 240, 240);
-//   font: 400 1em pt-sans;
-//   line-height: 1.2em;
-//   text-align: left;
-// }
-
-// a :hover .about-body-text { color: rgb(151, 199, 249); }
 
