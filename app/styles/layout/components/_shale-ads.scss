@@ -1,0 +1,21 @@
+$bp-shale-ad: new-breakpoint(min-width 870px);
+
+.ad-container {
+  margin: 1em auto;
+}
+
+.box-ad {
+  display: none;
+
+  @include media($bp-shale-ad) {
+    display: block;
+    float: right;
+    width: 350px;
+    height: 250px;
+  }
+}
+
+.banner-ad {
+  width: 728px;
+  height: 90px;
+}

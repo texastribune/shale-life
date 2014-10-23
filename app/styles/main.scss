@@ -7,21 +7,25 @@
 
 // app specific script
 @import 'helpers/shale-colors';
+@import 'helpers/breakpoints';
+@import 'helpers/story-specifics';
+@import 'helpers/icons';
 
-@import 'theme/shale-base';
-@import 'theme/story-specifics';
-@import 'theme/flexslider';
-@import 'layout/shale-landing';
-@import 'layout/base/shale-masthead';
-@import 'layout/base/shale-footer';
-@import 'layout/base/nav-carousel';
-@import 'layout/story/story-content';
-@import 'layout/story/story-video';
-@import 'layout/supporters';
-@import 'layout/about';
-@import 'layout/story/story-slideshow';
-@import 'layout/story/data-context';
-@import 'theme/fancybox';
+@import 'vendors/flexslider';
+@import 'vendors/fancybox';
+
+@import 'layout/theme/shale-base';
+@import 'layout/theme/shale-landing';
+@import 'layout/theme/story-content';
+@import 'layout/theme/about';
+@import 'layout/theme/supporters';
+
+@import 'layout/components/shale-masthead';
+@import 'layout/components/shale-footer';
+@import 'layout/components/story-slideshow';
+@import 'layout/components/data-context';
+@import 'layout/components/nav-carousel';
+@import 'layout/components/shale-ads';
 
 body {
   overflow-x: hidden;

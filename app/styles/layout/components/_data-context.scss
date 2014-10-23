@@ -5,14 +5,13 @@ $bp-shale-ad: new-breakpoint(min-width 870px);
 }
 
 .data-box {
+  @extend %content-block;
   display: block;
-  position: relative;
   margin-bottom: 1em;
+  position: relative;
   text-align: center;
   vertical-align: middle;
   @include span-columns(12);
-
-  @extend %content-block;
 
   img {
     display: none;
@@ -24,8 +23,8 @@ $bp-shale-ad: new-breakpoint(min-width 870px);
 
     img {
       display: block;
-      width: 100%;
       max-width: 300px;
+      width: 100%;
     }
   }
 
@@ -35,8 +34,8 @@ $bp-shale-ad: new-breakpoint(min-width 870px);
 
     img {
       display: block;
-      width: 100%;
       max-width: 300px;
+      width: 100%;
     }
   }
 }
@@ -55,22 +54,4 @@ $bp-shale-ad: new-breakpoint(min-width 870px);
   }
 }
 
-.ad-container {
-  margin: 1em auto;
-}
 
-.box-ad {
-  display: none;
-
-  @include media($bp-shale-ad) {
-    display: block;
-    float: right;
-    width: 350px;
-    height: 250px;
-  }
-}
-
-.banner-ad {
-  width: 728px;
-  height: 90px;
-}
