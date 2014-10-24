@@ -15,538 +15,765 @@
 <section class="lead-content">
   <div class="landing-header-image"></div>
   <div class="container">
-    <header class="lead-header">
+    <header class="lead-header supporters-header">
       <h1>ABOUT</h1>
       <h1 class="yellow">THE SHALE LIFE</h1>
-      <div class="supporters-prompt"></div>
     </header>
   </div>
 </section>
 
 <section>
   <div class="container about-container">
-    <div class="about-prose row">
-      <p class="byline">By Jim Malewitz, visualizations by Ryan Murphy</p>
-      <hr class="shale-yellow">
-      {{ ABOUT.TEXT_1 }}
+    <div class="prose-column">
+      <div class="about-prose">
+        <p class="byline">Story by Jim Malewitz, visualizations by Ryan Murphy</p>
+        {{ ABOUT.TEXT_1 }}
+      </div>
+      <div class="about-map-container">
+        <header class="map-header">
+          <h3>Texas oil permits</h3>
+          {{ ABOUT.MAP_TEXT }}
+          <hr class="shale-yellow">
+        </header>
+        <div id="about-map" class="about-map"></div>
+        <div id="map-legend-container" class="map-legend-container">
+          <div class="legend-scale">
+            <ul class="legend-labels">
+              <li><span class="legend-block-orange"></span>{{ ABOUT.ORANGE_LABEL }}</li>
+              <li><span class="legend-block-lightblue"></span>{{ ABOUT.LIGHTBLUE_LABEL }}</li>
+              <li><span class="legend-block-darkblue"></span>{{ ABOUT.DARKBLUE_LABEL }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="about-prose">
+      {{ ABOUT.TEXT_2 }}
+      </div>
     </div>
-    <div style="clear: both;"></div>
-    <div class="about-map-container">
-      <header class="map-header">
-        <h3>Texas oil permits</h3>
-        {{ ABOUT.MAP_TEXT }}
-        <hr class="shale-yellow">
-      </header>
-      <div id="about-map" class="about-map"></div>
-      <div id="map-legend-container" class="map-legend-container">
-        <div class="legend-scale">
-          <ul class="legend-labels">
-            <li><span class="legend-block-orange"></span>{{ ABOUT.ORANGE_LABEL }}</li>
-            <li><span class="legend-block-lightblue"></span>{{ ABOUT.LIGHTBLUE_LABEL }}</li>
-            <li><span class="legend-block-darkblue"></span>{{ ABOUT.DARKBLUE_LABEL }}</li>
-          </ul>
+
+    <div class="chart-column">
+      <div class="about-chart">
+        <header>
+          <h3>Texas crude oil production since 1935 (in thousands of barrels)</h3>
+          <p>Source: <a href="http://www.rrc.state.tx.us/oil-gas/research-and-statistics/production-data/historical-production-data/crude-oil-production-and-well-counts-since-1935/">Texas Railroad Commission</a></p>
+          <hr class="shale-yellow">
+        </header>
+        <div class="bar-chart">
+
+          <div class="bar-row">
+            <div class="label">2013</div>
+            <div class="bar">
+              <span class="color" style="width: 55.65239209379047%">
+                <span class="output">703,119</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">2012</div>
+            <div class="bar">
+              <span class="color" style="width: 42.19850690036188%">
+                <span class="output">533,141</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">2011</div>
+            <div class="bar">
+              <span class="color" style="width: 31.17589511576588%">
+                <span class="output">393,880</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">2010</div>
+            <div class="bar">
+              <span class="color" style="width: 28.249771254349334%">
+                <span class="output">356,911</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">2009</div>
+            <div class="bar">
+              <span class="color" style="width: 27.269568438482462%">
+                <span class="output">344,527</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">2008</div>
+            <div class="bar">
+              <span class="color" style="width: 27.436180754971456%">
+                <span class="output">346,632</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">2007</div>
+            <div class="bar">
+              <span class="color" style="width: 26.61222150810662%">
+                <span class="output">336,222</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">2006</div>
+            <div class="bar">
+              <span class="color" style="width: 26.98130142819603%">
+                <span class="output">340,885</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">2005</div>
+            <div class="bar">
+              <span class="color" style="width: 27.245744064485695%">
+                <span class="output">344,226</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">2004</div>
+            <div class="bar">
+              <span class="color" style="width: 27.64205184057141%">
+                <span class="output">349,233</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">2003</div>
+            <div class="bar">
+              <span class="color" style="width: 28.275811849183007%">
+                <span class="output">357,240</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">2002</div>
+            <div class="bar">
+              <span class="color" style="width: 28.835724213479054%">
+                <span class="output">364,314</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">2001</div>
+            <div class="bar">
+              <span class="color" style="width: 29.986180280066993%">
+                <span class="output">378,849</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">2000</div>
+            <div class="bar">
+              <span class="color" style="width: 31.55566038631895%">
+                <span class="output">398,678</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">1999</div>
+            <div class="bar">
+              <span class="color" style="width: 32.199709991673345%">
+                <span class="output">406,815</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">1998</div>
+            <div class="bar">
+              <span class="color" style="width: 36.21138630945408%">
+                <span class="output">457,499</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">1997</div>
+            <div class="bar">
+              <span class="color" style="width: 38.69363279753556%">
+                <span class="output">488,860</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">1996</div>
+            <div class="bar">
+              <span class="color" style="width: 39.20953734807014%">
+                <span class="output">495,378</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">1995</div>
+            <div class="bar">
+              <span class="color" style="width: 40.522173289473265%">
+                <span class="output">511,962</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">1994</div>
+            <div class="bar">
+              <span class="color" style="width: 42.85870325752803%">
+                <span class="output">541,482</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">1993</div>
+            <div class="bar">
+              <span class="color" style="width: 45.477484779311894%">
+                <span class="output">574,568</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">1992</div>
+            <div class="bar">
+              <span class="color" style="width: 48.495027750250905%">
+                <span class="output">612,692</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">1991</div>
+            <div class="bar">
+              <span class="color" style="width: 51.192801714721725%">
+                <span class="output">646,776</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">1990</div>
+            <div class="bar">
+              <span class="color" style="width: 51.12671084333535%">
+                <span class="output">645,941</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">1989</div>
+            <div class="bar">
+              <span class="color" style="width: 51.48866719644898%">
+                <span class="output">650,514</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">1988</div>
+            <div class="bar">
+              <span class="color" style="width: 55.264949201052396%">
+                <span class="output">698,224</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">1987</div>
+            <div class="bar">
+              <span class="color" style="width: 57.386584898671224%">
+                <span class="output">725,029</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">1986</div>
+            <div class="bar">
+              <span class="color" style="width: 62.062573412315224%">
+                <span class="output">784,106</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">1985</div>
+            <div class="bar">
+              <span class="color" style="width: 65.74237065976895%">
+                <span class="output">830,597</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">1984</div>
+            <div class="bar">
+              <span class="color" style="width: 66.92211250170173%">
+                <span class="output">845,502</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">1983</div>
+            <div class="bar">
+              <span class="color" style="width: 67.20468065840754%">
+                <span class="output">849,072</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">1982</div>
+            <div class="bar">
+              <span class="color" style="width: 69.00203575714019%">
+                <span class="output">871,780</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">1981</div>
+            <div class="bar">
+              <span class="color" style="width: 71.04357090165362%">
+                <span class="output">897,573</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">1980</div>
+            <div class="bar">
+              <span class="color" style="width: 73.69551658524693%">
+                <span class="output">931,078</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">1979</div>
+            <div class="bar">
+              <span class="color" style="width: 77.45248580827156%">
+                <span class="output">978,544</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">1978</div>
+            <div class="bar">
+              <span class="color" style="width: 82.39323356118194%">
+                <span class="output">1040,966</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">1977</div>
+            <div class="bar">
+              <span class="color" style="width: 87.15581298895371%">
+                <span class="output">1,101,137</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">1976</div>
+            <div class="bar">
+              <span class="color" style="width: 91.33528888438609%">
+                <span class="output">1,153,941</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">1975</div>
+            <div class="bar">
+              <span class="color" style="width: 93.84769180599835%">
+                <span class="output">1,185,683</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">1974</div>
+            <div class="bar">
+              <span class="color" style="width: 96.97280063827161%">
+                <span class="output">1,225,166</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">1973</div>
+            <div class="bar">
+              <span class="color" style="width: 99.49699702076599%">
+                <span class="output">1,257,057</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">1972</div>
+            <div class="bar">
+              <span class="color" style="width: 100%">
+                <span class="output">1,263,412</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">1971</div>
+            <div class="bar">
+              <span class="color" style="width: 93.58554454128978%">
+                <span class="output">1,182,371</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">1970</div>
+            <div class="bar">
+              <span class="color" style="width: 95.58441743469272%">
+                <span class="output">1,207,625</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">1969</div>
+            <div class="bar">
+              <span class="color" style="width: 87.63142981070308%">
+                <span class="output">1,107,146</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">1968</div>
+            <div class="bar">
+              <span class="color" style="width: 86.10215828249217%">
+                <span class="output">1,087,825</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">1967</div>
+            <div class="bar">
+              <span class="color" style="width: 84.99586833115404%">
+                <span class="output">1,073,848</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">1966</div>
+            <div class="bar">
+              <span class="color" style="width: 79.17646816715371%">
+                <span class="output">1,000,325</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">1965</div>
+            <div class="bar">
+              <span class="color" style="width: 73.83260567415854%">
+                <span class="output">932,810</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">1964</div>
+            <div class="bar">
+              <span class="color" style="width: 73.49985594564559%">
+                <span class="output">928,606</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">1963</div>
+            <div class="bar">
+              <span class="color" style="width: 72.45617423295015%">
+                <span class="output">915,420</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">1962</div>
+            <div class="bar">
+              <span class="color" style="width: 70.76258575983131%">
+                <span class="output">894,023</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">1961</div>
+            <div class="bar">
+              <span class="color" style="width: 70.82131561200939%">
+                <span class="output">894,765</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="label">1960</div>
+            <div class="bar">
+              <span class="color" style="width: 70.60911246687542%">
+                <span class="output">892,084</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="label">1959</div>
+            <div class="bar">
+              <span class="color" style="width: 74.750754306592%">
+                <span class="output">944,410</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="label">1958</div>
+            <div class="bar">
+              <span class="color" style="width: 72.02385286826467%">
+                <span class="output">909,958</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="label">1957</div>
+            <div class="bar">
+              <span class="color" style="width: 83.74124988523141%">
+                <span class="output">1,057,997</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="label">1956</div>
+            <div class="bar">
+              <span class="color" style="width: 85.39462978030919%">
+                <span class="output">1,078,886</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="label">1955</div>
+            <div class="bar">
+              <span class="color" style="width: 79.34703802085147%">
+                <span class="output">1,002,480</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="label">1954</div>
+            <div class="bar">
+              <span class="color" style="width: 75.54416136620516%">
+                <span class="output">954,434</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="label">1953</div>
+            <div class="bar">
+              <span class="color" style="width: 79.19388133087227%">
+                <span class="output">1,000,545</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="label">1952</div>
+            <div class="bar">
+              <span class="color" style="width: 79.92586741300542%">
+                <span class="output">1,009,793</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="label">1951</div>
+            <div class="bar">
+              <span class="color" style="width: 78.51619265924337%">
+                <span class="output">991,983</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="label">1950</div>
+            <div class="bar">
+              <span class="color" style="width: 64.73280291781303%">
+                <span class="output">817,842</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="label">1949</div>
+            <div class="bar">
+              <span class="color" style="width: 58.304575229616304%">
+                <span class="output">736,627</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="label">1948</div>
+            <div class="bar">
+              <span class="color" style="width: 70.70646788221103%">
+                <span class="output">893,314</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="label">1947</div>
+            <div class="bar">
+              <span class="color" style="width: 64.6018875869471%">
+                <span class="output">816,188</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="label">1946</div>
+            <div class="bar">
+              <span class="color" style="width: 59.8300475221068%">
+                <span class="output">755,900</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="label">1945</div>
+            <div class="bar">
+              <span class="color" style="width: 59.44577065913573%">
+                <span class="output">751,045</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="label">1944</div>
+            <div class="bar">
+              <span class="color" style="width: 58.660674427660965%">
+                <span class="output">741,126</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="label">1943</div>
+            <div class="bar">
+              <span class="color" style="width: 46.49599655535962%">
+                <span class="output">587,436</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="label">1942</div>
+            <div class="bar">
+              <span class="color" style="width: 37.82044178779369%">
+                <span class="output">477,828</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="label">1941</div>
+            <div class="bar">
+              <span class="color" style="width: 39.51268469826154%">
+                <span class="output">499,208</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="label">1940</div>
+            <div class="bar">
+              <span class="color" style="width: 38.51965946183826%">
+                <span class="output">486,662</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="label">1939</div>
+            <div class="bar">
+              <span class="color" style="width: 37.71928713673766%">
+                <span class="output">476,550</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="label">1938</div>
+            <div class="bar">
+              <span class="color" style="width: 37.104444155983956%">
+                <span class="output">468,782</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="label">1937</div>
+            <div class="bar">
+              <span class="color" style="width: 40.05557965255989%">
+                <span class="output">506,067</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="label">1936</div>
+            <div class="bar">
+              <span class="color" style="width: 33.146432042754064%">
+                <span class="output">418,776</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="label">1935</div>
+            <div class="bar">
+              <span class="color" style="width: 29.730365074892433%">
+                <span class="output">375,617</span>
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="about-prose">
-    {{ ABOUT.TEXT_2 }}
-    </div>
-    <div class="about-chart">
-      <header>
-        <h3>Texas crude oil production since 1960 (in thousands of barrels)</h3>
-        <p>Source: <a href="http://www.rrc.state.tx.us/oil-gas/research-and-statistics/production-data/historical-production-data/crude-oil-production-and-well-counts-since-1935/">Texas Railroad Commission</a></p>
-        <hr class="shale-yellow">
-      </header>
-      <div class="bar-chart">
 
-        <div class="bar-row">
-          <div class="label">2013</div>
-          <div class="bar">
-            <span class="color" style="width: 55.65239209379047%">
-              <span class="output">703,119</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">2012</div>
-          <div class="bar">
-            <span class="color" style="width: 42.19850690036188%">
-              <span class="output">533,141</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">2011</div>
-          <div class="bar">
-            <span class="color" style="width: 31.17589511576588%">
-              <span class="output">393,880</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">2010</div>
-          <div class="bar">
-            <span class="color" style="width: 28.249771254349334%">
-              <span class="output">356,911</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">2009</div>
-          <div class="bar">
-            <span class="color" style="width: 27.269568438482462%">
-              <span class="output">344,527</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">2008</div>
-          <div class="bar">
-            <span class="color" style="width: 27.436180754971456%">
-              <span class="output">346,632</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">2007</div>
-          <div class="bar">
-            <span class="color" style="width: 26.61222150810662%">
-              <span class="output">336,222</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">2006</div>
-          <div class="bar">
-            <span class="color" style="width: 26.98130142819603%">
-              <span class="output">340,885</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">2005</div>
-          <div class="bar">
-            <span class="color" style="width: 27.245744064485695%">
-              <span class="output">344,226</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">2004</div>
-          <div class="bar">
-            <span class="color" style="width: 27.64205184057141%">
-              <span class="output">349,233</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">2003</div>
-          <div class="bar">
-            <span class="color" style="width: 28.275811849183007%">
-              <span class="output">357,240</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">2002</div>
-          <div class="bar">
-            <span class="color" style="width: 28.835724213479054%">
-              <span class="output">364,314</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">2001</div>
-          <div class="bar">
-            <span class="color" style="width: 29.986180280066993%">
-              <span class="output">378,849</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">2000</div>
-          <div class="bar">
-            <span class="color" style="width: 31.55566038631895%">
-              <span class="output">398,678</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">1999</div>
-          <div class="bar">
-            <span class="color" style="width: 32.199709991673345%">
-              <span class="output">406,815</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">1998</div>
-          <div class="bar">
-            <span class="color" style="width: 36.21138630945408%">
-              <span class="output">457,499</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">1997</div>
-          <div class="bar">
-            <span class="color" style="width: 38.69363279753556%">
-              <span class="output">488,860</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">1996</div>
-          <div class="bar">
-            <span class="color" style="width: 39.20953734807014%">
-              <span class="output">495,378</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">1995</div>
-          <div class="bar">
-            <span class="color" style="width: 40.522173289473265%">
-              <span class="output">511,962</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">1994</div>
-          <div class="bar">
-            <span class="color" style="width: 42.85870325752803%">
-              <span class="output">541,482</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">1993</div>
-          <div class="bar">
-            <span class="color" style="width: 45.477484779311894%">
-              <span class="output">574,568</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">1992</div>
-          <div class="bar">
-            <span class="color" style="width: 48.495027750250905%">
-              <span class="output">612,692</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">1991</div>
-          <div class="bar">
-            <span class="color" style="width: 51.192801714721725%">
-              <span class="output">646,776</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">1990</div>
-          <div class="bar">
-            <span class="color" style="width: 51.12671084333535%">
-              <span class="output">645,941</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">1989</div>
-          <div class="bar">
-            <span class="color" style="width: 51.48866719644898%">
-              <span class="output">650,514</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">1988</div>
-          <div class="bar">
-            <span class="color" style="width: 55.264949201052396%">
-              <span class="output">698,224</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">1987</div>
-          <div class="bar">
-            <span class="color" style="width: 57.386584898671224%">
-              <span class="output">725,029</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">1986</div>
-          <div class="bar">
-            <span class="color" style="width: 62.062573412315224%">
-              <span class="output">784,106</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">1985</div>
-          <div class="bar">
-            <span class="color" style="width: 65.74237065976895%">
-              <span class="output">830,597</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">1984</div>
-          <div class="bar">
-            <span class="color" style="width: 66.92211250170173%">
-              <span class="output">845,502</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">1983</div>
-          <div class="bar">
-            <span class="color" style="width: 67.20468065840754%">
-              <span class="output">849,072</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">1982</div>
-          <div class="bar">
-            <span class="color" style="width: 69.00203575714019%">
-              <span class="output">871,780</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">1981</div>
-          <div class="bar">
-            <span class="color" style="width: 71.04357090165362%">
-              <span class="output">897,573</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">1980</div>
-          <div class="bar">
-            <span class="color" style="width: 73.69551658524693%">
-              <span class="output">931,078</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">1979</div>
-          <div class="bar">
-            <span class="color" style="width: 77.45248580827156%">
-              <span class="output">978,544</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">1978</div>
-          <div class="bar">
-            <span class="color" style="width: 82.39323356118194%">
-              <span class="output">1040,966</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">1977</div>
-          <div class="bar">
-            <span class="color" style="width: 87.15581298895371%">
-              <span class="output">1,101,137</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">1976</div>
-          <div class="bar">
-            <span class="color" style="width: 91.33528888438609%">
-              <span class="output">1,153,941</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">1975</div>
-          <div class="bar">
-            <span class="color" style="width: 93.84769180599835%">
-              <span class="output">1,185,683</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">1974</div>
-          <div class="bar">
-            <span class="color" style="width: 96.97280063827161%">
-              <span class="output">1,225,166</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">1973</div>
-          <div class="bar">
-            <span class="color" style="width: 99.49699702076599%">
-              <span class="output">1,257,057</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">1972</div>
-          <div class="bar">
-            <span class="color" style="width: 100%">
-              <span class="output">1,263,412</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">1971</div>
-          <div class="bar">
-            <span class="color" style="width: 93.58554454128978%">
-              <span class="output">1,182,371</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">1970</div>
-          <div class="bar">
-            <span class="color" style="width: 95.58441743469272%">
-              <span class="output">1,207,625</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">1969</div>
-          <div class="bar">
-            <span class="color" style="width: 87.63142981070308%">
-              <span class="output">1,107,146</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">1968</div>
-          <div class="bar">
-            <span class="color" style="width: 86.10215828249217%">
-              <span class="output">1,087,825</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">1967</div>
-          <div class="bar">
-            <span class="color" style="width: 84.99586833115404%">
-              <span class="output">1,073,848</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">1966</div>
-          <div class="bar">
-            <span class="color" style="width: 79.17646816715371%">
-              <span class="output">1,000,325</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">1965</div>
-          <div class="bar">
-            <span class="color" style="width: 73.83260567415854%">
-              <span class="output">932,810</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">1964</div>
-          <div class="bar">
-            <span class="color" style="width: 73.49985594564559%">
-              <span class="output">928,606</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">1963</div>
-          <div class="bar">
-            <span class="color" style="width: 72.45617423295015%">
-              <span class="output">915,420</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">1962</div>
-          <div class="bar">
-            <span class="color" style="width: 70.76258575983131%">
-              <span class="output">894,023</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">1961</div>
-          <div class="bar">
-            <span class="color" style="width: 70.82131561200939%">
-              <span class="output">894,765</span>
-            </span>
-          </div>
-        </div>
-
-        <div class="bar-row">
-          <div class="label">1960</div>
-          <div class="bar">
-            <span class="color" style="width: 70.60911246687542%">
-              <span class="output">892,084</span>
-            </span>
-          </div>
-        </div>
-
-      </div>
-    </div>
   </div>
 
 </section>
