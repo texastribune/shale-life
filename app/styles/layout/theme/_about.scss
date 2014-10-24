@@ -1,4 +1,4 @@
-$bar-chart-break: new-breakpoint(min-width em(800));
+$bar-chart-break: new-breakpoint(min-width em(840));
 $map-break: new-breakpoint(min-width em(768));
 $map-header-break: new-breakpoint(min-width em(1100));
 
@@ -28,12 +28,20 @@ $white: rgb(255, 255, 255);
   }
 }
 
+.prose-column {
+  @include media($bar-chart-break) {
+    @include span-columns(8);
+  }
+}
+
+.chart-column {
+  @include media($bar-chart-break) {
+    @include span-columns(4);
+  }
+}
+
 .about-prose {
   padding: 0 em(20);
-
-  @include media($bar-chart-break) {
-    @include span-columns(6);
-  }
 
   p {
     color: $white;
@@ -54,21 +62,17 @@ $white: rgb(255, 255, 255);
   margin-bottom: em(20);
   padding: 0 20px;
 
-  @include media($bar-chart-break) {
-    @include span-columns(6);
-  }
-
   .label {
     float: left;
     font-weight: 700;
     padding: em(5) 0;
-    width: 10%;
+    width: 14%;
   }
 
   .bar {
     float: left;
     margin-bottom: em(10);
-    width: 90%;
+    width: 86%;
   }
 
   .color {
@@ -112,6 +116,7 @@ $white: rgb(255, 255, 255);
 
 .map-legend-container {
   padding: 0 em(20);
+
   @include media($map-break) {
     display: none;
     padding: 0;
