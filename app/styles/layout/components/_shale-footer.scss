@@ -7,6 +7,7 @@ footer {
   background-size: cover;
   color: $white;
   font-family: pt-sans;
+  font-size: .875em;
   font-weight: 200;
   text-align: left;
   line-height: 1.5em;
@@ -16,7 +17,7 @@ footer {
     color: $white;
 
     &:hover {
-      color: $teal;
+      color: $light-denim;
     }
   }
 }
@@ -24,20 +25,6 @@ footer {
 .footer-wrapper {
   @extend %content-block;
 }
-// .footer-background {
-//   background: url(../images/SL-footer-bg-tread001.png) no-repeat;
-//   background-position: center center;
-//   background-size: cover;
-//   bottom: 0;
-//   left: 0;
-//   position: absolute;
-//   right: 0;
-//   top: 0;
-
-//   @include media($bp-shale-lg) {
-//     background: url(../images/SL-footer-bg-tread001.png) no-repeat;
-//   }
-// }
 
 .footer-logo,
 .member-push,
@@ -55,7 +42,7 @@ footer {
 }
 
 .footer-logo {
-  padding-top: 1em;
+  padding-top: 1.5em;
   img {
     margin-bottom: .5em;
     max-width: 200px;

@@ -2051,8 +2051,10 @@ function positionNav(klass) {
     if ($e.hasClass('slide-box')) {
       setPosition('.flex-next', '.flex-prev', '.flex-active-slide > .nav-ref', 25);
       $('.lead-header').css('background-color', 'rgba(26, 26, 26, .7)');
+      $('.flex-next').css('left', '4em');
     } else {
       setPosition('.flex-next', '.flex-prev', '.flex-active-slide > .nav-ref', 40);
+      $('.flex-next').css('left', '0');
       $('.lead-header').css('background-color', 'rgba(26, 26, 26, 0)');
     }
 }

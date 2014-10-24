@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="shortcut icon" type="image/x-icon" href="https://s3.amazonaws.com/static.texastribune.org/common/images/favicon.ico">
   <meta charset="UTF-8">
   <meta name="keywords" content="texas, oil, gas, drilling, eagle ford, permian basin">
   <meta name="news_keywords" content="texas, oil, gas, drilling, eagle ford, permian basin">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   {% block title_row %}<title> {{ META.project_title }} | The Shale Life </title>{% endblock %}
-
+  <link rel="shortcut icon" type="image/x-icon" href="//s3.amazonaws.com/static.texastribune.org/common/images/favicon.ico">
   {% block description %}<meta name="description" content="">{% endblock %}
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -41,11 +40,11 @@
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-  <!-- build:css /styles/vendor.css -->
+  <!-- build:css ../styles/vendor.css -->
   <!-- bower:css -->
   <!-- endbower -->
   <!-- endbuild -->
-  <!-- build:css(.tmp) /styles/main.css -->
+  <!-- build:css(.tmp) ../styles/main.css -->
   <link rel="stylesheet" href="/styles/main.css">
   <!-- endbuild -->
   {% block extra_style %}{% endblock %}
@@ -90,8 +89,8 @@
       <img class="trib-shale-logo mobile" alt="The Texas Tribune" src="//s3.amazonaws.com/apps.texastribune.org/branding/TT-logo-white.dd56ad79c0da.png">
       <img class="trib-shale-logo desktop" alt="The Texas Tribune" src="//s3.amazonaws.com/apps.texastribune.org/branding/TxTrib-logo-white500x55.png">
     </a>
-    <a href=""><h3>About</h3></a>
-    <a href=""><i class="fa fa-th"></i></a>
+    <a href="http://apps.texastribune.org/shale-life/about/"><h3>About</h3></a>
+    <a href="http://apps.texastribune.org/shale-life/"><i class="fa fa-th"></i></a>
     <p class="more-stories">More Shale Life Stories</p>
   </div>
  </div>
@@ -100,99 +99,101 @@
 {% block content %}{% endblock %}
 
 <section class="nav-carousel">
-  <div class="flexslider nav-slider">
-    <ul class="slides">
-      <li>
-        <a href="http://newsapps.test.texastribune.org/{{ LOVING_COUNTY.SLUG }}">
-          <img src="http://placekitten.com/g/200/200" />
-          <h3>{{ LOVING_COUNTY.SHORT_HEAD }}</h3>
-        </a>
-      </li>
-      <li>
-        <a href="http://newsapps.test.texastribune.org/{{ COTTON_FARMERS.SLUG }}">
-          <img src="http://placekitten.com/g/200/200" />
-          <h3>{{ COTTON_FARMERS.SHORT_HEAD }}</h3>
-        </a>
-      </li>
-      <li>
-        <a href="http://newsapps.test.texastribune.org/{{ RESPONDERS.SLUG }}">
-          <img src="http://placekitten.com/g/200/200" />
-          <h3>{{ RESPONDERS.SHORT_HEAD }}</h3>
-        </a>
-      </li>
-      <li>
-        <a href="http://newsapps.test.texastribune.org/{{ EAGLE_FORD_ACCIDENTS.SLUG }}">
-          <img src="http://placekitten.com/g/200/200" />
-          <h3>{{ EAGLE_FORD_ACCIDENTS.SHORT_HEAD }}</h3>
-        </a>
-      </li>
-      <li>
-        <a href="http://newsapps.test.texastribune.org/{{ KARNES.SLUG }}">
-          <img src="http://placekitten.com/g/200/200" />
-          <h3>{{ KARNES.SHORT_HEAD }}</h3>
-        </a>
-      </li>
-      <li>
-        <a href="http://newsapps.test.texastribune.org/{{ FOOTBALL.SLUG }}">
-          <img src="http://placekitten.com/g/200/200" />
-          <h3>{{ FOOTBALL.SHORT_HEAD }}</h3>
-        </a>
-      </li>
-      <li>
-        <a href="http://newsapps.test.texastribune.org/{{ BUSES.SLUG }}">
-          <img src="http://placekitten.com/g/200/200" />
-          <h3>{{ BUSES.SHORT_HEAD }}</h3>
-        </a>
-      </li>
-      <li>
-        <a href="http://newsapps.test.texastribune.org/{{ CHALLENGE.SLUG }}">
-          <img src="http://placekitten.com/g/200/200" />
-          <h3>{{ CHALLENGE.SHORT_HEAD }}</h3>
-        </a>
-      </li>
-      <li>
-        <a href="http://newsapps.test.texastribune.org/{{ OPPORTUNITY.SLUG }}">
-          <img src="http://placekitten.com/g/200/200" />
-          <h3>{{ OPPORTUNITY.SHORT_HEAD }}</h3>
-        </a>
-      </li>
-      <li>
-        <a href="http://newsapps.test.texastribune.org/{{ AIR_QUALITY.SLUG }}">
-          <img src="http://placekitten.com/g/200/200" />
-          <h3>{{ AIR_QUALITY.SHORT_HEAD }}</h3>
-        </a>
-      </li>
-      <li>
-        <a href="http://newsapps.test.texastribune.org/{{ COUNTING_HEADS.SLUG }}">
-          <img src="http://placekitten.com/g/200/200" />
-          <h3>{{ COUNTING_HEADS.SHORT_HEAD }}</h3>
-        </a>
-      </li>
-      <li>
-        <a href="http://newsapps.test.texastribune.org/{{ PRISONS.SLUG }}">
-          <img src="http://placekitten.com/g/200/200" />
-          <h3>{{ PRISONS.SHORT_HEAD }}</h3>
-        </a>
-      </li>
-      <li>
-        <a href="http://newsapps.test.texastribune.org/{{ MAN_CAMPS.SLUG }}">
-          <img src="http://placekitten.com/g/200/200" />
-          <h3>{{ MAN_CAMPS.SHORT_HEAD }}</h3>
-        </a>
-      </li>
-      <li>
-        <a href="http://newsapps.test.texastribune.org/{{ CROP_DUSTER.SLUG }}">
-          <img src="http://placekitten.com/g/200/200" />
-          <h3>{{ CROP_DUSTER.SHORT_HEAD }}</h3>
-        </a>
-      </li>
-      <li>
-        <a href="http://newsapps.test.texastribune.org/{{ BIG_LAKE.SLUG }}">
-          <img src="http://placekitten.com/g/200/200" />
-          <h3>{{ BIG_LAKE.SHORT_HEAD }}</h3>
-        </a>
-      </li>
-    </ul>
+  <div class="container">
+    <div class="flexslider nav-slider">
+      <ul class="slides">
+        <li>
+          <a href="http://apps.texastribune.org/shale-life/{{ LOVING_COUNTY.SLUG }}">
+            <img src="//s3.amazonaws.com/static.texastribune.org/media/shale/{{ LOVING_COUNTY.CAROUSEL_IMG_URL }}" />
+            <h3>{{ LOVING_COUNTY.SHORT_HEAD }}</h3>
+          </a>
+        </li>
+        <li>
+          <a href="http://apps.texastribune.org/shale-life/{{ COTTON_FARMERS.SLUG }}">
+            <img src="//s3.amazonaws.com/static.texastribune.org/media/shale/{{ COTTON_FARMERS.CAROUSEL_IMG_URL }}" />
+            <h3>{{ COTTON_FARMERS.SHORT_HEAD }}</h3>
+          </a>
+        </li>
+        <li>
+          <a href="http://apps.texastribune.org/shale-life/{{ RESPONDERS.SLUG }}">
+            <img src="//s3.amazonaws.com/static.texastribune.org/media/shale/{{ RESPONDERS.CAROUSEL_IMG_URL }}" />
+            <h3>{{ RESPONDERS.SHORT_HEAD }}</h3>
+          </a>
+        </li>
+        <li>
+          <a href="http://apps.texastribune.org/shale-life/{{ EAGLE_FORD_ACCIDENTS.SLUG }}">
+            <img src="//s3.amazonaws.com/static.texastribune.org/media/shale/{{ EAGLE_FORD_ACCIDENTS.CAROUSEL_IMG_URL }}" />
+            <h3>{{ EAGLE_FORD_ACCIDENTS.SHORT_HEAD }}</h3>
+          </a>
+        </li>
+        <li>
+          <a href="http://apps.texastribune.org/shale-life/{{ KARNES.SLUG }}">
+            <img src="//s3.amazonaws.com/static.texastribune.org/media/shale/{{ KARNES.CAROUSEL_IMG_URL }}" />
+            <h3>{{ KARNES.SHORT_HEAD }}</h3>
+          </a>
+        </li>
+        <li>
+          <a href="http://apps.texastribune.org/shale-life/{{ FOOTBALL.SLUG }}">
+            <img src="//s3.amazonaws.com/static.texastribune.org/media/shale/{{ FOOTBALL.CAROUSEL_IMG_URL }}" />
+            <h3>{{ FOOTBALL.SHORT_HEAD }}</h3>
+          </a>
+        </li>
+        <li>
+          <a href="http://apps.texastribune.org/shale-life/{{ BUSES.SLUG }}">
+            <img src="//s3.amazonaws.com/static.texastribune.org/media/shale/{{ BUSES.CAROUSEL_IMG_URL }}" />
+            <h3>{{ BUSES.SHORT_HEAD }}</h3>
+          </a>
+        </li>
+        <li>
+          <a href="http://apps.texastribune.org/shale-life/{{ CHALLENGE.SLUG }}">
+            <img src="//s3.amazonaws.com/static.texastribune.org/media/shale/{{ CHALLENGE.CAROUSEL_IMG_URL }}" />
+            <h3>{{ CHALLENGE.SHORT_HEAD }}</h3>
+          </a>
+        </li>
+        <li>
+          <a href="http://apps.texastribune.org/shale-life/{{ OPPORTUNITY.SLUG }}">
+            <img src="//s3.amazonaws.com/static.texastribune.org/media/shale/{{ OPPORTUNITY.CAROUSEL_IMG_URL }}" />
+            <h3>{{ OPPORTUNITY.SHORT_HEAD }}</h3>
+          </a>
+        </li>
+        <li>
+          <a href="http://apps.texastribune.org/shale-life/{{ AIR_QUALITY.SLUG }}">
+            <img src="//s3.amazonaws.com/static.texastribune.org/media/shale/{{ AIR_QUALITY.CAROUSEL_IMG_URL }}" />
+            <h3>{{ AIR_QUALITY.SHORT_HEAD }}</h3>
+          </a>
+        </li>
+        <li>
+          <a href="http://apps.texastribune.org/shale-life/{{ COUNTING_HEADS.SLUG }}">
+            <img src="//s3.amazonaws.com/static.texastribune.org/media/shale/{{ COUNTING_HEADS.CAROUSEL_IMG_URL }}" />
+            <h3>{{ COUNTING_HEADS.SHORT_HEAD }}</h3>
+          </a>
+        </li>
+        <li>
+          <a href="http://apps.texastribune.org/shale-life/{{ PRISONS.SLUG }}">
+            <img src="//s3.amazonaws.com/static.texastribune.org/media/shale/{{ PRISONS.CAROUSEL_IMG_URL }}" />
+            <h3>{{ PRISONS.SHORT_HEAD }}</h3>
+          </a>
+        </li>
+        <li>
+          <a href="http://apps.texastribune.org/shale-life/{{ MAN_CAMPS.SLUG }}">
+            <img src="//s3.amazonaws.com/static.texastribune.org/media/shale/{{ MAN_CAMPS.CAROUSEL_IMG_URL }}" />
+            <h3>{{ MAN_CAMPS.SHORT_HEAD }}</h3>
+          </a>
+        </li>
+        <li>
+          <a href="http://apps.texastribune.org/shale-life/{{ CROP_DUSTER.SLUG }}">
+            <img src="//s3.amazonaws.com/static.texastribune.org/media/shale/{{ CROP_DUSTER.CAROUSEL_IMG_URL }}" />
+            <h3>{{ CROP_DUSTER.SHORT_HEAD }}</h3>
+          </a>
+        </li>
+        <li>
+          <a href="http://apps.texastribune.org/shale-life/{{ BIG_LAKE.SLUG }}">
+            <img src="//s3.amazonaws.com/static.texastribune.org/media/shale/{{ BIG_LAKE.CAROUSEL_IMG_URL }}" />
+            <h3>{{ BIG_LAKE.SHORT_HEAD }}</h3>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </section>
 
@@ -209,7 +210,7 @@
 <footer>
   <div class="footer-wrapper container">
     <div class="footer-logo">
-      <img src="http://s3.amazonaws.com/apps.texastribune.org/branding/TT-logo-white.dd56ad79c0da.png">
+      <img src="//s3.amazonaws.com/apps.texastribune.org/branding/TT-logo-white.dd56ad79c0da.png">
       <p>© 2014 <a href="http://www.texastribune.org/">The Texas Tribune</a></p>
     </div>
     <div class="member-push">
@@ -219,7 +220,7 @@
         <li class="bold">Nonprofit.</li>
         <li class="bold">Statewide.</li>
       </ul>
-      <hr class="shale-yellow">
+      <hr class="yellow">
       <div class="button">Sign Up</div>
       <ul>
         <li class="bold">Dig Deeper.</li>
@@ -233,7 +234,7 @@
         <li><a href="">About The Shale Life Project</a></li>
         <li><a href="../supporters">Shale Life Supporters</a></li>
         <li><a href="http://www.texastribune.org/about/">About The Texas Tribune</a></li>
-        <li><a href="https://www.texastribune.org/join/" style="color: #008990;">Donate to The Texas Tribune</a></li>
+        <li><a href="https://www.texastribune.org/join/" style="color: #fcc10f;">Donate to The Texas Tribune</a></li>
         <li><a href="http://www.texastribune.org/contact/">Contact</a></li>
         <li><a href="http://www.texastribune.org/terms-of-service/">Terms of Service</a></li>
         <li><a href="http://www.texastribune.org/ethics/">Code of Ethics</a></li>
@@ -244,8 +245,11 @@
 </footer>
 
 
-<!-- build:js /scripts/vendor.js -->
+<!-- build:js ../scripts/vendor.js -->
 <!-- bower:js -->
+<script src="../../bower_components/jquery/dist/jquery.js"></script>
+<script src="../../bower_components/fitvids/jquery.fitvids.js"></script>
+<script src="../../bower_components/imager.js/Imager.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 
@@ -265,7 +269,7 @@
 </script>
 <script type='text/javascript' src='//cdn.knightlab.com/libs/soundcite/latest/js/soundcite.min.js'></script>
 
-<!-- build:js({app,.tmp}) /scripts/main.js -->
+<!-- build:js({app,.tmp}) ../scripts/main.js -->
 <script src="/scripts/jquery.flexslider.js"></script>
 <script src="/scripts/script.js"></script>
 <!-- endbuild -->

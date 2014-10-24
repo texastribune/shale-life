@@ -25,7 +25,7 @@
 
     h3 {
       background-color: transparentize($red, .5);
-      bottom: 10%;
+      top: 50%;
       color: $white;
       padding: .5em;
       position: absolute;
@@ -46,6 +46,7 @@
     .flex-next,
     .flex-prev {
       top: 50% !important;
+      opacity: 1 !important;
     }
   }
   .flex-control-paging li a {
@@ -68,5 +69,13 @@
   .flex-control-paging li a.flex-active {
     background: $white;
   }
+
+  .flex-prev {
+    left: 1% !important;
+  }
+  .flex-next {
+    left: 95% !important;
+  }
+
 }
 

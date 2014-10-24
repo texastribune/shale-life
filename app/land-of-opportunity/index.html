@@ -25,14 +25,14 @@
             <h1>{{OPPORTUNITY.SHORT_HEAD}}</h1>
             <hr class="shale-yellow">
           </div>
-          <div class="slideshow-start lead-text">
+          <div class="video-start lead-text">
             <a class="fancybox fancybox.iframe" href="https://www.youtube.com/embed/{{ OPPORTUNITY.VIDEO_URL }}?controls=2&enablejsapi=1&modestbranding=1&rel=0&showinfo=0"><button class="fancybox-media play-button"></button></a>
 
             <p>Watch Video</p>
           </div>
 
           <div class="share-story">
-            <a href="https://www.facebook.com/dialog/feed?app_id=154122474650943&display=popup&name={{OPPORTUNITY.SHORT_HEAD}}%20%7C%20The%20Shale%20Life&caption={{ OPPORTUNITY.ENCRYPTED_FACEBOOK }}&link=http%3A%2F%2Fapps.texastribune.org%2Fshale-life%2F{{ OPPORTUNITY.SLUG }}%2F&redirect_uri=http://apps.texastribune.org/shale-life/{{ OPPORTUNITY.SLUG }}" title="share on Facebook" class="social-share" target="_blank">
+            <a href="https://www.facebook.com/dialog/feed?app_id=154122474650943&display=popup&name={{OPPORTUNITY.SHORT_HEAD}}%20%7C%20The%20Shale%20Life&link=http%3A%2F%2Fapps.texastribune.org%2Fshale-life%2F{{ OPPORTUNITY.SLUG }}%2F&redirect_uri=http://apps.texastribune.org/shale-life/{{ OPPORTUNITY.SLUG }}" title="share on Facebook" class="social-share" target="_blank">
             <span class="fa-stack fa-lg">
               <i class="fa fa-circle fa-stack-2x"></i>
               <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -117,19 +117,19 @@
                 <th>{{ OPPORTUNITY.Data_Col6 }}</th>
               </tr>
               <tr>
-                <td data-title="{{ OPPORTUNITY.Data_Title_C }}">{{ OPPORTUNITY.Data_Title_C }}</td>
-                <td data-title="{{ OPPORTUNITY.Data_Col4 }}">{{ OPPORTUNITY.Data_C_1 }}</td>
-                <td data-title="{{ OPPORTUNITY.Data_Col5 }}">{{ OPPORTUNITY.Data_C_2 }}</td>
-                <td data-title="{{ OPPORTUNITY.Data_Col6 }}">{{ OPPORTUNITY.Data_C_3 }}</td>
+                <td data-title="{{ OPPORTUNITY.Data_Title_C }}" style="background-color: #333">{{ OPPORTUNITY.Data_Title_C }}</td>
+                <td data-title="{{ OPPORTUNITY.Data_Col4 }}" style="background-color: #333">{{ OPPORTUNITY.Data_C_1 }}</td>
+                <td data-title="{{ OPPORTUNITY.Data_Col5 }}" style="background-color: #333">{{ OPPORTUNITY.Data_C_2 }}</td>
+                <td data-title="{{ OPPORTUNITY.Data_Col6 }}" style="background-color: #333">{{ OPPORTUNITY.Data_C_3 }}</td>
               </tr>
               <tr>
-                <td data-title="{{ OPPORTUNITY.Data_Title_D }}">{{ OPPORTUNITY.Data_Title_D }}</td>
-                <td data-title="{{ OPPORTUNITY.Data_Col4 }}">{{ OPPORTUNITY.Data_D_1 }}</td>
-                <td data-title="{{ OPPORTUNITY.Data_Col5 }}">{{ OPPORTUNITY.Data_D_2 }}</td>
-                <td data-title="{{ OPPORTUNITY.Data_Col6 }}">{{ OPPORTUNITY.Data_D_3 }}</td>
+                <td data-title="{{ OPPORTUNITY.Data_Title_D }}" style="background-color: rgba(0, 0, 0, 0)">{{ OPPORTUNITY.Data_Title_D }}</td>
+                <td data-title="{{ OPPORTUNITY.Data_Col4 }}" style="background-color: rgba(0, 0, 0, 0)">{{ OPPORTUNITY.Data_D_1 }}</td>
+                <td data-title="{{ OPPORTUNITY.Data_Col5 }}" style="background-color: rgba(0, 0, 0, 0)">{{ OPPORTUNITY.Data_D_2 }}</td>
+                <td data-title="{{ OPPORTUNITY.Data_Col6 }}" style="background-color: rgba(0, 0, 0, 0)">{{ OPPORTUNITY.Data_D_3 }}</td>
               </tr>
               <tr>
-                <td colspan=4><em>Source: {{ OPPORTUNITY.Source }}</em></td>
+                <td colspan=4 style="background-color: #333"><em>Source: {{ OPPORTUNITY.Source }}</em></td>
               </tr>
             </tbody>
           </table>

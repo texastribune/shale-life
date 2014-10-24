@@ -52,6 +52,10 @@ $bp-shale-ad: new-breakpoint(min-width 870px);
     @include span-columns(6 of 10);
     @include omega();
   }
+
+  h4 {
+    margin-bottom: .5em;
+  }
 }
 
 

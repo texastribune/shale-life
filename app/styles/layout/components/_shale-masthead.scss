@@ -14,25 +14,26 @@ $bp-masthead: new-breakpoint(min-width 800px);
 
   i,
   h3 {
-    color: $white;
     float: right;
+
+    &:hover {
+      color: $light-denim;
+    }
   }
 
   i {
-    font-size: 2em;
+    font-size: 1.75em;
     padding: .1em .5em 0 0;
   }
 
   h3 {
     border-left: 2px solid $yellow;
     font-size: 1em;
-    padding: .5em;
+    margin-bottom: .5em;
+    padding: .25em .25em .25em .75em;
     text-transform: uppercase;
   }
 
-  a {
-    color: $white;
-  }
 }
 
 .more-stories {
@@ -41,12 +42,12 @@ $bp-masthead: new-breakpoint(min-width 800px);
   @include media($bp-masthead) {
     float: right;
     visibility: visible;
-    padding: .5em 1em;
+    padding: .25em .5em;
   }
 }
 
 .trib-shale-logo {
-  height: 2.5em;
+  height: 1.75em;
 
   &.mobile {
     display: inline-block;

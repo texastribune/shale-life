@@ -43,6 +43,7 @@
     &:hover {
       color: $light-denim;
       border-bottom: 1px solid $light-denim;
+      text-decoration: none;
     }
   }
   @include media($bp-shale-lg) {
@@ -57,7 +58,7 @@
 .supporters {
   @extend %content-block;
   @include span-columns(12);
-  margin: 2em 0;
+  margin: 1em 0 2em;
 
   p {
     color: $white;

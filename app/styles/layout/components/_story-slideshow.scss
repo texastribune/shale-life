@@ -33,11 +33,10 @@
 
   .flex-direction-nav {
     .flex-next {
-      background: url(/images/icons/btn-arrow-right.png) no-repeat;
+      background: url('../images/icons/btn-arrow-right.png') no-repeat;
       background-position: center center;
       background-size: cover;
       height: 2.25em;
-      left: 3em !important;
       opacity: .9 !important;
       width: 100%;
       max-width: 2.25em;
@@ -47,16 +46,14 @@
       }
 
       @include media($bp-shale-med) {
-        left: 3em !important;
       }
 
       @include media($bp-shale-lg) {
-        left: 9em !important;
       }
     }
 
     .flex-prev {
-      background: url(/images/icons/btn-arrow-left.png) no-repeat;
+      background: url('../images/icons/btn-arrow-left.png') no-repeat;
       background-position: center center;
       background-size: cover;
       height: 2.25em;
@@ -71,9 +68,9 @@
         opacity: 0 !important;
       }
 
-      @include media($bp-shale-lg) {
-        left: 5em !important;
-      }
+      // @include media($bp-shale-lg) {
+      //   left: 4.5em !important;
+      // }
     }
 
 
