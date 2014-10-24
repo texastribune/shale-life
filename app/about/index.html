@@ -26,14 +26,13 @@
   <div class="container about-container">
     <div class="prose-column">
       <div class="about-prose">
-        <p class="byline">Story by Jim Malewitz, visualizations by Ryan Murphy</p>
         {{ ABOUT.TEXT_1 }}
       </div>
+      <hr class="shale-yellow">
       <div class="about-map-container">
         <header class="map-header">
           <h3>Texas oil permits</h3>
           {{ ABOUT.MAP_TEXT }}
-          <hr class="shale-yellow">
         </header>
         <div id="about-map" class="about-map"></div>
         <div id="map-legend-container" class="map-legend-container">
@@ -46,16 +45,18 @@
           </div>
         </div>
       </div>
+      <hr class="shale-yellow">
       <div class="about-prose">
       {{ ABOUT.TEXT_2 }}
+      <p class="byline">Story by Jim Malewitz, visualizations by Ryan Murphy</p>
       </div>
     </div>
 
     <div class="chart-column">
       <div class="about-chart">
         <header>
-          <h3>Texas crude oil production since 1935 (in thousands of barrels)</h3>
-          <p>Source: <a href="http://www.rrc.state.tx.us/oil-gas/research-and-statistics/production-data/historical-production-data/crude-oil-production-and-well-counts-since-1935/">Texas Railroad Commission</a></p>
+          <h3>Texas crude oil production since 1935<br>(in thousands of barrels)</h3>
+          <p class="source">Source: <a href="http://www.rrc.state.tx.us/oil-gas/research-and-statistics/production-data/historical-production-data/crude-oil-production-and-well-counts-since-1935/">Texas Railroad Commission</a></p>
           <hr class="shale-yellow">
         </header>
         <div class="bar-chart">
