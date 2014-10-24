@@ -42,8 +42,6 @@
 }
 
 .lead-header {
-  margin-bottom: 1em;
-
   h1 {
     padding-top: 10%;
   }
@@ -90,13 +88,8 @@
 
 .slide-box {
   @include span-columns(12);
-  // @include media($bp-shale-lg) {
-  //   @include span-columns(10);
-  //   @include shift(1);
-  // }
 
   img {
-    margin-bottom: 1em;
     width: 100%;
   }
 }
@@ -109,6 +102,7 @@
     font-size: 1.3em;
     font-weight: 500;
     text-align: left;
+    margin-bottom: .25em;
   }
 }
 
@@ -117,6 +111,7 @@
   @include omega();
 
   p {
+    font-size: .85em;
     text-align: right;
   }
 }
@@ -181,24 +176,27 @@
 
 .slideshow-caption {
   @include span-columns(12);
-  margin: 3em 0 0;
+  font-size: .85em;
+  margin: 4em 0 0;
+  min-height: 4em;
 
   @include media($bp-shale-med) {
-    @include span-columns(8);
+    @include span-columns(11);
     @include shift(1);
-    padding-left: 3em;
+    padding-left: 4em;
     text-align: left;
     margin-top: 0;
-    margin-bottom: 1em;
+    margin-bottom: .25em;
   }
 
   @include media($bp-shale-lg) {
-    @include span-columns(8);
+    @include span-columns(10);
     @include shift(2);
     text-align: left;
     margin-top: 0;
-    margin-bottom: 1em;
+    margin-bottom: .25em;
   }
+
 }
 
 .supporters-prompt {
