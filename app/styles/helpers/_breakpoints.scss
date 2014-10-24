@@ -4,8 +4,8 @@ $bp-shale-med: new-breakpoint(min-width 765px max-width 1080px);
 $bp-shale-small: new-breakpoint(min-width 500px max-width 764px);
 
 $bp-landing-large: new-breakpoint(min-width 1000px);
-$bp-landing-medium: new-breakpoint(min-width 600px max-width 999px);
-$bp-landing-small: new-breakpoint(min-width 400px max-width 599px);
+$bp-landing-medium: new-breakpoint(min-width 700px max-width 999px);
+$bp-landing-small: new-breakpoint(min-width 400px max-width 699px);
 $bp-landing-tiny: new-breakpoint(min-width 399px);
 
 $bp-shale-ad: new-breakpoint(min-width 870px);

@@ -1,8 +1,3 @@
-$bp-landing-large: new-breakpoint(min-width 1000px);
-$bp-landing-medium: new-breakpoint(min-width 600px max-width 999px);
-$bp-landing-small: new-breakpoint(min-width 400px max-width 599px);
-$bp-landing-tiny: new-breakpoint(min-width 399px);
-
 .landing-banner {
   background-color: lighten($masthead-black, 15%);
   display: table;
