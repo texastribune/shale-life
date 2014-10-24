@@ -27,13 +27,13 @@
 
 
   @include media($bp-landing-medium) {
-    @include span-columns(10);
-    @include shift(1);
+    @include span-columns(8);
+    @include shift(2);
   }
 
   @include media($bp-landing-large) {
-    @include span-columns(10);
-    @include shift(1);
+    @include span-columns(8);
+    @include shift(2);
   }
 
 }
@@ -66,14 +66,14 @@
   }
 
   @include media($bp-landing-large) {
-    @include span-columns(4);
+    @include span-columns(5);
     h1 {
      margin-bottom: .25em;
     }
   }
 
   @include media($bp-landing-medium) {
-    @include span-columns(4);
+    @include span-columns(5);
     h1 {
      margin-bottom: .25em;
     }
@@ -83,10 +83,10 @@
 .subtitle,
 .share-project {
   @include media($bp-landing-large) {
-    @include span-columns(7);
+    @include span-columns(5);
   }
   @include media($bp-landing-medium) {
-    @include span-columns(7);
+    @include span-columns(5);
   }
 }
 
