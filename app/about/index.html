@@ -815,6 +815,8 @@
     .setView(mapCenter, mapZoom)
     .addControl(L.mapbox.geocoderControl('mapbox.places-v1'));
 
+  map.scrollWheelZoom.disable();
+
   var wellLayer = L.mapbox.tileLayer(wellLayerId, {
     detectRetina: true
   });
@@ -823,8 +825,6 @@
 
   if(width > 767) {
     map.legendControl.addLegend(document.getElementById('map-legend-container').innerHTML);
-  } else {
-    map.scrollWheelZoom.disable();
   }
 
 })();
