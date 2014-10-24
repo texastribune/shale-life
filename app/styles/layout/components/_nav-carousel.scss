@@ -25,7 +25,7 @@
 
     h3 {
       background-color: transparentize($red, .5);
-      top: 10%;
+      top: 50%;
       color: $white;
       padding: .5em;
       position: absolute;
@@ -45,7 +45,7 @@
   .flex-direction-nav {
     .flex-next,
     .flex-prev {
-      top: 50% !important;
+      top: 20% !important;
       opacity: 1 !important;
     }
   }

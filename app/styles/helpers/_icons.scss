@@ -32,3 +32,12 @@
   background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
 }
+
+
+.mfp-iframe-scaler button:hover:not(:disabled),
+.mfp-iframe-scaler button:hover:not(:disabled) ,
+.mfp-iframe-scaler button:active:not(:disabled),
+.mfp-iframe-scaler button:focus:not(:disabled) {
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
