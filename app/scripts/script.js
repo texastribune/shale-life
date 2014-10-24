@@ -1,6 +1,4 @@
 'use strict';
-/* global YT */
-/* exported onYouTubeIframeAPIReady */
 
 // Set element height based on height of reference element
 function setHeight(target, reference) {
@@ -79,80 +77,22 @@ $(document).ready(function() {
 
 });
 
-// var tag = document.createElement('script');
-
-// tag.src = 'https://www.youtube.com/iframe_api';
-// var firstScriptTag = document.getElementsByTagName('script')[0];
-// firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-// Fires whenever a player has finished loading
-// function onPlayerReady(event) {
-//     event.target.playVideo();
-// }
-
-// Fires when the player's state changes.
-// function onPlayerStateChange(event) {
-//     // Go to the next video after the current one is finished playing
-//     if (event.data === 0) {
-//         $.fancybox.next();
-//     }
-// }
-
-// The API will call this function when the page has finished downloading the JavaScript for the player API
-// function onYouTubePlayerAPIReady() {
-
-//   $(".fancybox")
-//       .attr('rel', 'gallery')
-//       .fancybox({
-//           openEffect  : 'none',
-//           closeEffect : 'fade',
-//           nextEffect  : 'none',
-//           prevEffect  : 'none',
-//           padding     : 0,
-//           margin      : 50,
-//           type        : "iframe",
-//           closeBtn    : true,
-//           iframe      : {
-//             preload: false
-//           },
-//           helpers     : {
-//             overlay: {
-//               css: {'background-color': 'rgba(26, 26, 26, .9)'}
-//             }
-//           },
-//           beforeShow  : function() {
-//             // Find the iframe ID
-//             var id = $.fancybox.inner.find('iframe').attr('id');
-
-//             // Create video player object and add event listeners
-//             var player = new YT.Player(id, {
-//                 events: {
-//                     'onReady': onPlayerReady,
-//                     'onStateChange': onPlayerStateChange
-//                 }
-//             });
-//           }
-//       });
-
-// }
-
 $('.video').magnificPopup({
   type: 'iframe',
-
-
   iframe: {
-     markup: '<div class="mfp-iframe-scaler">'+
+    markup: '<div class="mfp-iframe-scaler">'+
                 '<div class="mfp-close"></div>'+
                 '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
-                '<div class="mfp-title">Some caption</div>'+
-              '</div>'
-  },
-  callbacks: {
-    markupParse: function(template, values, item) {
-     values.title = item.el.attr('title');
-    }
+              '</div>',
+    patterns: {
+      youtube: {
+        index: 'youtube.com/',
+        id: 'v=',
+        src: '//www.youtube.com/embed/%id%?autoplay=1&controls=2&enablejsapi=1&modestbranding=1&rel=0&showinfo=0'
+      }
+    },
+    srcAction: 'iframe_src'
   }
-
 });
 
 // Reset heights/positions on window resize
