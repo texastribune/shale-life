@@ -7,13 +7,16 @@
 }
 
 .down-arrow {
+  background: $red;
   background: url('../images/icons/ShaleLife-btn-arrow-down.png') no-repeat;
   background-position: center center;
   background-size: cover;
 }
 
 .play-button {
+  background: $red;
   background: url('../images/icons/ShaleLife-btn-play.png') no-repeat;
+  background-color: $red;
   background-color: rgba(0, 0, 0, 0);
   background-position: center center;
   background-size: cover;
@@ -29,6 +32,7 @@
 .play-button:hover:not(:disabled) ,
 .play-button:active:not(:disabled),
 .play-button:focus:not(:disabled) {
+  background-color: $red;
   background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
 }
@@ -37,6 +41,7 @@
 .mfp-iframe-scaler button:hover:not(:disabled) ,
 .mfp-iframe-scaler button:active:not(:disabled),
 .mfp-iframe-scaler button:focus:not(:disabled) {
+  background-color: $red;
   background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
 }
