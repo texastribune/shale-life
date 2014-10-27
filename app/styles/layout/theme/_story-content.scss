@@ -152,27 +152,18 @@
     @include span-columns(7);
     @include shift(2);
 
-    &.lead-text {
-      margin-top: .5em;
-    }
   }
 
   @include media($bp-shale-med) {
     @include span-columns(8);
     @include shift(1);
 
-    &.lead-text {
-      margin-top: .5em;
-    }
   }
 
   @include media($bp-shale-lg) {
     @include span-columns(9);
     @include shift(1);
 
-    &.lead-text {
-      margin-top: .5em;
-    }
   }
 
 
