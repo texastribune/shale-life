@@ -44,18 +44,3 @@
   background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
 }
-
-button,
-.button {
-  color: $bodytext-black;
-  display: inline-block;
-  font-family: $base-sans-serif;
-  letter-spacing: .03rem;
-  vertical-align: middle;
-  @include button(flat, $red);
-
-  &:disabled {
-    background-color: $grey;
-    cursor: default;
-  }
-}
