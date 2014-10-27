@@ -192,14 +192,20 @@ a {
   background-position: center center;
   background-size: cover;
 }
+
 .wide,
 .lg-square {
-  width: 50%;
+  @include media($bp-thumbnails) {
+    width: 50%;
+  }
+
 }
 
 .square,
 .tall {
-  width: 25%;
+  @include media($bp-thumbnails) {
+    width: 25%;
+  }
 }
 
 .hide-until-load {

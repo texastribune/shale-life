@@ -12,8 +12,8 @@ function setThumbnails() {
 
   if ($(window).width() < 500) {
     $('.square').css('width', refWidth).css('height', refWidth);
-    $('.tall').css('width', refWidth).css('height', refWidth*2)
-    $('.wide').css('width', refWidth).css('height', refWidth/2);
+    $('.tall').css('width', refWidth).css('height', refWidth);
+    $('.wide').css('width', refWidth).css('height', refWidth);
     $('.lg-square').css('width', refWidth).css('height', refWidth);
   } else {
     $('.square').css('height', refWidthWide).css('width', refWidthWide);
