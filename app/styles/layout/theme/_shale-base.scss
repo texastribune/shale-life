@@ -129,18 +129,27 @@ tr {
     @include media($bp-table) {
       display: none;
     }
-  }
-}
 
-tr.color-swap {
+    &.color-swap {
+      &:nth-child(odd) td {
+        background-color: #111;
+      }
 
-  @include media($bp-table) {
-    &:nth-child(odd) td {
-      background-color: #111;
+      &:nth-child(even) td {
+        background-color: $grey;
+      }
     }
+  }
 
-    &:nth-child(even) td {
-      background-color: $grey;
+  &.color-swap {
+    @include media($bp-table) {
+      &:nth-child(odd) td {
+        background-color: #111;
+      }
+
+      &:nth-child(even) td {
+        background-color: $grey;
+      }
     }
   }
 }
