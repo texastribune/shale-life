@@ -69,29 +69,13 @@
   @include media($bp-shale-lg) {
     @include span-columns(10);
     @include shift(1);
-
-    p {
-      display: inline-block;
-      width: 30%;
-    }
   }
 
   @include media($bp-shale-med) {
     @include span-columns(10);
     @include shift(1);
-
-    p {
-      display: inline-block;
-      width: 46%;
-    }
   }
 
-  @include media($bp-shale-small) {
-    p {
-      display: inline-block;
-      width: 46%;
-    }
-  }
 
   a {
     border-bottom: 1px solid $yellow;
@@ -106,4 +90,37 @@
   }
 }
 
+.supporters-a {
+  @include span-columns(12);
 
+  @include media($bp-shale-lg) {
+    @include span-columns(5 of 10);
+  }
+
+  @include media($bp-shale-med) {
+    @include span-columns(5 of 10);
+  }
+
+  @include media($bp-shale-med) {
+    @include span-columns(5 of 10);
+  }
+}
+
+.supporters-b {
+  @include span-columns(12);
+
+  @include media($bp-shale-lg) {
+    @include span-columns(5 of 10);
+    @include omega();
+  }
+
+  @include media($bp-shale-med) {
+    @include span-columns(5 of 10);
+    @include omega();
+  }
+
+  @include media($bp-shale-med) {
+    @include span-columns(5 of 10);
+    @include omega();
+  }
+}
