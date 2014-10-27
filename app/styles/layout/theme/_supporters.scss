@@ -94,7 +94,15 @@
   }
 
   a {
+    border-bottom: 1px solid $yellow;
     color: $denim;
+
+    &:hover {
+      color: $light-denim;
+      border-bottom: 1px solid $light-denim;
+      text-decoration: none;
+    }
+
   }
 }
 
