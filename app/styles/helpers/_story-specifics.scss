@@ -1,3 +1,23 @@
+.ABOUT {
+  &.lead-image {
+    background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ ABOUT.LEAD_SM_IMG_URL }}');
+
+    @include media($bp-landing-large) {
+      background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ ABOUT.LEAD_LG_IMG_URL }}');
+    }
+  }
+}
+
+.SUPPORTERS {
+  &.lead-image {
+    background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ SUPPORTERS.LEAD_SM_IMG_URL }}');
+
+    @include media($bp-landing-large) {
+      background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ SUPPORTERS.LEAD_LG_IMG_URL }}');
+    }
+  }
+}
+
 .COTTON_FARMERS {
   &.lead-image {
     background-image: url('//s3.amazonaws.com/static.texastribune.org/media/shale/{{ COTTON_FARMERS.LEAD_SM_IMG_URL }}');
