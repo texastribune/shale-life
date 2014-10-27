@@ -48,6 +48,14 @@
       top: 20% !important;
       opacity: 1 !important;
     }
+
+    .flex-next {
+      right: 1%;
+    }
+
+    .flex-prev {
+      left: 1%;
+    }
   }
   .flex-control-paging li a {
     background: $light-denim;
