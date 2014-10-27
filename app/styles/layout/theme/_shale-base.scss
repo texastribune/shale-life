@@ -121,8 +121,26 @@ tr {
 
   &.extra-header {
     td {
-      padding: 1em;
+      font-size: 1.1em;
       font-weight: 800;
+      padding: 1em;
+    }
+
+    @include media($bp-table) {
+      display: none;
+    }
+  }
+}
+
+tr.color-swap {
+
+  @include media($bp-table) {
+    &:nth-child(odd) td {
+      background-color: #111;
+    }
+
+    &:nth-child(even) td {
+      background-color: $grey;
     }
   }
 }
