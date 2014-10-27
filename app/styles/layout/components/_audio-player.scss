@@ -19,7 +19,19 @@ $bar-background: rgb(160, 20, 20);
   display: inline-block;
 
   @include media($player-break) {
-    max-width: 300px !important;
+    max-width: 250px !important;
+  }
+}
+
+.mejs-time-rail {
+  @include media($player-break) {
+    display: none !important;
+  }
+}
+
+.mejs-duration-container {
+  @include media($player-break) {
+    display: none !important;
   }
 }
 
