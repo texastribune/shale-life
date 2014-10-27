@@ -2,7 +2,6 @@
   background-color: lighten($masthead-black, 15%);
   display: table;
   margin: 0 0 1.5em;
-  padding-bottom: .5em;
   position: relative;
   width: 100%;
 }
@@ -43,6 +42,8 @@
 }
 
 .lead-header {
+  padding-bottom: .5em;
+
   h1 {
     padding-top: 10%;
   }
