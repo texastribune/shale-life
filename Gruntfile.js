@@ -84,8 +84,16 @@ module.exports = function (grunt) {
         src: [
           '*.{ico,png,txt}',
           'images/{,*/}*.webp',
-          'styles/fonts/{,*/}*.*'
+          'styles/fonts/{,*/}*.*',
+          'styles/controls.*'
         ]
+      },
+      bowerAssets: {
+        expand: true,
+        flatten: true,
+        cwd: 'bower_components',
+        dest: '<%= config.dist %>/styles',
+        src: 'mediaelement/build/controls.{png,svg}'
       },
       compiledHtml: {
         expand: true,
@@ -297,6 +305,7 @@ module.exports = function (grunt) {
     'cssmin',
     'uglify',
     'copy:dist',
+    'copy:bowerAssets',
     'copy:compiledHtml',
     'rev',
     'usemin',
