@@ -164,6 +164,10 @@
     @include span-columns(9);
     @include shift(1);
 
+    p {
+      margin-top: .25em;
+    }
+
   }
 
 
