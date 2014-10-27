@@ -83,6 +83,7 @@
                 <th>2000</th>
                 <th>2010</th>
                 <th>2013</th>
+                <th></th>
               </tr>
             </thead>
             <tbody>
@@ -91,27 +92,30 @@
                 <td data-title="{{ RESPONDERS.Data_Col1 }}">{{ RESPONDERS.Pop2000 }}</td>
                 <td data-title="{{ RESPONDERS.Data_Col2 }}">{{ RESPONDERS.Pop2010 }}</td>
                 <td data-title="{{ RESPONDERS.Data_Col2 }}">{{ RESPONDERS.Pop2013 }}</td>
+                <td></td>
               </tr>
               <tr class="extra-header">
                 <td></td>
                 <td>{{ RESPONDERS.Data_Col1 }}</td>
                 <td>{{ RESPONDERS.Data_Col2 }}</td>
-                <td>{{ RESPONDERS.Data_Col3 }}</td>
+                <td colspan=2>{{ RESPONDERS.Data_Col3 }}</td>
               </tr>
               <tr class="color-swap">
                 <td data-title="{{ RESPONDERS.Data_Title_A }}">{{ RESPONDERS.Data_Title_A }}</td>
                 <td data-title="{{ RESPONDERS.Data_Col1 }}">{{ RESPONDERS.Data_A_1 }}</td>
                 <td data-title="{{ RESPONDERS.Data_Col2 }}">{{ RESPONDERS.Data_A_2 }}</td>
                 <td data-title="{{ RESPONDERS.Data_Col3 }}">{{ RESPONDERS.Data_A_3 }}</td>
+                <td data-title="{{ RESPONDERS.Data_Col4 }}">vs. {{ RESPONDERS.Data_A_4 }} statewide</td>
               </tr>
               <tr class="color-swap">
                 <td data-title="{{ RESPONDERS.Data_Title_B }}">{{ RESPONDERS.Data_Title_B }}</td>
                 <td data-title="{{ RESPONDERS.Data_Col1 }}">{{ RESPONDERS.Data_B_1 }}</td>
                 <td data-title="{{ RESPONDERS.Data_Col2 }}">{{ RESPONDERS.Data_B_2 }}</td>
                 <td data-title="{{ RESPONDERS.Data_Col3 }}">{{ RESPONDERS.Data_B_3 }}</td>
+                <td data-title="{{ RESPONDERS.Data_Col4 }}">vs. {{ RESPONDERS.Data_B_4 }} statewide</td>
               </tr>
               <tr class="color-swap">
-                <td colspan=4><em>Source: {{ RESPONDERS.Source }}</em></td>
+                <td colspan=5><em>Source: {{ RESPONDERS.Source }}</em></td>
               </tr>
             </tbody>
           </table>
