@@ -1,0 +1,59 @@
+$player-background: rgb(98, 14, 17);
+$bar-background: rgb(160, 20, 20);
+
+.audio-container {
+  margin: .5em 0;
+}
+
+.audio-prompt {
+  font-style: 'PT Sans', $helvetica;
+  font-weight: 800;
+  line-height: 30px;
+  margin: 0 .25em 0 0;
+}
+
+.mejs-player {
+  border-radius: 4px;
+  display: inline-block;
+  max-width: 300px !important;
+}
+
+.mejs-controls {
+  background: none !important;
+  background-color: $player-background !important;
+  border-radius: 4px;
+}
+
+.mejs-button {
+  button {
+    &:hover {
+      background-color: transparent !important;
+    }
+
+    &:focus {
+      background-color: transparent !important;
+    }
+  }
+}
+
+.mejs-time-total {
+  background: none !important;
+  background-color: $bar-background !important;
+}
+
+.mejs-time-loaded {
+  background: none !important;
+  background-color: transparent !important;
+}
+
+.mejs-time-current {
+  border-radius: 0 !important;
+}
+
+.mejs-horizontal-volume-total {
+  border-radius: 0 !important;
+}
+
+.mejs-horizontal-volume-current {
+  border-radius: 0 !important;
+}
