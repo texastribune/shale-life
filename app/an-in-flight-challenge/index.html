@@ -28,7 +28,7 @@
           <div class="video-start lead-text">
             <a class="video" href="http://www.youtube.com/watch?v={{ CROP_DUSTER.VIDEO_URL }}"><button class="play-button"></button></a>
 
-            <p>Watch Video</p>
+            <p>{{ CROP_DUSTER.PROMPT }}</p>
           </div>
 
           <div class="share-story">
@@ -93,13 +93,11 @@
                 <td data-title="{{ CROP_DUSTER.Data_Col2 }}">{{ CROP_DUSTER.Pop2013 }}</td>
               </tr>
               <tr class="extra-header">
-                <th></th>
-                <th></th>
-                <th>{{ CROP_DUSTER.Data_Col1 }}</th>
-                <th>{{ CROP_DUSTER.Data_Col2 }}</th>
+                <td></td>
+                <td></td>
+                <td>{{ CROP_DUSTER.Data_Col1 }}</td>
+                <td>{{ CROP_DUSTER.Data_Col2 }}</td>
               </tr>
-            </thead>
-            <tbody>
               <tr>
                 <td data-title="{{ CROP_DUSTER.Data_Title_A }}">{{ CROP_DUSTER.Data_Title_A }}</td>
                 <td></td>

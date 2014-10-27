@@ -42,7 +42,7 @@
 }
 
 .lead-header {
-  padding-bottom: .5em;
+  padding-bottom: 1em;
 
   h1 {
     padding-top: 10%;
@@ -75,7 +75,6 @@
 
   p {
     font-weight: 400;
-    margin-top: .25em;
   }
 
   a {
@@ -119,7 +118,15 @@
 }
 
 .video-start {
-  @include span-columns(10);
+  @include span-columns(12);
+
+  .video {
+    @include span-columns(2);
+  }
+
+  p {
+    @include span-columns(10);
+  }
 
   @include media($bp-shale-small) {
     @include span-columns(9);
@@ -132,6 +139,8 @@
   @include media($bp-shale-lg) {
     @include span-columns(10);
   }
+
+
 }
 
 .slideshow-start {
@@ -142,17 +151,31 @@
   @include media($bp-shale-small) {
     @include span-columns(7);
     @include shift(2);
+
+    &.lead-text {
+      margin-top: .5em;
+    }
   }
 
   @include media($bp-shale-med) {
     @include span-columns(8);
     @include shift(1);
+
+    &.lead-text {
+      margin-top: .5em;
+    }
   }
 
   @include media($bp-shale-lg) {
     @include span-columns(9);
     @include shift(1);
+
+    &.lead-text {
+      margin-top: .5em;
+    }
   }
+
+
 }
 
 .video-start,

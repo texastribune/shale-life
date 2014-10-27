@@ -115,8 +115,9 @@ tr {
   }
 
   &.extra-header {
-    th {
+    td {
       padding: 1em;
+      font-weight: 800;
     }
   }
 }
