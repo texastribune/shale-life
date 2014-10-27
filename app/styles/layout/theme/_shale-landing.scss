@@ -1,4 +1,5 @@
 .landing-banner {
+  background-color: $masthead-black;
   background-color: lighten($masthead-black, 15%);
   display: table;
   margin: 0;
@@ -125,6 +126,7 @@ a {
     position: relative;
 
     h3 {
+      background-color: $red;
       background-color: transparentize($red, .5);
       bottom: 10%;
       color: $off-white;

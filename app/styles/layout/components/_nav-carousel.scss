@@ -12,6 +12,7 @@
 
       &:hover {
         h3 {
+          background-color: $red;
           background-color: transparentize($red, .1);
         }
       }
@@ -24,6 +25,7 @@
     }
 
     h3 {
+      background-color: $red;
       background-color: transparentize($red, .5);
       top: 50%;
       color: $white;
