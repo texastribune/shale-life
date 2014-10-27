@@ -1,5 +1,16 @@
 'use strict';
 
+// get all audio players
+var audioPlayers = $('audio');
+
+function pauseAllPlayers() {
+  if (audioPlayers.length > 0) {
+    audioPlayers.each(function(i, v) {
+      v.player.pause();
+    });
+  }
+}
+
 // Set element height based on height of reference element
 function setHeight(target, reference) {
   var refHeight = $(reference).innerHeight();
@@ -52,9 +63,10 @@ $(document).ready(function() {
       positionNav('nav-ref');
       $('.total-slides').text(slider.count-1);
     },
-    before: function(slider) {
+    before: function() {
       $('.slideshow-caption').css('visibility', 'hidden');
       $('.share-story').css('visibility', 'hidden');
+      pauseAllPlayers();
     },
     // Re-position direction buttons after slide switches
     after: function(slider) {
