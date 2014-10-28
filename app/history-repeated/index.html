@@ -40,7 +40,7 @@
                   <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
                 </span>
                 </a>
-                <a href="https://twitter.com/intent/tweet?text={{ BIG_LAKE.ENCRYPTED_TWEET }}%20{{ BIG_LAKE.SHARE_URL }}" title="share on Twitter" class="social-share" target="_blank">
+                <a href="https://twitter.com/intent/tweet?text={{ BIG_LAKE.SHARE_TWEET | urlencode }} {{ BIG_LAKE.SHARE_URL | urlencode }}&via=texastribune" title="share on Twitter" class="social-share" target="_blank">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
