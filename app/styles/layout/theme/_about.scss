@@ -58,6 +58,15 @@ $white: rgb(255, 255, 255);
 .contrib-column {
   @include media($bar-chart-break) {
     @include span-columns(4 of 8);
+    margin-bottom: 2em;
+  }
+}
+
+.contrib-column-b {
+  @include media($bar-chart-break) {
+    @include span-columns(4 of 8);
+    @include omega();
+    margin-bottom: 2em;
   }
 }
 
