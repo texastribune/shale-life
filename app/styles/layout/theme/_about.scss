@@ -55,6 +55,12 @@ $white: rgb(255, 255, 255);
   }
 }
 
+.contrib-column {
+  @include media($bar-chart-break) {
+    @include span-columns(4 of 8);
+  }
+}
+
 .about-chart {
   color: $white;
   font-family: 'PT Sans Narrow', $helvetica;
