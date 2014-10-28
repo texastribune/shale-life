@@ -1,39 +1,40 @@
 // Masthead override
 $bp-masthead: new-breakpoint(min-width 800px);
 
-.branding {
-  color: $white;
-  font-size: 1em;
-  padding: .75em .5em .375em;
-  width: 0%;
+.masthead {
+  .branding {
+    color: $white;
+    font-size: 1em;
+    padding: .75em .5em .375em;
+    width: 100%;
 
-  img {
-    float: left;
-    padding-left: .5em;
-  }
+    img {
+      float: left;
+      padding-left: .5em;
+    }
 
-  i,
-  h3 {
-    float: right;
+    i,
+    h3 {
+      float: right;
 
-    &:hover {
-      color: $light-denim;
+      &:hover {
+        color: $light-denim;
+      }
+    }
+
+    i {
+      border-right: 2px solid $yellow;
+      font-size: 1.75em;
+      padding: 0 .5em 0 0;
+    }
+
+    h3 {
+      font-size: 1em;
+      margin-bottom: .5em;
+      padding: .25em .25em .25em .75em;
+      text-transform: uppercase;
     }
   }
-
-  i {
-    border-right: 2px solid $yellow;
-    font-size: 1.75em;
-    padding: 0 .5em 0 0;
-  }
-
-  h3 {
-    font-size: 1em;
-    margin-bottom: .5em;
-    padding: .25em .25em .25em .75em;
-    text-transform: uppercase;
-  }
-
 }
 
 .more-stories {
