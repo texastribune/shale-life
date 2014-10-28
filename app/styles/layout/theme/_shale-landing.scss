@@ -81,7 +81,6 @@
   }
 }
 
-.subtitle,
 .share-project {
   @include media($bp-landing-large) {
     @include span-columns(5);
@@ -95,6 +94,14 @@
   border-top: 2px solid $yellow;
   padding-top: 1em;
   margin-top: 1.2em;
+
+  @include media($bp-landing-large) {
+    @include span-columns(5);
+  }
+
+  @include media($bp-landing-medium) {
+    @include span-columns(6);
+  }
 }
 
 .explore {
@@ -105,9 +112,10 @@
   @include media($bp-landing-large) {
     @include span-columns(4);
   }
-  // @include media($bp-landing-medium) {
-  //   @include span-columns(4);
-  // }
+  @include media($bp-landing-medium) {
+    @include span-columns(4);
+    @include shift(5);
+  }
 }
 
 .share-project {
