@@ -2,7 +2,7 @@ $bp-footer-lg: new-breakpoint(min-width 800px);
 $bp-footer-med: new-breakpoint(min-width 400px max-width 800px);
 
 footer {
-  background: url(../images/SL-footer-bg-tread001.png) no-repeat;
+  background: url(../images/SL-footer-bg-tread001.png) 90% 100% no-repeat;
   background-position: center center;
   background-size: cover;
   color: $white;
