@@ -22,12 +22,12 @@ $bp-masthead: new-breakpoint(min-width 800px);
   }
 
   i {
+    border-right: 2px solid $yellow;
     font-size: 1.75em;
     padding: 0 .5em 0 0;
   }
 
   h3 {
-    border-left: 2px solid $yellow;
     font-size: 1em;
     margin-bottom: .5em;
     padding: .25em .25em .25em .75em;
