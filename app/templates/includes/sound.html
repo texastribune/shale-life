@@ -1,3 +1,7 @@
 <div class="audio-container">
-  <span class="audio-prompt">Listen: </span><audio class="mejs-player" preload="none" src="//s3.amazonaws.com/static.texastribune.org/media/shale/{{ audio_url }}"></audio>
+  <span class="audio-prompt">Listen: </span>
+  <audio class="mejs-player" preload="none">
+    <source src="//s3.amazonaws.com/static.texastribune.org/media/shale/{{ audio_url }}" type="audio/mp3">
+    Sorry, your browser is not supported. <a href="//s3.amazonaws.com/static.texastribune.org/media/shale/{{ audio_url }}">Download the audio file here</a>.
+  </audio>
 </div>
