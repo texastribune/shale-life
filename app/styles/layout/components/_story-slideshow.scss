@@ -45,11 +45,6 @@
         opacity: 1 !important;
       }
 
-      @include media($bp-shale-med) {
-      }
-
-      @include media($bp-shale-lg) {
-      }
     }
 
     .flex-prev {
@@ -67,10 +62,6 @@
         filter:alpha(opacity=0);
         opacity: 0 !important;
       }
-
-      // @include media($bp-shale-lg) {
-      //   left: 4.5em !important;
-      // }
     }
 
 
