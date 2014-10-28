@@ -89,11 +89,16 @@ module.exports = function (grunt) {
         ]
       },
       bowerAssets: {
-        expand: true,
-        flatten: true,
-        cwd: 'bower_components',
-        dest: '<%= config.dist %>/styles',
-        src: 'mediaelement/build/controls.{png,svg}'
+        files: [{
+          expand: true,
+          flatten: true,
+          cwd: 'bower_components',
+          dest: '<%= config.dist %>/styles',
+          src: 'mediaelement/build/controls.{png,svg}',
+        },{
+          src: 'bower_components/mediaelement/build/flashmediaelement-cdn.swf',
+          dest: '<%= config.dist %>/styles/flashmediaelement.swf'
+        }]
       },
       compiledHtml: {
         expand: true,
