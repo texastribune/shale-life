@@ -284,22 +284,6 @@ a.video {
     padding-top: 0;
   }
 
-  .fa-stack {
-    color: $off-white;
-
-    &:hover {
-      color: $light-denim;
-    }
-
-    @include media($bp-shale-lg) {
-      margin: 0 .25em;
-    }
-  }
-
-  .fa-facebook,
-  .fa-twitter {
-    color: $dark-denim;
-  }
 }
 
 .story-box {

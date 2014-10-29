@@ -45,3 +45,23 @@
   background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
 }
+
+.share-story,
+.landing-share {
+  .fa-stack {
+    color: $off-white;
+
+    &:hover {
+      color: $light-denim;
+    }
+
+    @include media($bp-shale-lg) {
+      margin: 0 .25em;
+    }
+  }
+
+  .fa-facebook,
+  .fa-twitter {
+    color: $dark-denim;
+  }
+}
