@@ -16,7 +16,7 @@
 .landing-header {
   @extend %content-block;
   display: block;
-  margin-top: 5%;
+  margin-top: 3%;
   position: relative;
   text-align: center;
   vertical-align: middle;
@@ -34,7 +34,7 @@
 
   @include media($bp-landing-large) {
     @include span-columns(8);
-    @include shift(2);
+    @include shift(3);
   }
 
 }
@@ -56,74 +56,60 @@
 }
 
 .the-shale {
-  h1 {
-    margin-top: .25em;
-  }
+}
+
+.life-subtitle {
+  display: inline-block;
 }
 
 .life {
   h1 {
     margin-bottom: 0;
   }
-
-  @include media($bp-landing-large) {
-    @include span-columns(5);
-    h1 {
-     margin-bottom: .25em;
-    }
-  }
-
-  @include media($bp-landing-medium) {
-    @include span-columns(5);
-    h1 {
-     margin-bottom: .25em;
-    }
-  }
-}
-
-.share-project {
-  @include media($bp-landing-large) {
-    @include span-columns(5);
-  }
-  @include media($bp-landing-medium) {
-    @include span-columns(5);
-  }
 }
 
 .subtitle {
   border-top: 2px solid $yellow;
-  padding-top: 1em;
-  margin-top: 1.2em;
+  padding-top: .5em;
+  margin-top: 1em;
+
+  h3 {
+    font-size: 1.3em;
+    margin-bottom: .25em;
+  }
 
   @include media($bp-landing-large) {
-    @include span-columns(5);
+    @include span-columns(10);
   }
 
   @include media($bp-landing-medium) {
-    @include span-columns(6);
+    @include span-columns(11);
   }
+}
+
+.landing-share {
+  text-align: right;
+  margin: 1em 0;
+
+  @include media($bp-landing-large) {
+    @include span-columns(3);
+  }
+  @include media($bp-landing-medium) {
+    @include span-columns(3);
+  }
+
 }
 
 .explore {
   @include span-columns(8);
   text-align: left;
-  margin-bottom: 1em;
+  margin: 1em 0;
 
   @include media($bp-landing-large) {
-    @include span-columns(4);
+    @include span-columns(7);
   }
   @include media($bp-landing-medium) {
-    @include span-columns(4);
-    @include shift(5);
-  }
-}
-
-.share-project {
-  text-align: right;
-  @include span-columns(4);
-
-  a {
-    margin: 0;
+    @include span-columns(8);
   }
 }
 

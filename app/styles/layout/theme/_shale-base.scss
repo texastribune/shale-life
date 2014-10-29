@@ -15,7 +15,7 @@ h1 {
   text-transform: uppercase;
 
   @include media($bp-landing-large) {
-    font-size: 13em;
+    font-size: 11em;
   }
 
   @include media($bp-landing-medium) {
