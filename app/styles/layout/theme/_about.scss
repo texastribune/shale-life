@@ -1,6 +1,7 @@
 $bar-chart-break: new-breakpoint(min-width em(840));
 $map-break: new-breakpoint(min-width em(768));
 $map-header-break: new-breakpoint(min-width em(1100));
+$share-break: new-breakpoint(max-width em(755));
 
 $bar-color: rgb(50, 88, 124);
 $white: rgb(255, 255, 255);
@@ -173,4 +174,12 @@ $white: rgb(255, 255, 255);
 .legend-block-darkblue {
   background-color: rgb(50, 87, 123);
   color: rgb(50, 87, 123);
+}
+
+.about-share {
+  width: auto;
+
+  @include media($share-break) {
+    text-align: left;
+  }
 }
