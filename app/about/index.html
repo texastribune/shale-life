@@ -18,6 +18,20 @@
     <header class="lead-header supporters-header">
       <h1>ABOUT</h1>
       <h1 class="yellow">THE SHALE LIFE</h1>
+        <div class="landing-share about-share">
+        <a href="https://www.facebook.com/dialog/feed?app_id=154122474650943&display=popup&name={{ ABOUT.HEAD }}%20%7C%20The%20Shale%20Life&link=http%3A%2F%2Fapps.texastribune.org%2Fshale-life%2Fabout%2F&redirect_uri=http://apps.texastribune.org/shale-life/about/" title="share on Facebook" class="social-share" target="_blank">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+        </span>
+        </a>
+        <a href="https://twitter.com/intent/tweet?text={{ ABOUT.SHARE_TWEET | urlencode }}%20{{ ABOUT.SHARE_URL | urlencode }}&via=texastribune" title="share on Twitter" class="social-share" target="_blank">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+        </span>
+        </a>
+      </div>
     </header>
   </div>
 </section>
