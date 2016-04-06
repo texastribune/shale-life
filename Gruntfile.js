@@ -158,7 +158,8 @@ module.exports = function (grunt) {
       },
       all: [
         'Gruntfile.js',
-        '<%= config.app %>/scripts/{,*/}*.js',
+        '<%= config.app %>/scripts/script.js',
+        '<%= config.app %>/scripts/landing-load.js',
         '!<%= config.app %>/scripts/vendor/*'
       ]
     },

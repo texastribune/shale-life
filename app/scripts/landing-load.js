@@ -1,3 +1,4 @@
+'use strict';
 
 // Set element height based on height of reference element
 function setHeight(target, reference) {
@@ -26,31 +27,24 @@ function setThumbnails() {
 }
 
 // Create nice scroll on href='#id' clicks
-$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
+$('#scroll').click(function() {
+  $('html, body').animate({
+      scrollTop: $('#landing-grid').offset().top
+  }, 1000);
 });
 
 $(document).ready(function() {
   setHeight('.landing-banner', window);
   // Set height of thumbnails on landing
   setThumbnails();
+  console.log('called ready');
 });
 
 // Reset heights/positions on window resize
 $(window).resize(function() {
   setHeight('.landing-banner', window);
   setThumbnails();
+  console.log('called resize');
 });
 
 $(window).on( "orientationchange", function() {
