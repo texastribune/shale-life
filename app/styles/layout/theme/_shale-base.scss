@@ -1,6 +1,7 @@
 // Short-Hed
 html,
 body {
+  background-color: #111;
   overflow-x: hidden;
   width: 100%;
 }
@@ -112,9 +113,19 @@ th {
   font-size: 1.1em;
   font-weight: 800;
   line-height: 1.2em;
+  text-align: right;
+  padding: 8px 12px;
 }
 
 tr {
+
+  td {
+    text-align: right;
+    &:first-child {
+      text-align: left;
+    }
+  }
+
   &:nth-child(odd) td {
     background-color: $grey;
   }
@@ -156,6 +167,7 @@ tr {
 
 td {
   font-size: 1em;
+  padding: 8px 12px;
 }
 
 .mfp-iframe-scaler {

@@ -84,6 +84,11 @@
   @include media($bp-landing-medium) {
     @include span-columns(11);
   }
+
+  .byline {
+    color: $white;
+    font-style: italic;
+  }
 }
 
 .landing-share {
