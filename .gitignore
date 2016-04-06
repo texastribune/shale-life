@@ -3,3 +3,5 @@ dist
 .sass-cache
 data.json
 data.xlsx
+scripts
+styles

@@ -3,7 +3,7 @@ process_spreadsheet:
 	node ./tools/build_data_json.js
 
 test-deploy:
-	aws s3 sync --delete --acl public-read dist s3://newsapps.test.texastribune.org/
+	aws s3 sync --delete --acl public-read dist s3://moose.texastribune.org/shale-life
 
 deploy:
-	aws s3 sync --delete --acl public-read dist s3://moose.texastribune.org/shale-life/
+	aws s3 sync --delete --acl public-read dist s3://apps.texastribune.org/shale-life/
