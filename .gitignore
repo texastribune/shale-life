@@ -1,10 +1,5 @@
-node_modules
 dist
 .tmp
 .sass-cache
-bower_components
 data.json
 data.xlsx
-
-scripts
-styles

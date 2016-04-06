@@ -3,7 +3,7 @@
   "private": true,
   "dependencies": {
     "jquery": "1",
-    "newsapps-styles": "texastribune/newsapps-styles#base_theme",
+    "newsapps-styles": "texastribune/newsapps-styles#no-more-submodule",
     "imager.js": "~0.3.0",
     "magnific-popup": "~0.9.9",
     "mediaelement": "~2.15.1"

@@ -1,0 +1,25 @@
+{
+  "name": "newsapps-styles",
+  "main": "_initialize.scss",
+  "private": true,
+  "ignore": [
+    "styleguide/",
+    "dist/",
+    "*.html",
+    "**/*.txt"
+  ],
+  "dependencies": {
+    "bourbon": "~4.1.1",
+    "neat": "~1.7.1"
+  },
+  "homepage": "https://github.com/texastribune/newsapps-styles",
+  "_release": "0821fc64b6",
+  "_resolution": {
+    "type": "branch",
+    "branch": "no-more-submodule",
+    "commit": "0821fc64b689243d9afbe407ce54cf7c00224649"
+  },
+  "_source": "git://github.com/texastribune/newsapps-styles.git",
+  "_target": "no-more-submodule",
+  "_originalSource": "texastribune/newsapps-styles"
+}
