@@ -37,14 +37,12 @@ $(document).ready(function() {
   setHeight('.landing-banner', window);
   // Set height of thumbnails on landing
   setThumbnails();
-  console.log('called ready');
 });
 
 // Reset heights/positions on window resize
 $(window).resize(function() {
   setHeight('.landing-banner', window);
   setThumbnails();
-  console.log('called resize');
 });
 
 $(window).on( "orientationchange", function() {
